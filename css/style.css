@@ -38,6 +38,7 @@
     --color-rose-quartz: #B76E79;
     --color-antique-gold: #C8A165;
     --color-cream: #F5F1E8;
+    --color-champagne: #F7E7CE;
     --color-dark-brown: #3D2914;
     --color-light-gray: #F8F8F8;
     --color-medium-gray: #666666;
@@ -625,11 +626,20 @@ a:hover {
 .hero-title {
     font-size: clamp(3rem, 8vw, 6rem);
     margin-bottom: var(--spacing-md);
+    font-family: var(--font-heading);
+    background-color: var(--color-champagne);
+    color: var(--color-dark-brown);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    display: inline-block;
+    /* CRITICAL: Bandar font must be solid, no stroke/outline */
     -webkit-text-stroke: none !important;
     text-stroke: none !important;
     -webkit-text-stroke-width: 0 !important;
     text-stroke-width: 0 !important;
     text-shadow: none !important;
+    font-weight: normal !important;
+    -webkit-text-fill-color: var(--color-dark-brown) !important;
 }
 
 .hero-subtitle {
@@ -688,6 +698,15 @@ section {
     font-size: clamp(2rem, 4vw, 3rem);
     color: var(--color-dark-brown);
     margin-bottom: var(--spacing-md);
+    font-family: var(--font-heading);
+    /* CRITICAL: Bandar font must be solid, no stroke/outline */
+    -webkit-text-stroke: none !important;
+    text-stroke: none !important;
+    -webkit-text-stroke-width: 0 !important;
+    text-stroke-width: 0 !important;
+    text-shadow: none !important;
+    font-weight: normal !important;
+    -webkit-text-fill-color: var(--color-dark-brown) !important;
 }
 
 .section-description {
@@ -1089,7 +1108,7 @@ input:focus-visible {
     pointer-events: none;
 }
 
-/* CRITICAL ANTI-STROKE RULES */
+/* CRITICAL ANTI-STROKE RULES - BELARTE TYPOGRAPHY STANDARDS */
 * {
     -webkit-text-stroke: none !important;
     text-stroke: none !important;
@@ -1103,12 +1122,19 @@ h1, h2, h3, h4, h5, h6,
 .hero-title, .section-title,
 .mobile-nav-title, .footer-title,
 [style*="font-family"][style*="Bandar"],
+[style*="font-family"][style*="BANDAR"],
 .bandar-font {
+    font-family: var(--font-heading) !important;
     -webkit-text-stroke: none !important;
     text-stroke: none !important;
     -webkit-text-stroke-width: 0 !important;
     text-stroke-width: 0 !important;
     text-shadow: none !important;
+    font-weight: normal !important;
+    -webkit-text-fill-color: currentColor !important;
+    /* Prevent hollow/outline effects */
+    text-outline: none !important;
+    -webkit-text-outline: none !important;
 }
 
 /* Utility classes */
