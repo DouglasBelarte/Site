@@ -96,6 +96,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     margin-bottom: var(--spacing-sm);
     /* CRITICAL: No text-stroke or outline allowed */
+    -webkit-text-stroke: none !important;
+    text-stroke: none !important;
+    -webkit-text-stroke-width: 0 !important;
+    text-stroke-width: 0 !important;
+    text-shadow: none !important;
 }
 
 h1 {
@@ -267,6 +272,11 @@ a:hover {
     font-size: 1.5rem;
     color: var(--color-dark-brown);
     text-decoration: none;
+    -webkit-text-stroke: none !important;
+    text-stroke: none !important;
+    -webkit-text-stroke-width: 0 !important;
+    text-stroke-width: 0 !important;
+    text-shadow: none !important;
 }
 
 .logo-butterfly {
@@ -612,7 +622,11 @@ a:hover {
 .hero-title {
     font-size: clamp(3rem, 8vw, 6rem);
     margin-bottom: var(--spacing-md);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: none !important;
+    text-stroke: none !important;
+    -webkit-text-stroke-width: 0 !important;
+    text-stroke-width: 0 !important;
+    text-shadow: none !important;
 }
 
 .hero-subtitle {
@@ -1070,6 +1084,28 @@ input:focus-visible {
 .loading {
     opacity: 0.7;
     pointer-events: none;
+}
+
+/* CRITICAL ANTI-STROKE RULES */
+* {
+    -webkit-text-stroke: none !important;
+    text-stroke: none !important;
+    -webkit-text-stroke-width: 0 !important;
+    text-stroke-width: 0 !important;
+}
+
+/* Specific anti-stroke for Bandar font elements */
+h1, h2, h3, h4, h5, h6, 
+.logo, .logo a, .logo-text,
+.hero-title, .section-title,
+.mobile-nav-title, .footer-title,
+[style*="font-family"][style*="Bandar"],
+.bandar-font {
+    -webkit-text-stroke: none !important;
+    text-stroke: none !important;
+    -webkit-text-stroke-width: 0 !important;
+    text-stroke-width: 0 !important;
+    text-shadow: none !important;
 }
 
 /* Utility classes */

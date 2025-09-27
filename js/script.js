@@ -412,24 +412,38 @@ class BelarteWebsite {
     }
 
     removeTextStroke(element) {
-        if (!element || !element.style) return;
+        if (!element) return;
 
-        // Remove text-stroke properties
-        if (element.style.webkitTextStroke) {
-            element.style.webkitTextStroke = '';
-        }
-        if (element.style.textStroke) {
-            element.style.textStroke = '';
+        // Remove text-stroke properties from element itself
+        if (element.style) {
+            element.style.setProperty('-webkit-text-stroke', 'none', 'important');
+            element.style.setProperty('text-stroke', 'none', 'important');
+            element.style.setProperty('-webkit-text-stroke-width', '0', 'important');
+            element.style.setProperty('text-stroke-width', '0', 'important');
+            element.style.setProperty('text-shadow', 'none', 'important');
         }
 
-        // Check all child elements
+        // Check all child elements aggressively
         const children = element.querySelectorAll('*');
         children.forEach(child => {
-            if (child.style.webkitTextStroke) {
-                child.style.webkitTextStroke = '';
+            if (child.style) {
+                child.style.setProperty('-webkit-text-stroke', 'none', 'important');
+                child.style.setProperty('text-stroke', 'none', 'important');
+                child.style.setProperty('-webkit-text-stroke-width', '0', 'important');
+                child.style.setProperty('text-stroke-width', '0', 'important');
+                child.style.setProperty('text-shadow', 'none', 'important');
             }
-            if (child.style.textStroke) {
-                child.style.textStroke = '';
+        });
+
+        // Special focus on Bandar font elements
+        const bandarElements = element.querySelectorAll('h1, h2, h3, h4, h5, h6, .logo, .logo a, .hero-title, .section-title');
+        bandarElements.forEach(el => {
+            if (el.style) {
+                el.style.setProperty('-webkit-text-stroke', 'none', 'important');
+                el.style.setProperty('text-stroke', 'none', 'important');
+                el.style.setProperty('-webkit-text-stroke-width', '0', 'important');
+                el.style.setProperty('text-stroke-width', '0', 'important');
+                el.style.setProperty('text-shadow', 'none', 'important');
             }
         });
     }
