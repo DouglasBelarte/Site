@@ -18,16 +18,16 @@
 </head>
 <body>
     <!-- Promo Bar -->
-    <div class="promo-bar">
+    <div class="promo">
         <p data-i18n="promo.text">Free shipping for purchases over $150</p>
     </div>
 
     <!-- Header -->
-    <header class="belarte-header-dynamic" id="header" style="position: fixed; top: 40px; left: 0px; right: 0px; z-index: 1000; transition: 0.3s; background-color: transparent; backdrop-filter: none; height: 70px; display: flex; align-items: center;">
-        <div class="belarte-header-container" style="display: flex; align-items: center; justify-content: space-between; padding: 0px 2rem; max-width: 1200px; margin: 0px auto; width: 100%; height: 100%;">
+    <header class="belarte-header-dynamic transparent" id="header">
+        <div class="belarte-header-container">
             <div class="belarte-header-nav">
-                <button class="belarte-header-icon" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" style="background: none; border: none; color: rgb(43, 43, 43); cursor: pointer;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6" aria-hidden="true">
+                <button class="belarte-header-icon" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 12h16"></path>
                         <path d="M4 18h16"></path>
                         <path d="M4 6h16"></path>
@@ -35,19 +35,19 @@
                 </button>
             </div>
             
-            <div class="belarte-header-logo" style="display: flex; align-items: center; gap: 0.5rem;">
-                <a href="#" style="text-decoration: none;">
-                    <span style="font-family: BANDAR, serif; font-size: 1.5rem; font-weight: bold; color: rgb(43, 43, 43); letter-spacing: 2px; text-transform: none; display: inline-block; -webkit-text-stroke: none !important; text-stroke: none !important; -webkit-text-stroke-width: 0 !important; text-stroke-width: 0 !important; text-shadow: none !important;">Belarte</span>
+            <div class="belarte-header-logo">
+                <a href="#" aria-label="Belarte Home">
+                    <span class="brand">Belarte</span>
                 </a>
                 <img alt="Belarte Butterfly" src="./assets/images/butterfly.png" style="height: 2rem; width: auto;">
             </div>
             
-            <div class="belarte-header-actions" style="display: flex; align-items: center; gap: 1rem;">
+            <div class="belarte-header-actions">
                 <!-- Language Selector -->
                 <div class="language-selector">
-                    <button class="lang-btn" id="langBtn" aria-label="Select Language" aria-expanded="false" style="display: flex; align-items: center; gap: 0.25rem; padding: 0.5rem; background: transparent; border: none; cursor: pointer; color: rgb(43, 43, 43); font-size: 0.875rem; font-weight: 500;">
-                        <span class="current-lang">EN</span>
-                        <svg class="lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <button class="lang-switch" id="langBtn" aria-label="Select Language" aria-expanded="false">
+                        <span class="current">EN</span>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                             <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
@@ -67,98 +67,85 @@
                     </div>
                 </div>
                 
-                <button class="belarte-header-icon" aria-label="Buscar" style="background: none; border: none; color: rgb(43, 43, 43); cursor: pointer;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-5 h-5" aria-hidden="true">
+                <button class="belarte-header-icon" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="m21 21-4.34-4.34"></path>
                         <circle cx="11" cy="11" r="8"></circle>
                     </svg>
                 </button>
                 
-                <button class="belarte-header-cart" style="background: none; border: none; color: rgb(43, 43, 43); cursor: pointer; position: relative;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-5 h-5" aria-hidden="true">
+                <button class="belarte-header-cart" aria-label="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="8" cy="21" r="1"></circle>
                         <circle cx="19" cy="21" r="1"></circle>
                         <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                     </svg>
-                    <span style="position: absolute; top: -8px; right: -8px; background-color: rgb(200, 161, 101); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">0</span>
+                    <span class="badge">0</span>
                 </button>
             </div>
         </div>
-
-        <!-- Mobile Navigation -->
-        <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Main Navigation">
-            <div class="mobile-nav-content">
-                <div class="mobile-nav-header">
-                    <span class="mobile-nav-title" data-i18n="nav.menu">Menu</span>
-                    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </button>
-                </div>
-                
-                <ul class="mobile-nav-links">
-                    <li><a href="#collections" data-i18n="nav.collections">Collections</a></li>
-                    <li><a href="#about" data-i18n="nav.about">About the Brand</a></li>
-                    <li><a href="#atelier" data-i18n="nav.atelier">Atelier</a></li>
-                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-                    <li class="nav-divider"></li>
-                    <li><a href="#login" data-i18n="nav.login">Login</a></li>
-                    <li><a href="#account" data-i18n="nav.account">My Account</a></li>
-                    <li><a href="#wishlist" data-i18n="nav.wishlist">Wish List</a></li>
-                </ul>
-
-                <div class="mobile-lang-selector">
-                    <p class="mobile-lang-title" data-i18n="nav.language">Language</p>
-                    <div class="mobile-lang-options">
-                        <button class="mobile-lang-option" data-lang="en">
-                            <span class="flag">🇺🇸</span>
-                            <span data-i18n="lang.en">English</span>
-                        </button>
-                        <button class="mobile-lang-option" data-lang="pt">
-                            <span class="flag">🇧🇷</span>
-                            <span data-i18n="lang.pt">Português</span>
-                        </button>
-                        <button class="mobile-lang-option" data-lang="it">
-                            <span class="flag">🇮🇹</span>
-                            <span data-i18n="lang.it">Italiano</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Main Navigation">
+        <div class="mobile-nav-header">
+            <span class="mobile-nav-title" data-i18n="nav.menu">Menu</span>
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav-links">
+            <li><a href="#collections" data-i18n="nav.collections">Collections</a></li>
+            <li><a href="#about" data-i18n="nav.about">About the Brand</a></li>
+            <li><a href="#atelier" data-i18n="nav.atelier">Atelier</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#login" data-i18n="nav.login">Login</a></li>
+            <li><a href="#account" data-i18n="nav.account">My Account</a></li>
+            <li><a href="#wishlist" data-i18n="nav.wishlist">Wish List</a></li>
+        </ul>
+
+        <div class="mobile-lang-selector">
+            <p class="mobile-lang-title" data-i18n="nav.language">Language</p>
+            <div class="mobile-lang-options">
+                <button class="mobile-lang-option" data-lang="en">
+                    <span class="flag">🇺🇸</span>
+                    <span data-i18n="lang.en">English</span>
+                </button>
+                <button class="mobile-lang-option" data-lang="pt">
+                    <span class="flag">🇧🇷</span>
+                    <span data-i18n="lang.pt">Português</span>
+                </button>
+                <button class="mobile-lang-option" data-lang="it">
+                    <span class="flag">🇮🇹</span>
+                    <span data-i18n="lang.it">Italiano</span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section class="hero" id="hero">
-            <div class="hero-video-container">
-                <video 
-                    class="hero-video" 
-                    autoplay 
-                    muted 
-                    loop 
-                    playsinline
-                    poster="./assets/images/hero-poster.jpg"
-                    data-i18n-alt="alt.hero"
-                >
+            <div class="hero-media">
+                <video class="hero-video" autoplay muted loop playsinline>
                     <source src="./assets/videos/hero.mp4" type="video/mp4">
-                    <img src="./assets/images/hero-poster.jpg" alt="Belarte Collection" data-i18n-alt="alt.hero">
                 </video>
-                <div class="hero-overlay"></div>
+                <img class="hero-poster" src="./assets/images/hero-poster.jpg" alt="Belarte Summer Collection" style="display: none;">
             </div>
             
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title" data-i18n="hero.title">Summer '26</h1>
-                    <p class="hero-subtitle" data-i18n="hero.subtitle">Discover the perfect fusion between Italian elegance and Brazilian soul</p>
-                    <p class="hero-tagline" data-i18n="hero.tagline">Made in Brazil • Italian Design, Brazilian Soul</p>
-                </div>
+                <h1 data-i18n="hero.title">Summer '26</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Discover the perfect fusion between Italian elegance and Brazilian soul</p>
+                <p class="hero-tagline" data-i18n="hero.tagline">Made in Brazil • Italian Design, Brazilian Soul</p>
                 
-                <div class="hero-actions">
-                    <button class="btn btn-primary" data-i18n="btn.collections">View Collection</button>
-                    <button class="btn btn-secondary" data-i18n="btn.atelier">Watch Campaign</button>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn btn-primary" data-i18n="btn.collections">View Collection</a>
+                    <a href="#atelier" class="btn btn-secondary" data-i18n="btn.atelier">Watch Campaign</a>
                 </div>
             </div>
         </section>

@@ -114,7 +114,7 @@ class BelarteWebsite {
     }
 
     updateLanguageSelector() {
-        const currentLangSpan = document.querySelector('.current-lang');
+        const currentLangSpan = document.querySelector('.current');
         if (currentLangSpan) {
             currentLangSpan.textContent = this.currentLanguage.toUpperCase();
         }
@@ -138,13 +138,11 @@ class BelarteWebsite {
             const currentScrollY = window.scrollY;
             
             if (currentScrollY > 100) {
-                header.classList.add('scrolled');
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                header.style.backdropFilter = 'blur(10px)';
+                header.classList.remove('transparent');
+                header.classList.add('solid');
             } else {
-                header.classList.remove('scrolled');
-                header.style.backgroundColor = 'transparent';
-                header.style.backdropFilter = 'none';
+                header.classList.remove('solid');
+                header.classList.add('transparent');
             }
 
             lastScrollY = currentScrollY;
