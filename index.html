@@ -23,28 +23,29 @@
     </div>
 
     <!-- Header -->
-    <header class="header" id="header">
-        <div class="header-container">
-            <!-- Mobile Menu Button -->
-            <button class="hamburger-menu" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#" aria-label="Belarte Home">
-                    <span class="logo-text">Belarte</span>
-                    <span class="logo-butterfly">🦋</span>
-                </a>
+    <header class="belarte-header-dynamic" id="header" style="position: fixed; top: 40px; left: 0px; right: 0px; z-index: 1000; transition: 0.3s; background-color: transparent; backdrop-filter: none; height: 70px; display: flex; align-items: center;">
+        <div class="belarte-header-container" style="display: flex; align-items: center; justify-content: space-between; padding: 0px 2rem; max-width: 1200px; margin: 0px auto; width: 100%; height: 100%;">
+            <div class="belarte-header-nav">
+                <button class="belarte-header-icon" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" style="background: none; border: none; color: rgb(43, 43, 43); cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6" aria-hidden="true">
+                        <path d="M4 12h16"></path>
+                        <path d="M4 18h16"></path>
+                        <path d="M4 6h16"></path>
+                    </svg>
+                </button>
             </div>
-
-            <!-- Header Actions -->
-            <div class="header-actions">
+            
+            <div class="belarte-header-logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <a href="#" style="text-decoration: none;">
+                    <span style="font-family: BANDAR, serif; font-size: 1.5rem; font-weight: bold; color: rgb(43, 43, 43); letter-spacing: 2px; text-transform: none; display: inline-block; -webkit-text-stroke: none !important; text-stroke: none !important; -webkit-text-stroke-width: 0 !important; text-stroke-width: 0 !important; text-shadow: none !important;">Belarte</span>
+                </a>
+                <img alt="Belarte Butterfly" src="./assets/images/butterfly.png" style="height: 2rem; width: auto;">
+            </div>
+            
+            <div class="belarte-header-actions" style="display: flex; align-items: center; gap: 1rem;">
                 <!-- Language Selector -->
                 <div class="language-selector">
-                    <button class="lang-btn" id="langBtn" aria-label="Select Language" aria-expanded="false">
+                    <button class="lang-btn" id="langBtn" aria-label="Select Language" aria-expanded="false" style="display: flex; align-items: center; gap: 0.25rem; padding: 0.5rem; background: transparent; border: none; cursor: pointer; color: rgb(43, 43, 43); font-size: 0.875rem; font-weight: 500;">
                         <span class="current-lang">EN</span>
                         <svg class="lang-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
                             <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -65,21 +66,21 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- Search Button -->
-                <button class="header-btn search-btn" aria-label="Search">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
-                        <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                
+                <button class="belarte-header-icon" aria-label="Buscar" style="background: none; border: none; color: rgb(43, 43, 43); cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-5 h-5" aria-hidden="true">
+                        <path d="m21 21-4.34-4.34"></path>
+                        <circle cx="11" cy="11" r="8"></circle>
                     </svg>
                 </button>
-
-                <!-- Cart Button -->
-                <button class="header-btn cart-btn" aria-label="Shopping Cart">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L5 3H3m4 10v6a1 1 0 001 1h10a1 1 0 001-1v-6m-12 0a1 1 0 011-1h10a1 1 0 011 1" stroke="currentColor" stroke-width="2"/>
+                
+                <button class="belarte-header-cart" style="background: none; border: none; color: rgb(43, 43, 43); cursor: pointer; position: relative;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-5 h-5" aria-hidden="true">
+                        <circle cx="8" cy="21" r="1"></circle>
+                        <circle cx="19" cy="21" r="1"></circle>
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                     </svg>
-                    <span class="cart-count">0</span>
+                    <span style="position: absolute; top: -8px; right: -8px; background-color: rgb(200, 161, 101); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem;">0</span>
                 </button>
             </div>
         </div>

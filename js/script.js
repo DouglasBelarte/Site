@@ -139,8 +139,12 @@ class BelarteWebsite {
             
             if (currentScrollY > 100) {
                 header.classList.add('scrolled');
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                header.style.backdropFilter = 'blur(10px)';
             } else {
                 header.classList.remove('scrolled');
+                header.style.backgroundColor = 'transparent';
+                header.style.backdropFilter = 'none';
             }
 
             lastScrollY = currentScrollY;
