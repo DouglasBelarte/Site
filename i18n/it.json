@@ -1,0 +1,105 @@
+{
+  "page": {
+    "title": "Belarte Co. - Design Italiano, Anima Brasiliana",
+    "description": "Scopri la fusione perfetta tra eleganza italiana e anima brasiliana. Moda artigianale con tradizione."
+  },
+  "promo": {
+    "text": "Spedizione gratuita per acquisti superiori a €120"
+  },
+  "lang": {
+    "en": "English",
+    "pt": "Português",
+    "it": "Italiano"
+  },
+  "nav": {
+    "menu": "Menu",
+    "collections": "Collezioni",
+    "about": "Il Brand",
+    "atelier": "Atelier",
+    "contact": "Contatto",
+    "login": "Accedi",
+    "account": "Il Mio Account",
+    "wishlist": "Lista Desideri",
+    "language": "Lingua"
+  },
+  "hero": {
+    "title": "Summer 26",
+    "subtitle": "Scopri la fusione perfetta tra eleganza italiana e anima brasiliana",
+    "tagline": "Fatto a mano in Brasile • Design Italiano, Anima Brasiliana"
+  },
+  "btn": {
+    "collections": "Vedi Collezione",
+    "atelier": "Guarda Campagna",
+    "catalog": "Scarica Catalogo Digitale",
+    "philosophy": "Scarica Filosofia Completa (PDF)",
+    "whatsapp": "WhatsApp",
+    "email": "📧 Email",
+    "subscribe": "Iscriviti"
+  },
+  "collections": {
+    "tagline": "Design Italiano, Anima Brasiliana",
+    "title": "Le Nostre Collezioni",
+    "description": "Ogni collezione racconta una storia unica, combinando la tradizione artigianale italiana con la vibrante energia brasiliana"
+  },
+  "badge": {
+    "artisanal": "Artigianale",
+    "new": "Nuovo",
+    "handmade": "Fatto a Mano"
+  },
+  "card": {
+    "eleganza": {
+      "title": "Eleganza",
+      "description": "Sofisticazione italiana per occasioni speciali",
+      "count": "24 pezzi"
+    },
+    "tropicale": {
+      "title": "Tropicale",
+      "description": "Freschezza brasiliana con tocco mediterraneo",
+      "count": "18 pezzi"
+    },
+    "artesania": {
+      "title": "Artesania",
+      "description": "Ricami e dettagli artigianali del Brasile",
+      "count": "15 pezzi"
+    }
+  },
+  "about": {
+    "tagline": "Design Italiano, Anima Brasiliana",
+    "title": "Il Brand",
+    "description": "Belarte è più di un brand di moda: è un'azienda imprenditoriale evolutiva, un ecosistema che unisce creatività, business e comunità. Il suo simbolo, la Farfalla, incarna la metamorfosi continua dell'arte e dell'anima imprenditoriale.",
+    "mission": "Fondata da Angélica Lucas, una visionaria brasiliana con anima italiana, il brand rappresenta la fusione perfetta tra sensualità tropicale e rigore dell'eleganza europea. Belarte costruisce ponti tra culture, generando valore economico, culturale ed estetico."
+  },
+  "newsletter": {
+    "title": "Ricevi Notizie Belarte",
+    "description": "Sii il primo a conoscere le nostre nuove collezioni e offerte esclusive",
+    "placeholder": "La tua migliore email"
+  },
+  "footer": {
+    "addresses": "I Nostri Indirizzi",
+    "brazil": "🇧🇷 Brasile",
+    "address": {
+      "brazil": "Condomínio Mansões Entre Lagos"
+    },
+    "quicklinks": "Link Rapidi",
+    "connect": "Connettiti",
+    "social": {
+      "text": "Seguici sui social media per dietro le quinte, lanci e ispirazioni"
+    },
+    "copyright": "© 2024 Belarte Co. Tutti i diritti riservati.",
+    "sustainability": "Sostenibilità"
+  },
+  "alt": {
+    "hero": "Collezione Belarte Summer 26",
+    "collection": {
+      "eleganza": "Collezione Eleganza - Sofisticazione italiana per occasioni speciali",
+      "tropicale": "Collezione Tropicale - Freschezza brasiliana con tocco mediterraneo",
+      "artesania": "Collezione Artesania - Ricami e dettagli artigianali del Brasile"
+    },
+    "about": "Su Belarte - Design Italiano, Anima Brasiliana"
+  },
+  "aria": {
+    "menu": "Apri menu di navigazione",
+    "search": "Cerca prodotti",
+    "cart": "Carrello della spesa"
+  }
+}

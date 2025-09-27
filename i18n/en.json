@@ -1,0 +1,105 @@
+{
+  "page": {
+    "title": "Belarte Co. - Italian Design, Brazilian Soul",
+    "description": "Discover the perfect fusion between Italian elegance and Brazilian soul. Handcrafted fashion with artisanal tradition."
+  },
+  "promo": {
+    "text": "Free shipping for purchases over $150"
+  },
+  "lang": {
+    "en": "English",
+    "pt": "Português",
+    "it": "Italiano"
+  },
+  "nav": {
+    "menu": "Menu",
+    "collections": "Collections",
+    "about": "About the Brand",
+    "atelier": "Atelier",
+    "contact": "Contact",
+    "login": "Login",
+    "account": "My Account",
+    "wishlist": "Wish List",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Summer 26",
+    "subtitle": "Discover the perfect fusion between Italian elegance and Brazilian soul",
+    "tagline": "Made in Brazil • Italian Design, Brazilian Soul"
+  },
+  "btn": {
+    "collections": "View Collection",
+    "atelier": "Watch Campaign",
+    "catalog": "Download Digital Catalog",
+    "philosophy": "Download Complete Philosophy (PDF)",
+    "whatsapp": "WhatsApp",
+    "email": "📧 Email",
+    "subscribe": "Subscribe"
+  },
+  "collections": {
+    "tagline": "Italian Design, Brazilian Soul",
+    "title": "Our Collections",
+    "description": "Each collection tells a unique story, combining Italian artisanal tradition with vibrant Brazilian energy"
+  },
+  "badge": {
+    "artisanal": "Artisanal",
+    "new": "New",
+    "handmade": "Handmade"
+  },
+  "card": {
+    "eleganza": {
+      "title": "Eleganza",
+      "description": "Italian sophistication for special occasions",
+      "count": "24 pieces"
+    },
+    "tropicale": {
+      "title": "Tropicale",
+      "description": "Brazilian freshness with Mediterranean touch",
+      "count": "18 pieces"
+    },
+    "artesania": {
+      "title": "Artesania",
+      "description": "Embroidery and details crafted in Brazil",
+      "count": "15 pieces"
+    }
+  },
+  "about": {
+    "tagline": "Italian Design, Brazilian Soul",
+    "title": "About the Brand",
+    "description": "Belarte is more than a fashion brand: it's an evolutionary entrepreneurial company, an ecosystem that unites creativity, business and community. Its symbol, the Butterfly, embodies the continuous metamorphosis of art and entrepreneurial soul.",
+    "mission": "Founded by Angélica Lucas, a Brazilian visionary with an Italian soul, the brand represents the perfect fusion between tropical sensuality and the rigor of European elegance. Belarte builds bridges between cultures, generating economic, cultural and aesthetic value."
+  },
+  "newsletter": {
+    "title": "Receive Belarte News",
+    "description": "Be the first to know about our new collections and exclusive offers",
+    "placeholder": "Your best email"
+  },
+  "footer": {
+    "addresses": "Our Addresses",
+    "brazil": "🇧🇷 Brazil",
+    "address": {
+      "brazil": "Condomínio Mansões Entre Lagos"
+    },
+    "quicklinks": "Quick Links",
+    "connect": "Connect",
+    "social": {
+      "text": "Follow us on social media for behind-the-scenes, launches and inspirations"
+    },
+    "copyright": "© 2024 Belarte Co. All rights reserved.",
+    "sustainability": "Sustainability"
+  },
+  "alt": {
+    "hero": "Belarte Summer 26 Collection",
+    "collection": {
+      "eleganza": "Eleganza Collection - Italian sophistication for special occasions",
+      "tropicale": "Tropicale Collection - Brazilian freshness with Mediterranean touch",
+      "artesania": "Artesania Collection - Embroidery and details crafted in Brazil"
+    },
+    "about": "About Belarte - Italian Design, Brazilian Soul"
+  },
+  "aria": {
+    "menu": "Open navigation menu",
+    "search": "Search products",
+    "cart": "Shopping cart"
+  }
+}

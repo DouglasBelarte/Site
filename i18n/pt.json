@@ -1,0 +1,105 @@
+{
+  "page": {
+    "title": "Belarte Co. - Design Italiano, Alma Brasileira",
+    "description": "Descubra a fusão perfeita entre elegância italiana e alma brasileira. Moda artesanal com tradição."
+  },
+  "promo": {
+    "text": "Frete grátis para compras acima de R$ 500"
+  },
+  "lang": {
+    "en": "English",
+    "pt": "Português",
+    "it": "Italiano"
+  },
+  "nav": {
+    "menu": "Menu",
+    "collections": "Coleções",
+    "about": "Sobre a Marca",
+    "atelier": "Ateliê",
+    "contact": "Contato",
+    "login": "Entrar",
+    "account": "Minha Conta",
+    "wishlist": "Lista de Desejos",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Summer 26",
+    "subtitle": "Descubra a fusão perfeita entre elegância italiana e alma brasileira",
+    "tagline": "Feito à mão no Brasil • Design Italiano, Alma Brasileira"
+  },
+  "btn": {
+    "collections": "Explore as Coleções",
+    "atelier": "Conheça o Ateliê",
+    "catalog": "Baixar Catálogo Digital",
+    "philosophy": "Baixar Filosofia Completa (PDF)",
+    "whatsapp": "WhatsApp",
+    "email": "📧 Email",
+    "subscribe": "Inscrever-se"
+  },
+  "collections": {
+    "tagline": "Design Italiano, Alma Brasileira",
+    "title": "Nossas Coleções",
+    "description": "Cada coleção conta uma história única, combinando a tradição artesanal italiana com a vibrante energia brasileira"
+  },
+  "badge": {
+    "artisanal": "Artesanal",
+    "new": "Novo",
+    "handmade": "Feito à Mão"
+  },
+  "card": {
+    "eleganza": {
+      "title": "Eleganza",
+      "description": "Sofisticação italiana para ocasiões especiais",
+      "count": "24 peças"
+    },
+    "tropicale": {
+      "title": "Tropicale",
+      "description": "Frescor brasileiro com toque mediterrâneo",
+      "count": "18 peças"
+    },
+    "artesania": {
+      "title": "Artesania",
+      "description": "Bordados e detalhes artesanais do Brasil",
+      "count": "15 peças"
+    }
+  },
+  "about": {
+    "tagline": "Design Italiano, Alma Brasileira",
+    "title": "Sobre a Marca",
+    "description": "Belarte é mais que uma marca de moda: é uma empresa empreendedora evolutiva, um ecossistema que une criatividade, negócios e comunidade. Seu símbolo, a Borboleta, incorpora a metamorfose contínua da arte e da alma empreendedora.",
+    "mission": "Fundada por Angélica Lucas, uma visionária brasileira com alma italiana, a marca representa a fusão perfeita entre sensualidade tropical e o rigor da elegância europeia. Belarte constrói pontes entre culturas, gerando valor econômico, cultural e estético."
+  },
+  "newsletter": {
+    "title": "Receba Novidades da Belarte",
+    "description": "Seja o primeiro a saber sobre nossas novas coleções e ofertas exclusivas",
+    "placeholder": "Seu melhor e-mail"
+  },
+  "footer": {
+    "addresses": "Nossos Endereços",
+    "brazil": "🇧🇷 Brasil",
+    "address": {
+      "brazil": "Condomínio Mansões Entre Lagos"
+    },
+    "quicklinks": "Links Rápidos",
+    "connect": "Conecte-se",
+    "social": {
+      "text": "Siga-nos nas redes sociais para bastidores, lançamentos e inspirações"
+    },
+    "copyright": "© 2024 Belarte Co. Todos os direitos reservados.",
+    "sustainability": "Sustentabilidade"
+  },
+  "alt": {
+    "hero": "Coleção Belarte Summer 26",
+    "collection": {
+      "eleganza": "Coleção Eleganza - Sofisticação italiana para ocasiões especiais",
+      "tropicale": "Coleção Tropicale - Frescor brasileiro com toque mediterrâneo",
+      "artesania": "Coleção Artesania - Bordados e detalhes artesanais do Brasil"
+    },
+    "about": "Sobre a Belarte - Design Italiano, Alma Brasileira"
+  },
+  "aria": {
+    "menu": "Abrir menu de navegação",
+    "search": "Buscar produtos",
+    "cart": "Carrinho de compras"
+  }
+}
