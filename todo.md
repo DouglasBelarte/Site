@@ -12,3 +12,7 @@
 - [x] Aplicar tipografia (Playfair Display + Inter)
 - [x] Aplicar paleta de cores DA.co (cinza neutro + laranja #E85D04)
 - [x] Configurar meta tags e SEO
+
+## Correções
+
+- [x] Corrigir fundo transparente do header fixo (deve ter cor sólida)

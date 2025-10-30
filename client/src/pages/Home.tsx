@@ -39,7 +39,7 @@ export default function Home() {
       <CookieBar />
 
       {/* HEADER */}
-      <header className="sticky top-0 z-40 bg-background border-b border-border">
+      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container">
           <div className="flex items-start justify-between py-4">
             <div className="flex flex-col max-w-[220px]">
