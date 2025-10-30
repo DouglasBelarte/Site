@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Menu, X } from "lucide-react";
 import { CookieBar } from "@/components/CookieBar";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
@@ -37,6 +38,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <CookieBar />
+      <ScrollToTop />
 
       {/* HEADER */}
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">

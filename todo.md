@@ -16,3 +16,7 @@
 ## Correções
 
 - [x] Corrigir fundo transparente do header fixo (deve ter cor sólida)
+
+## Novas Funcionalidades
+
+- [x] Adicionar botão 'Voltar ao Topo' no canto inferior direito
