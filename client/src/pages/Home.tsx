@@ -2,14 +2,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Menu, X } from "lucide-react";
+
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { GlobalHeader } from "@/components/GlobalHeader";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
@@ -35,61 +35,25 @@ export default function Home() {
     contactMutation.mutate(formData);
   };
 
+  const dacoMenuItems = [
+    { label: "Manifesto", href: "#manifesto" },
+    { label: "DAD", href: "/dad" },
+    { label: "Roça", href: "/mrd" },
+    { label: "EAD", href: "/ead" },
+    { label: "LAB", href: "/lab" },
+    { label: "Blog", href: "#blog" },
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" data-section="daco">
       <CookieBar />
       <ScrollToTop />
 
-      {/* HEADER */}
-      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container">
-          <div className="flex items-start justify-between py-4">
-            <div className="flex flex-col max-w-[220px]">
-              <h1 className="text-base font-medium">DA.co — Douglas Amorim Company</h1>
-              <p className="text-[0.7rem] text-muted-foreground mt-1 leading-tight">
-                Não só uma empresa, um estado de espírito.
-              </p>
-            </div>
-
-            {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-6 text-sm font-medium">
-              <a href="#manifesto" className="hover:text-primary transition-colors">Manifesto</a>
-              <a href="#dad" className="hover:text-primary transition-colors">DAD</a>
-              <a href="#mrd" className="hover:text-primary transition-colors">Roça</a>
-              <a href="#ead" className="hover:text-primary transition-colors">EAD</a>
-              <a href="#lab" className="hover:text-primary transition-colors">LAB</a>
-              <a href="#blog" className="hover:text-primary transition-colors">Blog</a>
-              <a href="#contato" className="bg-primary text-primary-foreground px-4 py-2 rounded-full hover:bg-primary/90 transition-colors">
-                Contato
-              </a>
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 border border-foreground rounded-lg"
-              aria-label="Menu"
-            >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
-          </div>
-
-          {/* Mobile Nav */}
-          {mobileMenuOpen && (
-            <nav className="lg:hidden flex flex-col gap-4 pb-6 text-base font-medium">
-              <a href="#manifesto" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors">Manifesto</a>
-              <a href="#dad" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors">DAD</a>
-              <a href="#mrd" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors">Roça</a>
-              <a href="#ead" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors">EAD</a>
-              <a href="#lab" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors">LAB</a>
-              <a href="#blog" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors">Blog</a>
-              <a href="#contato" onClick={() => setMobileMenuOpen(false)} className="bg-primary text-primary-foreground px-4 py-2 rounded-full hover:bg-primary/90 transition-colors inline-block text-center">
-                Contato
-              </a>
-            </nav>
-          )}
-        </div>
-      </header>
+      <GlobalHeader
+        section="daco"
+        logo="DA.co — Douglas Amorim Company"
+        menuItems={dacoMenuItems}
+      />
 
       {/* HERO */}
       <section id="manifesto" className="py-12 md:py-16">

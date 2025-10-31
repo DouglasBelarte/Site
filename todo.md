@@ -20,3 +20,15 @@
 ## Novas Funcionalidades
 
 - [x] Adicionar botão 'Voltar ao Topo' no canto inferior direito
+
+## Atualização v1.1 - Manual Técnico
+
+- [x] Implementar header global com 3 áreas (logo esquerda, menu centro, info/idioma/login direita)
+- [x] Criar sistema de cores por seção (DAD azul, MRD verde, EAD roxo, LAB amarelo)
+- [x] Implementar seletor de idioma (PT/EN/FR) no header
+- [x] Criar página DAD com menu (Home, Portfólio, Clipping)
+- [x] Criar página MRD com menu (Permacultura, Fauna e Flora, Comunidade)
+- [x] Criar página EAD com menu (Home, Conteúdo, Biblioteca)
+- [x] Criar página LAB com menu (Missão, Sites, Aplicativos, Parceiros)
+- [x] Aplicar data-section attribute para controle de cores contextuais
+- [x] Ajustar altura do header (72px desktop, 60px mobile)

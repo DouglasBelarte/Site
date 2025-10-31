@@ -181,3 +181,28 @@
     }
   }
 }
+/* Cores contextuais por seção - Manual Técnico v1.1 */
+[data-section="daco"] .nav-link:hover,
+[data-section="daco"] .nav-link:focus {
+  color: #E85D04;
+}
+
+[data-section="dad"] .nav-link:hover,
+[data-section="dad"] .nav-link:focus {
+  color: #1D4ED8;
+}
+
+[data-section="mrd"] .nav-link:hover,
+[data-section="mrd"] .nav-link:focus {
+  color: #4CAF50;
+}
+
+[data-section="ead"] .nav-link:hover,
+[data-section="ead"] .nav-link:focus {
+  color: #8B5CF6;
+}
+
+[data-section="lab"] .nav-link:hover,
+[data-section="lab"] .nav-link:focus {
+  color: #FACC15;
+}

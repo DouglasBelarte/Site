@@ -5,12 +5,20 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import DAD from "./pages/DAD";
+import MRD from "./pages/MRD";
+import EAD from "./pages/EAD";
+import LAB from "./pages/LAB";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path="/dad" component={DAD} />
+      <Route path="/mrd" component={MRD} />
+      <Route path="/ead" component={EAD} />
+      <Route path="/lab" component={LAB} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
