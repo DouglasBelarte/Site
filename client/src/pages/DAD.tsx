@@ -26,13 +26,13 @@ export default function DAD() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="inline-block bg-[#1D4ED8]/10 border border-[#1D4ED8]/30 rounded-full px-4 py-2 text-sm font-medium text-[#1D4ED8] mb-6">
-              Branding, Identidade e Presença Digital
+              Branding, posicionamento e presença digital
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
               DAD — Doug Amorim Design
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Branding, posicionamento e presença digital para negócios que precisam existir com autoridade.
+              Branding, posicionamento e presença digital que precisam existir com autoridade.
               Identidade visual, site institucional, landing pages de conversão e material comercial.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -41,7 +41,7 @@ export default function DAD() {
                 className="rounded-full"
                 style={{ backgroundColor: "#1D4ED8" }}
               >
-                Quero orçar DAD
+                Quero orçar DAD →
               </Button>
               <Button
                 variant="outline"
@@ -49,53 +49,31 @@ export default function DAD() {
                 className="rounded-full"
                 style={{ borderColor: "#1D4ED8", color: "#1D4ED8" }}
               >
-                Ver Portfólio
+                Ver portfólio
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVIÇOS */}
+      {/* SOBRE */}
       <section className="py-16 border-t border-border">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl mb-12">O que fazemos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-card border border-border rounded-2xl p-8">
-              <h3 className="text-2xl font-medium mb-4" style={{ color: "#1D4ED8" }}>
-                Marca e narrativa
-              </h3>
-              <p className="text-muted-foreground">
-                Identidade visual completa, posicionamento estratégico e narrativa comercial que conecta com seu público.
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl mb-6">Clareza, beleza funcional e entrega real.</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Um só DNA: clareza, beleza funcional e entrega real. Marca e narrativa. Website & Landing Pages.
+                Catálogo de produtos / Portfólio. Social kit e materiais de venda.
               </p>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>• Marca e narrativa</li>
+                <li>• Website & Landing Pages</li>
+                <li>• Catálogo de produtos / Portfólio</li>
+                <li>• Social kit e materiais de venda</li>
+              </ul>
             </div>
-
-            <div className="bg-card border border-border rounded-2xl p-8">
-              <h3 className="text-2xl font-medium mb-4" style={{ color: "#1D4ED8" }}>
-                Website & Landing Pages
-              </h3>
-              <p className="text-muted-foreground">
-                Sites institucionais, landing pages de conversão e presença digital profissional que gera resultados.
-              </p>
-            </div>
-
-            <div className="bg-card border border-border rounded-2xl p-8">
-              <h3 className="text-2xl font-medium mb-4" style={{ color: "#1D4ED8" }}>
-                Catálogo de produtos / Portfólio
-              </h3>
-              <p className="text-muted-foreground">
-                Apresentação profissional de produtos e serviços com foco em conversão e experiência do cliente.
-              </p>
-            </div>
-
-            <div className="bg-card border border-border rounded-2xl p-8">
-              <h3 className="text-2xl font-medium mb-4" style={{ color: "#1D4ED8" }}>
-                Social kit e materiais de venda
-              </h3>
-              <p className="text-muted-foreground">
-                Material comercial completo: apresentações, catálogos, social media kit e ferramentas de vendas.
-              </p>
-            </div>
+            <div className="aspect-video bg-gradient-to-br from-[#1D4ED8]/20 to-[#1D4ED8]/5 rounded-2xl"></div>
           </div>
         </div>
       </section>
@@ -103,18 +81,15 @@ export default function DAD() {
       {/* PORTFÓLIO */}
       <section id="portfolio" className="py-16 border-t border-border bg-muted/30">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl mb-4">Portfólio</h2>
-          <p className="text-muted-foreground mb-12 max-w-2xl">
-            Projetos selecionados que demonstram nossa abordagem: clareza, beleza funcional e entrega real.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
+          <h2 className="text-3xl md:text-4xl mb-12">Portfólio</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden">
                 <div className="aspect-video bg-gradient-to-br from-[#1D4ED8]/20 to-[#1D4ED8]/5"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-medium mb-2">Projeto {i}</h3>
+                  <h3 className="text-lg font-medium mb-2">Projeto {i}</h3>
                   <p className="text-sm text-muted-foreground">
-                    Branding completo e presença digital
+                    Branding completo, site institucional e materiais de comunicação.
                   </p>
                 </div>
               </div>
@@ -126,22 +101,23 @@ export default function DAD() {
       {/* CLIPPING */}
       <section id="clipping" className="py-16 border-t border-border">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl mb-4">Clipping</h2>
-          <p className="text-muted-foreground mb-12 max-w-2xl">
-            Reconhecimento, parcerias e menções na mídia.
-          </p>
-          <div className="space-y-6">
-            <div className="bg-card border border-border rounded-xl p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 bg-[#1D4ED8]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-bold" style={{ color: "#1D4ED8" }}>B</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">Parceria Belarte Company</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Desenvolvimento de identidade visual e presença digital para linha premium de produtos artesanais.
-                  </p>
-                </div>
+          <h2 className="text-3xl md:text-4xl mb-6">Clipping & Parceiros</h2>
+          <div className="max-w-3xl">
+            <p className="text-lg text-muted-foreground mb-12">
+              Reconhecimentos, publicações e parcerias que marcam nossa trajetória.
+            </p>
+            <div className="space-y-6">
+              <div className="border-l-4 pl-6" style={{ borderColor: "#1D4ED8" }}>
+                <h3 className="text-lg font-medium mb-2">Belarte Company</h3>
+                <p className="text-sm text-muted-foreground">
+                  Parceria estratégica em projetos de branding e comunicação visual para o mercado europeu.
+                </p>
+              </div>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#1D4ED8" }}>
+                <h3 className="text-lg font-medium mb-2">Publicações</h3>
+                <p className="text-sm text-muted-foreground">
+                  Trabalhos destacados em portais de design e inovação.
+                </p>
               </div>
             </div>
           </div>
@@ -149,19 +125,19 @@ export default function DAD() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 border-t border-border">
+      <section className="py-16 border-t border-border bg-muted/30">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl mb-6">Pronto para começar?</h2>
+            <h2 className="text-3xl md:text-4xl mb-6">Vamos criar algo com autoridade?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Entre em contato e vamos transformar sua visão em presença digital profissional.
+              Conte o que você precisa. Eu respondo em voz humana — não resposta pasteurizada.
             </p>
             <Button
               size="lg"
               className="rounded-full"
               style={{ backgroundColor: "#1D4ED8" }}
             >
-              Iniciar projeto DAD
+              Quero orçar DAD →
             </Button>
           </div>
         </div>
@@ -172,29 +148,33 @@ export default function DAD() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="font-medium text-lg mb-2">DAD — Doug Amorim Design</div>
-              <div className="text-sm text-white/70 mb-3">Branding & Presença Digital</div>
+              <div className="font-medium text-lg mb-2">DA.co — Douglas Amorim Company</div>
+              <div className="text-sm text-white/70 mb-3">Não só uma empresa, um estado de espírito.</div>
               <div className="text-xs text-white/60">
-                Parte do ecossistema DA.co<br />
-                Jambeiro / SP · Brasil
+                Base Jambeiro/SP · Brasil<br />
+                Atuação Brasil / remoto
               </div>
             </div>
 
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wide mb-3">Navegação</div>
+              <div className="text-sm font-semibold uppercase tracking-wide mb-3">Mapa</div>
               <ul className="space-y-2 text-sm text-white/80">
-                <li><a href="/dad" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="/dad#portfolio" className="hover:text-white transition-colors">Portfólio</a></li>
-                <li><a href="/dad#clipping" className="hover:text-white transition-colors">Clipping</a></li>
-                <li><a href="/" className="hover:text-white transition-colors">Voltar ao DA.co</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">Manifesto</a></li>
+                <li><a href="/dad" className="hover:text-white transition-colors">DAD — Doug Amorim Design</a></li>
+                <li><a href="/mrd" className="hover:text-white transition-colors">Roça / Mundo Roça Digital</a></li>
+                <li><a href="/ead" className="hover:text-white transition-colors">EAD — Let's Go Beyond</a></li>
+                <li><a href="/lab" className="hover:text-white transition-colors">LAB — Pesquisa & Protótipo</a></li>
+                <li><a href="/#blog" className="hover:text-white transition-colors">Blog / Bastidores</a></li>
               </ul>
             </div>
 
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wide mb-3">Contato</div>
+              <div className="text-sm font-semibold uppercase tracking-wide mb-3">Contato Direto</div>
               <ul className="space-y-2 text-sm text-white/80">
+                <li>Iniciar projeto</li>
                 <li>Douglas@DougAmorim.com</li>
-                <li>WhatsApp: +55 (11) 97581-3741</li>
+                <li>WhatsApp comercial: +55 (11) 97581-3741</li>
+                <li>Atendimento humano-assistido Daniel (beta)</li>
               </ul>
             </div>
 
@@ -204,6 +184,7 @@ export default function DAD() {
                 <li><a href="/termos.html" className="hover:text-white transition-colors">Termos de Uso</a></li>
                 <li><a href="/privacidade.html" className="hover:text-white transition-colors">Política de Privacidade</a></li>
                 <li><a href="/cookies.html" className="hover:text-white transition-colors">Cookies & Dados</a></li>
+                <li className="text-white/60 text-xs pt-2">Contato PT-BR. Disponível EN em breve.</li>
               </ul>
             </div>
           </div>

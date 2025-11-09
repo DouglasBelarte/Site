@@ -21,14 +21,14 @@
 
 - [x] Adicionar botão 'Voltar ao Topo' no canto inferior direito
 
-## Atualização v1.1 - Manual Técnico
+## Atualização v1.1.1 - Logos Oficiais (LOCK MODE)
 
-- [x] Implementar header global com 3 áreas (logo esquerda, menu centro, info/idioma/login direita)
-- [x] Criar sistema de cores por seção (DAD azul, MRD verde, EAD roxo, LAB amarelo)
-- [x] Implementar seletor de idioma (PT/EN/FR) no header
-- [x] Criar página DAD com menu (Home, Portfólio, Clipping)
-- [x] Criar página MRD com menu (Permacultura, Fauna e Flora, Comunidade)
-- [x] Criar página EAD com menu (Home, Conteúdo, Biblioteca)
-- [x] Criar página LAB com menu (Missão, Sites, Aplicativos, Parceiros)
-- [x] Aplicar data-section attribute para controle de cores contextuais
-- [x] Ajustar altura do header (72px desktop, 60px mobile)
+- [x] Copiar logos para /public/assets/logos/
+- [x] Adicionar CSS .brand-logo (160px desktop, 140px mobile)
+- [x] Criar componente GlobalHeader com suporte a logos por seção
+- [x] Criar página DAD com logo e menu específico
+- [x] Criar página MRD com logo e menu específico
+- [x] Criar página EAD com logo e menu específico
+- [x] Criar página LAB com logo, fundo preto e menu específico
+- [x] Adicionar rotas no App.tsx para todas as páginas
+- [x] Aplicar data-section em cada página para cores contextuais

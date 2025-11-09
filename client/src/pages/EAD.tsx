@@ -190,11 +190,10 @@ export default function EAD() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="font-medium text-lg mb-2">EAD — Let's Go Beyond</div>
-              <div className="text-sm text-white/70 mb-3">Conteúdo, vivência e mentoria prática</div>
+              <div className="font-medium text-lg mb-2">DA.co — Douglas Amorim Company</div>
+              <div className="text-sm text-white/70 mb-3">Não só uma empresa, um estado de espírito.</div>
               <div className="text-xs text-white/60">
-                Parte do ecossistema DA.co<br />
-                Jambeiro / SP · Brasil
+                Base Jambeiro/SP · Brasil
               </div>
             </div>
 

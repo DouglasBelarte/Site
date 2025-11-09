@@ -12,7 +12,7 @@ export default function LAB() {
   ];
 
   return (
-    <div className="min-h-screen bg-background" data-section="lab">
+    <div className="min-h-screen bg-black text-white" data-section="lab">
       <CookieBar />
       <ScrollToTop />
 
@@ -32,7 +32,7 @@ export default function LAB() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
               LAB — Pesquisa & Protótipo
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+            <p className="text-xl text-white/70 mb-8 max-w-2xl">
               Background dominante: preto #000000, texto branco, acento amarelo.
               Blocos: cards técnicos (Daniel — WhatsApp Assistente Comercial; Busca avançada + WebAR / Orlean; prototipagem digital rápida).
             </p>
@@ -57,7 +57,7 @@ export default function LAB() {
       </section>
 
       {/* MISSÃO */}
-      <section id="missao" className="py-16 border-t border-border bg-black text-white">
+      <section id="missao" className="py-16 border-t border-white/10">
         <div className="container">
           <div className="max-w-3xl">
             <h2 className="text-3xl md:text-4xl mb-6">Missão</h2>
@@ -74,11 +74,11 @@ export default function LAB() {
       </section>
 
       {/* SITES */}
-      <section id="sites" className="py-16 border-t border-border">
+      <section id="sites" className="py-16 border-t border-white/10">
         <div className="container">
           <h2 className="text-3xl md:text-4xl mb-12">Sites experimentais</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-black text-white border border-[#FACC15]/30 rounded-2xl p-8">
+            <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-8">
               <div className="inline-block bg-[#FACC15]/20 px-3 py-1 rounded-full text-xs font-medium text-[#FACC15] mb-4">
                 EM DESENVOLVIMENTO
               </div>
@@ -94,7 +94,7 @@ export default function LAB() {
               </div>
             </div>
 
-            <div className="bg-black text-white border border-[#FACC15]/30 rounded-2xl p-8">
+            <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-8">
               <div className="inline-block bg-[#FACC15]/20 px-3 py-1 rounded-full text-xs font-medium text-[#FACC15] mb-4">
                 BETA
               </div>
@@ -113,7 +113,7 @@ export default function LAB() {
       </section>
 
       {/* APLICATIVOS */}
-      <section id="aplicativos" className="py-16 border-t border-border bg-black text-white">
+      <section id="aplicativos" className="py-16 border-t border-white/10">
         <div className="container">
           <h2 className="text-3xl md:text-4xl mb-12">Aplicativos & Assistentes</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -151,17 +151,17 @@ export default function LAB() {
       </section>
 
       {/* PARCEIROS */}
-      <section id="parceiros" className="py-16 border-t border-border">
+      <section id="parceiros" className="py-16 border-t border-white/10">
         <div className="container">
           <h2 className="text-3xl md:text-4xl mb-6">Parceiros</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
+          <p className="text-lg text-white/70 mb-12 max-w-3xl">
             Colaboramos com empresas, startups e instituições que querem inovar de verdade.
             Se você tem um desafio técnico complexo, vamos conversar.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="border-l-4 pl-6" style={{ borderColor: "#FACC15" }}>
               <h3 className="text-lg font-medium mb-2">Para empresas</h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm text-white/70 mb-4">
                 P&D sob demanda, prototipagem rápida, validação de conceitos e implementação de IA aplicada.
               </p>
               <a href="#" className="text-sm font-medium" style={{ color: "#FACC15" }}>
@@ -171,7 +171,7 @@ export default function LAB() {
 
             <div className="border-l-4 pl-6" style={{ borderColor: "#FACC15" }}>
               <h3 className="text-lg font-medium mb-2">Para startups</h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-sm text-white/70 mb-4">
                 Aceleramos sua ideia: MVP em semanas, validação técnica, arquitetura escalável.
               </p>
               <a href="#" className="text-sm font-medium" style={{ color: "#FACC15" }}>
@@ -183,7 +183,7 @@ export default function LAB() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 border-t border-border bg-black text-white">
+      <section className="py-16 border-t border-white/10">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl mb-6">Tem uma ideia ousada?</h2>
@@ -201,15 +201,14 @@ export default function LAB() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#2B2B2B] text-white py-12">
+      <footer className="bg-[#2B2B2B] text-white py-12 border-t border-white/10">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="font-medium text-lg mb-2">LAB — Pesquisa & Protótipo</div>
-              <div className="text-sm text-white/70 mb-3">Futuro, eficiência, P&D aplicado</div>
+              <div className="font-medium text-lg mb-2">DA.co — Douglas Amorim Company</div>
+              <div className="text-sm text-white/70 mb-3">Não só uma empresa, um estado de espírito.</div>
               <div className="text-xs text-white/60">
-                Parte do ecossistema DA.co<br />
-                Jambeiro / SP · Brasil
+                Base Jambeiro/SP · Brasil
               </div>
             </div>
 

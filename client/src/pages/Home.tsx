@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { GlobalHeader } from "@/components/GlobalHeader";
@@ -36,12 +35,12 @@ export default function Home() {
   };
 
   const dacoMenuItems = [
-    { label: "Manifesto", href: "#manifesto" },
+    { label: "Manifesto", href: "/#manifesto" },
     { label: "DAD", href: "/dad" },
     { label: "Roça", href: "/mrd" },
     { label: "EAD", href: "/ead" },
     { label: "LAB", href: "/lab" },
-    { label: "Blog", href: "#blog" },
+    { label: "Blog", href: "/#blog" },
   ];
 
   return (
