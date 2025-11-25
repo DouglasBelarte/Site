@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface MenuItem {
   label: string;
@@ -22,17 +23,17 @@ interface GlobalHeaderProps {
 
 export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("PT");
+  const { language, setLanguage } = useLanguage();
 
   const getLogoPath = () => {
-    const logoMap = {
-      daco: "DACO",
-      dad: "DAD",
-      mrd: "MRD",
-      ead: "EAD",
-      lab: "LAB",
+    const logoMap: Record<typeof section, string> = {
+      daco: "DAco Logo DACO in white.jpg",
+      dad: "DAco Logo DAD in white.jpg",
+      mrd: "DAco Logo MRD in white.jpg",
+      ead: "DAco Logo EAD in white.jpg",
+      lab: "DAco Logo LAB in white.jpg",
     };
-    return `/assets/logos/DAco Logo ${logoMap[section]} in white.jpg`;
+    return `/assets/logos/${logoMap[section]}`;
   };
 
   return (
@@ -83,8 +84,8 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                 <DropdownMenuItem onClick={() => setLanguage("EN")}>
                   English
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("FR")}>
-                  Français
+                <DropdownMenuItem onClick={() => setLanguage("IT")}>
+                  Italiano
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -139,8 +140,8 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                   <DropdownMenuItem onClick={() => setLanguage("EN")}>
                     English
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setLanguage("FR")}>
-                    Français
+                  <DropdownMenuItem onClick={() => setLanguage("IT")}>
+                    Italiano
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

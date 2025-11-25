@@ -267,11 +267,27 @@ export default function Home() {
               <div className="bg-accent/10 border border-accent/30 rounded-xl p-4 text-sm text-accent mb-6 max-w-md">
                 Pra projetos urgentes ("pra ontem"): descreve o prazo e o que precisa ir pro ar primeiro.
               </div>
-              <div className="space-y-2 text-sm">
-                <div className="font-semibold text-xs uppercase tracking-wide">E-mail direto</div>
-                <div className="text-base font-medium">Douglas@DougAmorim.com</div>
-                <div className="text-xs text-muted-foreground">
-                  Esse endereço será usado no formulário ao lado.
+              <div className="space-y-4">
+                <div className="space-y-2 text-sm">
+                  <div className="font-semibold text-xs uppercase tracking-wide">E-mail direto</div>
+                  <div className="text-base font-medium">Douglas@DougAmorim.com</div>
+                  <div className="text-xs text-muted-foreground">
+                    Esse endereço será usado no formulário ao lado.
+                  </div>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <div className="font-semibold text-xs uppercase tracking-wide">WhatsApp</div>
+                  <a 
+                    href="https://wa.me/5511975813741" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-base font-medium hover:text-primary transition-colors inline-block"
+                  >
+                    +55 (11) 97581-3741
+                  </a>
+                  <div className="text-xs text-muted-foreground">
+                    Atendimento comercial direto.
+                  </div>
                 </div>
               </div>
             </div>

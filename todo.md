@@ -32,3 +32,15 @@
 - [x] Criar página LAB com logo, fundo preto e menu específico
 - [x] Adicionar rotas no App.tsx para todas as páginas
 - [x] Aplicar data-section em cada página para cores contextuais
+
+## Update Corretivo + Multilíngue (LOCK MODE)
+
+- [x] Corrigir logos das subpáginas (DAD, MRD, EAD, LAB)
+- [x] Adicionar formulário de contato na seção Contato (já existia)
+- [x] Configurar envio de e-mail para info@dougamorim.com (já configurado)
+- [x] Integrar botão WhatsApp (+55 11 97581-3741)
+- [x] Ativar sistema multilíngue (PT/EN/IT)
+- [x] Testar carregamento de logos em todas as páginas
+- [x] Testar envio do formulário
+- [x] Testar botão WhatsApp
+- [x] Testar troca de idioma
