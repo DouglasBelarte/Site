@@ -1,4 +1,5 @@
 import { GlobalHeader } from "@/components/GlobalHeader";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
@@ -20,6 +21,7 @@ export default function EAD() {
         logo="EAD — Let's Go Beyond"
         menuItems={eadMenuItems}
       />
+      <Breadcrumb />
 
       {/* HERO */}
       <section className="py-16 md:py-24">

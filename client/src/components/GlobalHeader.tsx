@@ -31,13 +31,13 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
       dad: "DAco Logo DAD in white.jpg",
       mrd: "DAco Logo MRD in white.jpg",
       ead: "DAco Logo EAD in white.jpg",
-      lab: "DAco Logo LAB in white.jpg",
+      lab: "LAB-logo.png",
     };
     return `/assets/logos/${logoMap[section]}`;
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border h-[72px] md:h-[72px] flex items-center">
+    <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border h-[60px] md:h-[72px] flex items-center">
       <div className="container">
         <div className="flex items-center justify-between h-full">
           {/* Logo Esquerda */}
@@ -46,7 +46,8 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
               <img
                 src={getLogoPath()}
                 alt={logo}
-                className="brand-logo"
+                className="h-[50px] md:h-[60px] w-auto object-contain"
+                style={{ maxWidth: "200px" }}
               />
             </div>
           </Link>
@@ -84,8 +85,8 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                 <DropdownMenuItem onClick={() => setLanguage("EN")}>
                   English
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("IT")}>
-                  Italiano
+                <DropdownMenuItem onClick={() => setLanguage("FR")}>
+                  Français
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -140,8 +141,8 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                   <DropdownMenuItem onClick={() => setLanguage("EN")}>
                     English
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setLanguage("IT")}>
-                    Italiano
+                  <DropdownMenuItem onClick={() => setLanguage("FR")}>
+                    Français
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

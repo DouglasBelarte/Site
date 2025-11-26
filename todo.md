@@ -44,3 +44,12 @@
 - [x] Testar envio do formulário
 - [x] Testar botão WhatsApp
 - [x] Testar troca de idioma
+
+## LOCKDOWN MODE - Ajustes Técnicos Precisos
+
+- [x] Ajustar todas as logos para 200x85px com object-fit:contain
+- [x] Copiar logo LAB atualizada (MANUALMARCADAcoCOM.png)
+- [x] Implementar sistema de tradução automática EN/PT/FR
+- [x] Corrigir responsividade do header mobile
+- [x] Adicionar breadcrumb global em todas as páginas
+- [x] Gerar pacote para deploy no Netlify

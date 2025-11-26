@@ -1,4 +1,5 @@
 import { GlobalHeader } from "@/components/GlobalHeader";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
@@ -21,6 +22,7 @@ export default function LAB() {
         logo="LAB — Pesquisa & Protótipo"
         menuItems={labMenuItems}
       />
+      <Breadcrumb />
 
       {/* HERO */}
       <section className="py-16 md:py-24">
