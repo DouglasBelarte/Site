@@ -29,8 +29,8 @@ export function Breadcrumb() {
               {index === breadcrumbItems.length - 1 ? (
                 <span className="text-foreground font-medium">{item.label}</span>
               ) : (
-                <Link href={item.href}>
-                  <a className="hover:text-foreground transition-colors">{item.label}</a>
+                <Link href={item.href} className="hover:text-foreground transition-colors">
+                  {item.label}
                 </Link>
               )}
             </li>

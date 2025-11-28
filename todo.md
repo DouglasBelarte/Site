@@ -66,3 +66,7 @@
 - [x] Garantir que botões de idioma troquem conteúdo real
 - [x] Corrigir responsividade do header mobile (media-query, flexbox)
 - [x] Testar em Chrome/Edge com cache limpo
+
+## Correção de Erro HTML
+
+- [x] Corrigir tags <a> aninhadas no componente Breadcrumb
