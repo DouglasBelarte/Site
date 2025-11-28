@@ -38,9 +38,9 @@ export default function Home() {
   };
 
   const dacoMenuItems = [
-    { label: "Manifesto", href: "/#manifesto" },
-    { label: "DAD", href: "/dad" },
-    { label: "Roça", href: "/mrd" },
+    { label: "HOME", href: "/" },
+    { label: "DESIGN", href: "/dad" },
+    { label: "MUNDO ROÇA", href: "/mrd" },
     { label: "EAD", href: "/ead" },
     { label: "LAB", href: "/lab" },
     { label: "Blog", href: "/#blog" },

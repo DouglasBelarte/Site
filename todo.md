@@ -71,3 +71,32 @@
 ## Correção de Erro HTML
 
 - [x] Corrigir tags <a> aninhadas no componente Breadcrumb
+
+## Atualização de Conteúdo - Menu + Integração (LOCK MODE)
+
+### 1. Atualização do Menu Header
+- [x] Substituir "Manifesto" por "HOME"
+- [x] Renomear "DAD" para "DESIGN"
+- [x] Manter "MUNDO ROÇA" (Roça)
+- [x] Substituir "Let's Go Beyond" por "EAD"
+- [x] Substituir "Projetos" por "LAB"
+- [x] Remover "Parceiros" do menu principal (migrar para LAB)
+
+### 2. Correção de URLs
+- [x] Substituir todas ocorrências de https://www.dougamorim.com/?lang=en por https://www.dougamorim.com/portfolio (URL não encontrada no código atual)
+
+### 3. Integração de Conteúdo
+- [ ] HOME: Herdar conteúdo do manifesto/página principal
+- [ ] DESIGN: Integrar conteúdo de hlqzbsae.manus.space e llmouute.manussite.space
+- [ ] MUNDO ROÇA: Integrar conteúdo de xxnbfvtc, vnhwxqdn, ddjuumku
+- [ ] EAD: Integrar conteúdo de htqbedjv, gjpahwlw, qkmuhxsh
+- [ ] LAB: Integrar projetos + parceiros + blog (jdozwvcl.manus.space)
+
+### 4. Breadcrumbs
+- [ ] Aplicar breadcrumbs em todas as páginas filhas seguindo nova estrutura
+
+### 5. QA
+- [ ] Conferir todos os links
+- [ ] Verificar ordem e rótulos do menu
+- [ ] Testar responsividade
+- [ ] Validar CTAs e formulários
