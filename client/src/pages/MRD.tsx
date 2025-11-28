@@ -3,8 +3,12 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function MRD() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const mrdMenuItems = [
     { label: "Permacultura", href: "/mrd#permacultura" },
     { label: "Fauna e Flora", href: "/mrd#fauna-flora" },
@@ -28,14 +32,13 @@ export default function MRD() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="inline-block bg-[#4CAF50]/10 border border-[#4CAF50]/30 rounded-full px-4 py-2 text-sm font-medium text-[#4CAF50] mb-6">
-              Campo, origem, afeto e produto artesanal
+              {t.mrd_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-              MRD — Mundo Roça Digital
+              {t.mrd_title}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Campo, origem, afeto e produto artesanal. Linha autoral (geleia de jabuticaba, pão 4–6 grãos, etc.)
-              conectada a um jeito mais humano de fazer negócios.
+              {t.mrd_description}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -43,7 +46,7 @@ export default function MRD() {
                 className="rounded-full"
                 style={{ backgroundColor: "#4CAF50" }}
               >
-                Conhecer produtos
+                {t.mrd_cta}
               </Button>
               <Button
                 variant="outline"
@@ -51,7 +54,7 @@ export default function MRD() {
                 className="rounded-full"
                 style={{ borderColor: "#4CAF50", color: "#4CAF50" }}
               >
-                Nossa história
+                {t.mrd_history}
               </Button>
             </div>
           </div>

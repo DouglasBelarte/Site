@@ -3,8 +3,12 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function DAD() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const dadMenuItems = [
     { label: "Home", href: "/dad" },
     { label: "Portfólio", href: "/dad#portfolio" },
@@ -28,14 +32,13 @@ export default function DAD() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="inline-block bg-[#1D4ED8]/10 border border-[#1D4ED8]/30 rounded-full px-4 py-2 text-sm font-medium text-[#1D4ED8] mb-6">
-              Branding, posicionamento e presença digital
+              {t.dad_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-              DAD — Doug Amorim Design
+              {t.dad_title}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Branding, posicionamento e presença digital que precisam existir com autoridade.
-              Identidade visual, site institucional, landing pages de conversão e material comercial.
+              {t.dad_description}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -43,7 +46,7 @@ export default function DAD() {
                 className="rounded-full"
                 style={{ backgroundColor: "#1D4ED8" }}
               >
-                Quero orçar DAD →
+                {t.dad_cta}
               </Button>
               <Button
                 variant="outline"
@@ -51,7 +54,7 @@ export default function DAD() {
                 className="rounded-full"
                 style={{ borderColor: "#1D4ED8", color: "#1D4ED8" }}
               >
-                Ver portfólio
+                {t.dad_portfolio}
               </Button>
             </div>
           </div>

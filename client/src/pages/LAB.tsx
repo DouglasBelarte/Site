@@ -3,8 +3,12 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function LAB() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const labMenuItems = [
     { label: "Missão", href: "/lab#missao" },
     { label: "Sites", href: "/lab#sites" },
@@ -30,21 +34,20 @@ export default function LAB() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="inline-block bg-[#FACC15]/10 border border-[#FACC15]/30 rounded-full px-4 py-2 text-sm font-medium text-[#FACC15] mb-6">
-              Futuro, eficiência, P&D aplicado
+              {t.lab_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-              LAB — Pesquisa & Protótipo
+              {t.lab_title}
             </h1>
             <p className="text-xl text-white/70 mb-8 max-w-2xl">
-              Background dominante: preto #000000, texto branco, acento amarelo.
-              Blocos: cards técnicos (Daniel — WhatsApp Assistente Comercial; Busca avançada + WebAR / Orlean; prototipagem digital rápida).
+              {t.lab_description}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
                 className="rounded-full bg-[#FACC15] text-black hover:bg-[#FACC15]/90"
               >
-                Explorar projetos
+                {t.lab_cta}
               </Button>
               <Button
                 variant="outline"
@@ -52,7 +55,7 @@ export default function LAB() {
                 className="rounded-full"
                 style={{ borderColor: "#FACC15", color: "#FACC15" }}
               >
-                Nossa missão
+                {t.lab_mission}
               </Button>
             </div>
           </div>

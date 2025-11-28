@@ -3,8 +3,12 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function EAD() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const eadMenuItems = [
     { label: "Home", href: "/ead" },
     { label: "Conteúdo", href: "/ead#conteudo" },
@@ -28,14 +32,13 @@ export default function EAD() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="inline-block bg-[#8B5CF6]/10 border border-[#8B5CF6]/30 rounded-full px-4 py-2 text-sm font-medium text-[#8B5CF6] mb-6">
-              Conteúdo, aula, vivência e mentoria prática
+              {t.ead_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-              EAD — Let's Go Beyond
+              {t.ead_title}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Foco visual: leitura confortável, espaçamento amplo, respiro branco.
-              Inclui workshops presenciais, viagens criativas e mentoria prática.
+              {t.ead_description}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -43,7 +46,7 @@ export default function EAD() {
                 className="rounded-full"
                 style={{ backgroundColor: "#8B5CF6" }}
               >
-                Quero participar
+                {t.ead_cta}
               </Button>
               <Button
                 variant="outline"
@@ -51,7 +54,7 @@ export default function EAD() {
                 className="rounded-full"
                 style={{ borderColor: "#8B5CF6", color: "#8B5CF6" }}
               >
-                Ver programação
+                {t.ead_schedule}
               </Button>
             </div>
           </div>

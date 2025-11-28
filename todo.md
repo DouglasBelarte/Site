@@ -110,3 +110,14 @@
 
 ### Correção Nomenclatura Breadcrumb
 - [x] Alterar "Home" para "HOME" no breadcrumb
+
+## QA - Imagens e Multilíngue
+- [x] Verificar carregamento de logos em todas as páginas (OK - logos carregando)
+- [x] Verificar cache-buster das imagens (OK - v1.1.1 aplicado)
+- [x] Testar sistema multilíngue na Home (OK - funcionando)
+- [x] Testar sistema multilíngue em DAD/DESIGN (PROBLEMA - não traduz)
+- [x] Aplicar traduções em MRD/MUNDO ROÇA
+- [x] Aplicar traduções em EAD
+- [x] Aplicar traduções em LAB
+- [x] Testar persistência de idioma entre páginas (OK - idioma EN persistindo)
+- [x] Testar QA completo em navegador (OK - logos e traduções funcionando)
