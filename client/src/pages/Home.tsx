@@ -43,7 +43,6 @@ export default function Home() {
     { label: "MUNDO ROÇA", href: "/mrd" },
     { label: "EAD", href: "/ead" },
     { label: "LAB", href: "/lab" },
-    { label: "Blog", href: "/#blog" },
   ];
 
   return (

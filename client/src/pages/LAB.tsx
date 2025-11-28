@@ -10,6 +10,7 @@ export default function LAB() {
     { label: "Sites", href: "/lab#sites" },
     { label: "Aplicativos", href: "/lab#aplicativos" },
     { label: "Parceiros", href: "/lab#parceiros" },
+    { label: "Blog", href: "/lab#blog" },
   ];
 
   return (
@@ -184,6 +185,40 @@ export default function LAB() {
         </div>
       </section>
 
+      {/* BLOG */}
+      <section id="blog" className="py-16 border-t border-white/10">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl mb-6">Blog / Bastidores</h2>
+          <p className="text-lg text-white/70 mb-12 max-w-3xl">
+            Insights técnicos, experimentos, aprendizados e bastidores dos projetos do LAB.
+            Conteúdo sem filtro sobre inovação, tecnologia e desenvolvimento.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-6">
+              <div className="text-xs text-[#FACC15] mb-3">Em breve</div>
+              <h3 className="text-xl font-medium mb-3">Artigos técnicos</h3>
+              <p className="text-sm text-white/70">
+                Deep dives em arquitetura, IA aplicada, WebAR e outras tecnologias que estamos explorando.
+              </p>
+            </div>
+            <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-6">
+              <div className="text-xs text-[#FACC15] mb-3">Em breve</div>
+              <h3 className="text-xl font-medium mb-3">Bastidores de projetos</h3>
+              <p className="text-sm text-white/70">
+                Como desenvolvemos, testamos e validamos ideias. O processo real, sem glamourização.
+              </p>
+            </div>
+            <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-6">
+              <div className="text-xs text-[#FACC15] mb-3">Em breve</div>
+              <h3 className="text-xl font-medium mb-3">Experimentos</h3>
+              <p className="text-sm text-white/70">
+                Testes, falhas, aprendizados. Documentando o que funciona e o que não funciona.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 border-t border-white/10">
         <div className="container">
@@ -221,6 +256,7 @@ export default function LAB() {
                 <li><a href="/lab#sites" className="hover:text-white transition-colors">Sites</a></li>
                 <li><a href="/lab#aplicativos" className="hover:text-white transition-colors">Aplicativos</a></li>
                 <li><a href="/lab#parceiros" className="hover:text-white transition-colors">Parceiros</a></li>
+                <li><a href="/lab#blog" className="hover:text-white transition-colors">Blog</a></li>
                 <li><a href="/" className="hover:text-white transition-colors">Voltar ao DA.co</a></li>
               </ul>
             </div>

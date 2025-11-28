@@ -100,3 +100,7 @@
 - [ ] Verificar ordem e rótulos do menu
 - [ ] Testar responsividade
 - [ ] Validar CTAs e formulários
+
+### Correção Adicional
+- [x] Remover "Blog" do menu principal da Home
+- [x] Integrar "Blog" dentro da seção LAB
