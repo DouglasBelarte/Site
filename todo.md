@@ -53,3 +53,16 @@
 - [x] Corrigir responsividade do header mobile
 - [x] Adicionar breadcrumb global em todas as páginas
 - [x] Gerar pacote para deploy no Netlify
+
+## Correção Técnica - Logos, Multilíngue, Responsividade
+
+- [x] Verificar presença de todos os arquivos de logo no servidor
+- [x] Corrigir caminhos (src) das logos no HTML/CSS/JS
+- [x] Verificar permissões de leitura das logos (chmod 644)
+- [x] Garantir que logos não estejam invisíveis por CSS
+- [ ] Implementar cache-buster para logos
+- [ ] Converter logos para PNG/JPG se necessário
+- [x] Ativar tradução automática funcional EN/PT/FR
+- [x] Garantir que botões de idioma troquem conteúdo real
+- [x] Corrigir responsividade do header mobile (media-query, flexbox)
+- [x] Testar em Chrome/Edge com cache limpo

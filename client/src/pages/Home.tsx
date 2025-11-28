@@ -7,8 +7,11 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { GlobalHeader } from "@/components/GlobalHeader";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/translations";
 
 export default function Home() {
+  const { language } = useLanguage();
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
@@ -60,28 +63,26 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight">
-                Bem-vindo à DA.co — Roseta Stone Edition.
+                {t('hero_title', language)}
                 <br />
                 <span className="text-primary block mt-2">
-                  Experiências que conectam pessoas, marcas e território.
+                  {t('hero_subtitle', language)}
                 </span>
               </h2>
 
               <p className="mt-6 text-muted-foreground max-w-[38ch]">
-                Eu sou Douglas Amorim. Diretor de Soluções Web.
-                Minha missão é transformar visão em estrutura: marca, site, funil, catálogo,
-                atendimento humano-assistido e presença real.
+                {t('hero_description', language)}
               </p>
 
               <div className="flex flex-wrap gap-4 mt-6">
                 <a href="#contato">
                   <Button size="lg" className="rounded-full">
-                    Quero conversar
+                    {t('want_to_talk', language)}
                   </Button>
                 </a>
                 <a href="#areas">
                   <Button variant="outline" size="lg" className="rounded-full">
-                    Ver áreas de atuação
+                    {t('see_areas', language)}
                   </Button>
                 </a>
               </div>
@@ -111,9 +112,9 @@ export default function Home() {
       <section id="areas" className="py-12 md:py-16 border-t border-border">
         <div className="container">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl">Nossas frentes</h2>
+            <h2 className="text-3xl md:text-4xl">{t('our_fronts', language)}</h2>
             <p className="text-muted-foreground mt-3 max-w-[42ch]">
-              Quatro braços. Um só DNA: clareza, beleza funcional e entrega real.
+              {t('our_fronts_subtitle', language)}
             </p>
           </div>
 
@@ -123,10 +124,9 @@ export default function Home() {
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 DAD.dougamorim.com
               </div>
-              <h3 className="text-xl font-medium mb-3">DAD — Doug Amorim Design</h3>
+              <h3 className="text-xl font-medium mb-3">{t('dad_title', language)}</h3>
               <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                Branding, posicionamento e presença digital para negócios que precisam existir com autoridade.
-                Identidade visual, site institucional, landing pages de conversão e material comercial.
+                {t('dad_description', language)}
               </p>
               <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
                 <li>Marca e narrativa</li>
@@ -135,7 +135,7 @@ export default function Home() {
                 <li>Social kit e materiais de venda</li>
               </ul>
               <a href="#contato" className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Quero orçar DAD →
+                {t('dad_cta', language)}
               </a>
             </article>
 
@@ -144,11 +144,9 @@ export default function Home() {
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 MRD.dougamorim.com
               </div>
-              <h3 className="text-xl font-medium mb-3">MRD — Mundo Roça Digital</h3>
+              <h3 className="text-xl font-medium mb-3">{t('mrd_title', language)}</h3>
               <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                Campo, origem, afeto e produto artesanal.
-                Linha autoral (geleia de jabuticaba, pão 4–6 grãos, etc.)
-                conectada a um jeito mais humano de fazer negócios.
+                {t('mrd_description', language)}
               </p>
               <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
                 <li>Produto artesanal & rótulo</li>
@@ -166,10 +164,9 @@ export default function Home() {
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 EAD.dougamorim.com
               </div>
-              <h3 className="text-xl font-medium mb-3">EAD — Let's Go Beyond</h3>
+              <h3 className="text-xl font-medium mb-3">{t('ead_title', language)}</h3>
               <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                Conteúdo, aula, vivência e mentoria prática.
-                Idioma, turismo criativo, campo e experiência imersiva.
+                {t('ead_description', language)}
               </p>
               <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
                 <li>Workshops presenciais e on-line</li>
@@ -186,11 +183,9 @@ export default function Home() {
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 LAB.dougamorim.com
               </div>
-              <h3 className="text-xl font-medium mb-3">LAB — Pesquisa & Protótipo</h3>
+              <h3 className="text-xl font-medium mb-3">{t('lab_title', language)}</h3>
               <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                Aqui a gente quebra padrão.
-                IA aplicada, AR, assistentes, busca avançada e prova de conceito
-                para marcas que querem dar o próximo salto.
+                {t('lab_description', language)}
               </p>
               <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
                 <li>Daniel — Assistente comercial via WhatsApp</li>
@@ -210,12 +205,9 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-3xl md:text-4xl mb-4">Quem está por trás</h2>
+              <h2 className="text-3xl md:text-4xl mb-4">{t('about_title', language)}</h2>
               <p className="text-base font-medium mb-4">
-                Sou Douglas Amorim.
-                Diretor de Soluções Web.
-                Eu entro quando você precisa transformar "ideia boa"
-                em "proposta vendável e operacional".
+                {t('about_intro', language)}
               </p>
               <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
                 Meu trabalho começa no posicionamento e termina na experiência do cliente final:
@@ -259,24 +251,23 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-3xl md:text-4xl mb-4">Vamos falar?</h2>
+              <h2 className="text-3xl md:text-4xl mb-4">{t('contact_title', language)}</h2>
               <p className="text-muted-foreground mb-4">
-                Me conta rapidamente o que você precisa.
-                Eu te respondo em voz humana — não resposta pasteurizada.
+                {t('contact_description', language)}
               </p>
               <div className="bg-accent/10 border border-accent/30 rounded-xl p-4 text-sm text-accent mb-6 max-w-md">
                 Pra projetos urgentes ("pra ontem"): descreve o prazo e o que precisa ir pro ar primeiro.
               </div>
               <div className="space-y-4">
                 <div className="space-y-2 text-sm">
-                  <div className="font-semibold text-xs uppercase tracking-wide">E-mail direto</div>
+                  <div className="font-semibold text-xs uppercase tracking-wide">{t('contact_email_label', language)}</div>
                   <div className="text-base font-medium">Douglas@DougAmorim.com</div>
                   <div className="text-xs text-muted-foreground">
                     Esse endereço será usado no formulário ao lado.
                   </div>
                 </div>
                 <div className="space-y-2 text-sm">
-                  <div className="font-semibold text-xs uppercase tracking-wide">WhatsApp</div>
+                  <div className="font-semibold text-xs uppercase tracking-wide">{t('contact_whatsapp_label', language)}</div>
                   <a 
                     href="https://wa.me/5511975813741" 
                     target="_blank" 
@@ -294,29 +285,29 @@ export default function Home() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium mb-2">Seu nome</label>
+                <label className="block text-sm font-medium mb-2">{t('contact_form_name', language)}</label>
                 <Input
                   type="text"
-                  placeholder="Seu nome completo"
+                  placeholder={t('contact_form_name', language)}
                   value={formData.nome}
                   onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
                   required
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">E-mail</label>
+                <label className="block text-sm font-medium mb-2">{t('contact_form_email', language)}</label>
                 <Input
                   type="email"
-                  placeholder="voce@empresa.com"
+                  placeholder={t('contact_form_email', language)}
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">O que você precisa?</label>
+                <label className="block text-sm font-medium mb-2">{t('contact_form_message', language)}</label>
                 <Textarea
-                  placeholder="Site, catálogo, identidade, lançamento, etc."
+                  placeholder={t('contact_form_message', language)}
                   rows={4}
                   value={formData.mensagem}
                   onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
@@ -324,7 +315,7 @@ export default function Home() {
                 />
               </div>
               <Button type="submit" size="lg" className="w-full" disabled={contactMutation.isPending}>
-                {contactMutation.isPending ? "Enviando..." : "Enviar mensagem"}
+                {contactMutation.isPending ? t('contact_form_sending', language) : t('contact_form_submit', language)}
               </Button>
             </form>
           </div>

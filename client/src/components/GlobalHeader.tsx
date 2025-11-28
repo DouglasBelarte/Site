@@ -37,17 +37,16 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border h-[60px] md:h-[72px] flex items-center">
+    <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container">
-        <div className="flex items-center justify-between h-full">
+        <div className="flex items-center justify-between h-[60px] md:h-[72px]">
           {/* Logo Esquerda */}
           <Link href={section === "daco" ? "/" : `/${section}`}>
             <div className="brand-block flex items-center cursor-pointer">
               <img
                 src={getLogoPath()}
                 alt={logo}
-                className="h-[50px] md:h-[60px] w-auto object-contain"
-                style={{ maxWidth: "200px" }}
+                style={{ width: "200px", height: "85px", objectFit: "contain" }}
               />
             </div>
           </Link>
@@ -113,7 +112,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
 
         {/* Mobile Nav */}
         {mobileMenuOpen && (
-          <nav className="lg:hidden flex flex-col gap-4 pb-6 pt-4 text-base font-medium border-t border-border mt-4">
+          <nav className="lg:hidden flex flex-col gap-4 pb-6 pt-4 text-base font-medium border-t border-border">
             {menuItems.map((item) => (
               <a
                 key={item.href}
