@@ -4,11 +4,11 @@ import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { translations } from "@/lib/translations";
+import { manifestoTranslations } from "@/lib/manifestoTranslations";
 
 export default function ManifestoDAD() {
   const { language } = useLanguage();
-  const t = translations[language];
+  const t = manifestoTranslations[language];
   
   const dadMenuItems = [
     { label: "Home", href: "/dad" },
@@ -34,10 +34,10 @@ export default function ManifestoDAD() {
         <div className="container max-w-4xl">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-tight mb-6">
-              MANIFESTO D.A.D.
+              {t.title}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              A Arquitetura Intelectual por trás de tudo o que eu crio
+              {t.subtitle}
             </p>
           </div>
         </div>
@@ -46,321 +46,245 @@ export default function ManifestoDAD() {
       {/* 01. Declaração de Identidade Criativa */}
       <section className="py-12 md:py-16 animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">01.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section1_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Declaração de Identidade Criativa
+            {t.section1_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Eu não entrego serviços. Eu crio Propriedade Intelectual.
-          </h3>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-6">
-              A atuação da D.A.D. (Doug Amorim Design) é fundamentada na criação de{" "}
-              <strong>sistemas</strong>, <strong>frameworks</strong>,{" "}
-              <strong>métodos</strong>, <strong>livros técnicos</strong>,{" "}
-              <strong>padrões operacionais</strong>, <strong>templates</strong> e{" "}
-              <strong>estruturas estratégicas de design e tecnologia</strong>.
-            </p>
-            <p className="text-lg leading-relaxed mb-6">
-              Cada entrega nasce como <strong>obra intelectual</strong> — documentada,
-              expansível e licenciável.
-            </p>
-            <blockquote className="border-l-4 border-[#1D4ED8] pl-6 italic text-xl my-8">
-              Meu valor não está na execução. Meu valor está no pensamento estruturado.
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section1_subtitle}
+          </p>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>{t.section1_p1}</p>
+            <p>{t.section1_p2}</p>
+            <blockquote className="border-l-4 border-[#1D4ED8] pl-6 italic text-muted-foreground my-8">
+              {t.section1_quote}
             </blockquote>
           </div>
         </div>
       </section>
 
       {/* 02. Propósito da D.A.D. */}
-      <section className="py-12 md:py-16 bg-muted/30 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">02.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section2_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Propósito da D.A.D.
+            {t.section2_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Transformar ideias em sistemas que funcionam, duram e geram valor vitalício.
-          </h3>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-6">A D.A.D. cria:</p>
-            <ul className="space-y-2 text-lg">
-              <li>Modelos de design</li>
-              <li>Arquiteturas de identidade visual e narrativa</li>
-              <li>Templates proprietários</li>
-              <li>Sistemas WebAR e SEO</li>
-              <li>Estruturas de automação</li>
-              <li>Playbooks de execução</li>
-              <li>Frameworks escaláveis e documentados</li>
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section2_subtitle}
+          </p>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>{t.section2_intro}</p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              {t.section2_items.map((item: string, index: number) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
-            <p className="text-lg leading-relaxed mt-6">
-              Cada criação existe com o propósito de <strong>impacto contínuo</strong>,{" "}
-              <strong>longevidade</strong> e <strong>aplicação inteligente</strong>.
-            </p>
+            <p className="mt-6">{t.section2_conclusion}</p>
           </div>
         </div>
       </section>
 
       {/* 03. Diferencial de Mercado */}
-      <section className="py-12 md:py-16 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">03.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section3_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Diferencial de Mercado
+            {t.section3_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Eu não vendo horas. Eu licencio pensamento estruturado.
-          </h3>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-6">
-              Os parceiros não contratam mão de obra. Eles obtêm acesso a:
-            </p>
-            <ul className="space-y-2 text-lg">
-              <li>conhecimento</li>
-              <li>metodologia consolidada</li>
-              <li>estruturas de decisão</li>
-              <li>modelos escaláveis</li>
-              <li>sistemas documentados</li>
-              <li>frameworks proprietários</li>
-              <li>processos replicáveis</li>
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section3_subtitle}
+          </p>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>{t.section3_intro}</p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              {t.section3_items.map((item: string, index: number) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
-            <p className="text-lg leading-relaxed mt-6">
-              Cada projeto é um <strong>investimento</strong>, não uma despesa.
-            </p>
+            <p className="mt-6">{t.section3_conclusion}</p>
           </div>
         </div>
       </section>
 
       {/* 04. O Ciclo da Criação D.A.D. */}
-      <section className="py-12 md:py-16 bg-muted/30 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">04.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section4_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-8">
-            O Ciclo da Criação D.A.D.
+            {t.section4_title}
           </h2>
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-3">1. Concepção</h3>
-              <p className="text-lg leading-relaxed">
-                Pesquisa, formulação e desenho estratégico do conceito.
-              </p>
+              <h3 className="text-xl font-medium mb-2">{t.section4_step1_title}</h3>
+              <p className="text-muted-foreground">{t.section4_step1_desc}</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-3">2. Arquitetura</h3>
-              <p className="text-lg leading-relaxed">
-                Transformação do conceito em fluxos, estruturas, padrões, etapas e
-                critérios.
-              </p>
+              <h3 className="text-xl font-medium mb-2">{t.section4_step2_title}</h3>
+              <p className="text-muted-foreground">{t.section4_step2_desc}</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-3">3. Documentação</h3>
-              <p className="text-lg leading-relaxed">
-                Cada obra torna-se: manual, framework, grid, mapa, playbook, tabela, guia
-                ou template.
-              </p>
+              <h3 className="text-xl font-medium mb-2">{t.section4_step3_title}</h3>
+              <p className="text-muted-foreground">{t.section4_step3_desc}</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-3">4. Licenciamento</h3>
-              <p className="text-lg leading-relaxed">
-                O parceiro adquire direito de uso — a propriedade intelectual permanece
-                com o autor.
-              </p>
+              <h3 className="text-xl font-medium mb-2">{t.section4_step4_title}</h3>
+              <p className="text-muted-foreground">{t.section4_step4_desc}</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-3">5. Expansão</h3>
-              <p className="text-lg leading-relaxed">
-                A obra evolui, podendo gerar produtos escaláveis, novas versões e novos
-                templates.
-              </p>
+              <h3 className="text-xl font-medium mb-2">{t.section4_step5_title}</h3>
+              <p className="text-muted-foreground">{t.section4_step5_desc}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* 05. Biblioteca Oficial D.A.D. */}
-      <section className="py-12 md:py-16 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">05.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section5_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Biblioteca Oficial D.A.D.
+            {t.section5_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Propriedade Intelectual Registrada e Expansível
-          </h3>
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section5_subtitle}
+          </p>
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Frameworks Estratégicos</h3>
-              <ul className="space-y-2 text-lg">
-                <li>Identidade 9D</li>
-                <li>WebAR Blueprint 2026</li>
-                <li>SEO Spiral Model</li>
-                <li>Prisma de Narrativa Consciente</li>
-                <li>Design Operacional Modular (DOM)</li>
+              <h3 className="text-xl font-medium mb-3">{t.section5_cat1_title}</h3>
+              <ul className="list-disc list-inside space-y-2 ml-4 text-muted-foreground">
+                {t.section5_cat1_items.map((item: string, index: number) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">
-                Arquivos-TEMPLATE (Licenciáveis)
-              </h3>
-              <ul className="space-y-2 text-lg">
-                <li>Template Executivo de Projeto</li>
-                <li>Template Estratégico de Arquitetura Web</li>
-                <li>Template de Cronograma (versões variadas para parceiros)</li>
-                <li>Template de Execução Manus.AI</li>
-                <li>Template de Planejamento de Lançamento</li>
+              <h3 className="text-xl font-medium mb-3">{t.section5_cat2_title}</h3>
+              <ul className="list-disc list-inside space-y-2 ml-4 text-muted-foreground">
+                {t.section5_cat2_items.map((item: string, index: number) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">
-                Livros Técnicos (Formato Book)
-              </h3>
-              <ul className="space-y-2 text-lg">
-                <li>
-                  <em>Design Vivo: A Essência da Estrutura</em>
-                </li>
-                <li>
-                  <em>Sistema Técnico de Execução – Edição Completa</em>
-                </li>
-                <li>
-                  <em>Manual Manus.AI – Execução por Fases</em>
-                </li>
-                <li>
-                  <em>Grid 360 – Padrões de Qualidade Visual e Estratégica</em>
-                </li>
+              <h3 className="text-xl font-medium mb-3">{t.section5_cat3_title}</h3>
+              <ul className="list-disc list-inside space-y-2 ml-4 text-muted-foreground">
+                {t.section5_cat3_items.map((item: string, index: number) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Sistemas Proprietários</h3>
-              <ul className="space-y-2 text-lg">
-                <li>D.A.D. Story Grid</li>
-                <li>D.A.D. Vision Blocks</li>
-                <li>D.A.D. Identity Loop</li>
+              <h3 className="text-xl font-medium mb-3">{t.section5_cat4_title}</h3>
+              <ul className="list-disc list-inside space-y-2 ml-4 text-muted-foreground">
+                {t.section5_cat4_items.map((item: string, index: number) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
-            <blockquote className="border-l-4 border-[#1D4ED8] pl-6 italic text-xl my-8">
-              Todas as obras são permanentes, autorais e licenciáveis por contrato.
+            <blockquote className="border-l-4 border-[#1D4ED8] pl-6 italic text-muted-foreground my-8">
+              {t.section5_quote}
             </blockquote>
           </div>
         </div>
       </section>
 
       {/* 06. Filosofia de Trabalho */}
-      <section className="py-12 md:py-16 bg-muted/30 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">06.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section6_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Filosofia de Trabalho
+            {t.section6_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Criar é assumir responsabilidade sobre o impacto.
-          </h3>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-6">Pilares:</p>
-            <ul className="space-y-2 text-lg">
-              <li>
-                <strong>Clareza</strong> antes de estética
-              </li>
-              <li>
-                <strong>Função</strong> antes de glamour
-              </li>
-              <li>
-                <strong>Estrutura</strong> antes de execução
-              </li>
-              <li>
-                <strong>Narrativa</strong> antes de venda
-              </li>
-              <li>
-                <strong>Documentação</strong> antes de entrega
-              </li>
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section6_subtitle}
+          </p>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>{t.section6_intro}</p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              {t.section6_items.map((item: string, index: number) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+              ))}
             </ul>
-            <p className="text-lg leading-relaxed mt-6">
-              O design existe para <strong>resolver, ordenar, explicar e transformar</strong>.
-            </p>
+            <p className="mt-6">{t.section6_conclusion}</p>
           </div>
         </div>
       </section>
 
       {/* 07. Compromisso D.A.D. */}
-      <section className="py-12 md:py-16 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">07.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section7_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Compromisso D.A.D.
+            {t.section7_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Toda entrega deixa o parceiro maior do que ele chegou.
-          </h3>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-6">Porque recebe:</p>
-            <ul className="space-y-2 text-lg">
-              <li>sistemas funcionais</li>
-              <li>estrutura replicável</li>
-              <li>visão ampliada</li>
-              <li>clareza operacional</li>
-              <li>autonomia para evoluir</li>
-              <li>documentação completa</li>
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section7_subtitle}
+          </p>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>{t.section7_intro}</p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              {t.section7_items.map((item: string, index: number) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
         </div>
       </section>
 
       {/* 08. Chamado 2026 */}
-      <section className="py-12 md:py-16 bg-muted/30 animate-fade-in">
+      <section className="py-12 md:py-16 border-t border-border animate-fade-in">
         <div className="container max-w-3xl">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">08.</div>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section8_number}</div>
           <h2 className="text-3xl md:text-4xl font-serif mb-4">
-            Chamado 2026 — A Nova Era da D.A.D.
+            {t.section8_title}
           </h2>
-          <h3 className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            A era da criação escalável.
-          </h3>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed mb-6">
-              A partir de 2026, a D.A.D. intensifica:
-            </p>
-            <ul className="space-y-2 text-lg">
-              <li>frameworks WebAR proprietários</li>
-              <li>pacotes de licenciamento premium</li>
-              <li>biblioteca digital de templates D.A.D.</li>
-              <li>automação inteligente integrada ao Manus.AI</li>
-              <li>sistemas técnicos escaláveis</li>
-              <li>expansão para projetos de grande porte</li>
+          <p className="text-xl text-muted-foreground mb-8">
+            {t.section8_subtitle}
+          </p>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>{t.section8_intro}</p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              {t.section8_items.map((item: string, index: number) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
-            <p className="text-lg leading-relaxed mt-6">
-              A D.A.D. torna-se um <strong>ecossistema de propriedade intelectual</strong>.
-            </p>
+            <p className="mt-6">{t.section8_conclusion}</p>
           </div>
         </div>
       </section>
 
-      {/* 09. CTA */}
-      <section className="py-16 md:py-24 animate-fade-in">
+      {/* 09. Conclusão */}
+      <section className="py-16 md:py-24 border-t border-border animate-fade-in bg-muted/30">
         <div className="container max-w-3xl text-center">
-          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">09.</div>
-          <h2 className="text-3xl md:text-4xl font-serif mb-6">
-            D.A.D.: Design criado para durar.
-          </h2>
-          <p className="text-xl md:text-2xl mb-4">Frameworks feitos para escalar.</p>
-          <p className="text-xl md:text-2xl mb-8">
-            Estruturas pensadas para transformar.
-          </p>
+          <div className="mb-4 text-sm font-medium text-[#1D4ED8]">{t.section9_number}</div>
+          <div className="space-y-4 text-2xl md:text-3xl font-serif leading-relaxed mb-12">
+            <p>{t.section9_line1}</p>
+            <p>{t.section9_line2}</p>
+            <p>{t.section9_line3}</p>
+          </div>
           <p className="text-lg text-muted-foreground mb-8">
-            Licenciamento, projetos, frameworks e sistemas sob consulta privada.
+            {t.section9_line4}
           </p>
-          <Button
-            size="lg"
-            className="rounded-full"
-            style={{ backgroundColor: "#1D4ED8" }}
-          >
-            Solicitar consulta →
-          </Button>
+          <a href="/#contato">
+            <Button size="lg" className="rounded-full">
+              {t.section9_cta}
+            </Button>
+          </a>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t">
-        <div className="container max-w-3xl text-center text-sm text-muted-foreground">
-          <p>© 2025 D.A.D. — Doug Amorim Design. Todos os direitos reservados.</p>
+      {/* FOOTER */}
+      <footer className="border-t border-border py-8">
+        <div className="container">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+            <p>© 2025 Douglas Amorim Company. Todos os direitos reservados.</p>
+            <div className="flex gap-6">
+              <a href="/termos.html" className="hover:text-foreground transition-colors">Termos</a>
+              <a href="/privacidade.html" className="hover:text-foreground transition-colors">Privacidade</a>
+              <a href="/cookies.html" className="hover:text-foreground transition-colors">Cookies</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

@@ -119,7 +119,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* DAD */}
-            <article id="dad" className="bg-card border border-border rounded-2xl p-6 shadow-md">
+            <a href="/dad" className="block">
+            <article id="dad" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 DAD.dougamorim.com
               </div>
@@ -133,13 +134,15 @@ export default function Home() {
                 <li>Catálogo de produtos / Portfólio</li>
                 <li>Social kit e materiais de venda</li>
               </ul>
-              <a href="#contato" className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                {t('dad_cta', language)}
-              </a>
+              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                Venha conhecer →
+              </span>
             </article>
+            </a>
 
             {/* MRD */}
-            <article id="mrd" className="bg-card border border-border rounded-2xl p-6 shadow-md">
+            <a href="/mrd" className="block">
+            <article id="mrd" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 MRD.dougamorim.com
               </div>
@@ -153,13 +156,15 @@ export default function Home() {
                 <li>Preço justo e transparência</li>
                 <li>Entrega curta, direto de quem fez</li>
               </ul>
-              <a href="#contato" className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Falar sobre MRD →
-              </a>
+              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                Venha conhecer →
+              </span>
             </article>
+            </a>
 
             {/* EAD */}
-            <article id="ead" className="bg-card border border-border rounded-2xl p-6 shadow-md">
+            <a href="/ead" className="block">
+            <article id="ead" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 EAD.dougamorim.com
               </div>
@@ -172,13 +177,15 @@ export default function Home() {
                 <li>Experiência guiada / viagem criativa</li>
                 <li>Formação prática de comunicação</li>
               </ul>
-              <a href="#contato" className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Quero saber mais →
-              </a>
+              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                Venha conhecer →
+              </span>
             </article>
+            </a>
 
             {/* LAB */}
-            <article id="lab" className="bg-card border border-border rounded-2xl p-6 shadow-md">
+            <a href="/lab" className="block">
+            <article id="lab" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
               <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
                 LAB.dougamorim.com
               </div>
@@ -191,10 +198,11 @@ export default function Home() {
                 <li>Busca avançada + WebAR (ex.: Orlean)</li>
                 <li>Prototipagem rápida de produto digital</li>
               </ul>
-              <a href="#contato" className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Explorar o LAB →
-              </a>
+              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                Venha conhecer →
+              </span>
             </article>
+            </a>
           </div>
         </div>
       </section>

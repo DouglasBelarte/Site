@@ -130,3 +130,11 @@
 - [x] Criar rota /dad/manifesto
 - [x] Adicionar link de navegação no menu DAD
 - [x] Testar responsividade e validar
+
+## Melhorias Home + Manifesto + Licenciamento
+
+- [x] Linkar cards das frentes (DAD, MRD, EAD, LAB) às subpáginas
+- [x] Mudar CTAs de "QUERO ORÇAR" para "Venha conhecer"
+- [x] Adicionar traduções EN/FR ao Manifesto D.A.D.
+- [ ] Criar página de Licenciamento (/dad/licenciamento)
+- [ ] Conectar CTA "Solicitar consulta" do Manifesto ao formulário de contato
