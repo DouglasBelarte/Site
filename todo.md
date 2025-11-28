@@ -104,3 +104,6 @@
 ### Correção Adicional
 - [x] Remover "Blog" do menu principal da Home
 - [x] Integrar "Blog" dentro da seção LAB
+
+### Correção Breadcrumb
+- [x] Fixar breadcrumbs junto ao header nas subpáginas (sticky)

@@ -20,7 +20,7 @@ export function Breadcrumb() {
   }
 
   return (
-    <nav className="border-b border-border bg-background">
+    <nav className="sticky top-[72px] md:top-[72px] z-40 border-b border-border bg-background/95 backdrop-blur-sm">
       <div className="container py-2">
         <ol className="flex items-center gap-2 text-sm text-muted-foreground">
           {breadcrumbItems.map((item, index) => (
