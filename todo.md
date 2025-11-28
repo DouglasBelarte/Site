@@ -121,3 +121,12 @@
 - [x] Aplicar traduções em LAB
 - [x] Testar persistência de idioma entre páginas (OK - idioma EN persistindo)
 - [x] Testar QA completo em navegador (OK - logos e traduções funcionando)
+
+## Manifesto D.A.D.
+
+- [x] Criar página Manifesto D.A.D. com conteúdo completo
+- [x] Implementar layout minimalista editorial premium
+- [x] Adicionar animações fade-in no scroll
+- [x] Criar rota /dad/manifesto
+- [x] Adicionar link de navegação no menu DAD
+- [x] Testar responsividade e validar
