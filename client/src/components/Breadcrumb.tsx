@@ -7,7 +7,7 @@ export function Breadcrumb() {
   const pathSegments = location.split("/").filter(Boolean);
   
   const breadcrumbItems = [
-    { label: "Home", href: "/" },
+    { label: "HOME", href: "/" },
     ...pathSegments.map((segment, index) => {
       const href = "/" + pathSegments.slice(0, index + 1).join("/");
       const label = segment.toUpperCase();

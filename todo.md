@@ -107,3 +107,6 @@
 
 ### Correção Breadcrumb
 - [x] Fixar breadcrumbs junto ao header nas subpáginas (sticky)
+
+### Correção Nomenclatura Breadcrumb
+- [x] Alterar "Home" para "HOME" no breadcrumb
