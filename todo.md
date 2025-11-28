@@ -138,3 +138,15 @@
 - [x] Adicionar traduções EN/FR ao Manifesto D.A.D.
 - [ ] Criar página de Licenciamento (/dad/licenciamento)
 - [ ] Conectar CTA "Solicitar consulta" do Manifesto ao formulário de contato
+
+## Deploy Netlify
+
+- [x] Gerar build de produção
+- [x] Criar pacote ZIP para Netlify
+- [x] Gerar instruções de deploy
+
+## SEO - Sitemap e Robots
+
+- [x] Criar sitemap.xml com todas as páginas
+- [x] Criar robots.txt configurado
+- [x] Gerar novo build e pacote Netlify
