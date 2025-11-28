@@ -60,8 +60,9 @@
 - [x] Corrigir caminhos (src) das logos no HTML/CSS/JS
 - [x] Verificar permissões de leitura das logos (chmod 644)
 - [x] Garantir que logos não estejam invisíveis por CSS
-- [ ] Implementar cache-buster para logos
-- [ ] Converter logos para PNG/JPG se necessário
+- [x] Verificar formatos das logos existentes (JPG e PNG, formatos compatíveis)
+- [x] Converter logos para PNG se necessário (não necessário, formatos OK)
+- [x] Implementar cache-buster para logos (query string com versão v1.1.1)
 - [x] Ativar tradução automática funcional EN/PT/FR
 - [x] Garantir que botões de idioma troquem conteúdo real
 - [x] Corrigir responsividade do header mobile (media-query, flexbox)

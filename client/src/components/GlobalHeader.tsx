@@ -33,7 +33,9 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
       ead: "DAco Logo EAD in white.jpg",
       lab: "LAB-logo.png",
     };
-    return `/assets/logos/${logoMap[section]}`;
+    // Cache-buster: adiciona versão como query string
+    const version = "v1.1.1";
+    return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
   return (
