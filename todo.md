@@ -150,3 +150,11 @@
 - [x] Criar sitemap.xml com todas as páginas
 - [x] Criar robots.txt configurado
 - [x] Gerar novo build e pacote Netlify
+
+## LOCK MODE - Correções Técnicas
+
+- [x] Aplicar background #373435 no header e breadcrumb da página LAB
+- [x] Manter background #FFFFFF no header e breadcrumb das demais páginas
+- [x] Transformar todos os links dos menus para ALL CAPS (text-transform: uppercase)
+- [x] Adicionar underline no hover dos links usando cor da paleta de cada página
+- [x] Corrigir paths das logos para produção (garantir carregamento em todos os navegadores)

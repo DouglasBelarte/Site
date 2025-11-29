@@ -38,8 +38,10 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
+  const headerBg = section === "lab" ? "bg-[#373435]/95" : "bg-background/95";
+
   return (
-    <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className={`sticky top-0 z-40 ${headerBg} backdrop-blur-sm border-b border-border`}>
       <div className="container">
         <div className="flex items-center justify-between h-[60px] md:h-[72px]">
           {/* Logo Esquerda */}
@@ -59,7 +61,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
               <a
                 key={item.href}
                 href={item.href}
-                className="nav-link hover:opacity-70 transition-opacity"
+                className="nav-link uppercase hover:opacity-70 hover:underline transition-opacity"
               >
                 {item.label}
               </a>
@@ -68,7 +70,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
 
           {/* Direita: INFO · Idioma · Acesso */}
           <div className="hidden lg:flex items-center gap-4 text-sm">
-            <a href="/#contato" className="nav-link hover:opacity-70 transition-opacity">
+            <a href="/#contato" className="nav-link uppercase hover:opacity-70 hover:underline transition-opacity">
               INFO
             </a>
             <span className="text-muted-foreground">·</span>
@@ -120,13 +122,13 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="nav-link hover:opacity-70 transition-opacity"
+                className="nav-link uppercase hover:opacity-70 hover:underline transition-opacity"
               >
                 {item.label}
               </a>
             ))}
             <div className="flex items-center gap-3 pt-2 border-t border-border">
-              <a href="/#contato" className="text-sm">INFO</a>
+              <a href="/#contato" className="text-sm uppercase hover:underline">INFO</a>
               <span className="text-muted-foreground">·</span>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
