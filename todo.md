@@ -165,3 +165,10 @@
 - [x] Ajustar bordas da página LAB para cor #373435
 - [x] Verificar header e breadcrumb da página Home usam fundo branco padrão
 - [x] Garantir hover dos links do menu na Home seguem cor laranja #E85D04 da paleta DA.co
+
+## LOCK MODE - Padronização Linhas e Remoção Sticky
+
+- [x] Remover sticky do header (header fica no topo da página, não acompanha scroll)
+- [x] Remover sticky do breadcrumb (breadcrumb fica abaixo do header, não acompanha scroll)
+- [x] Padronizar linhas entre header e breadcrumb para brancas em todas as páginas
+- [x] Manter linha #373435 apenas na sub página LAB

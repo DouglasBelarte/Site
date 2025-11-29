@@ -38,11 +38,11 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
-  const headerBg = section === "lab" ? "bg-[#373435]/95" : "bg-background/95";
-  const borderColor = section === "lab" ? "border-[#373435]" : "border-border";
+  const headerBg = section === "lab" ? "bg-[#373435]" : "bg-background";
+  const borderColor = section === "lab" ? "border-[#373435]" : "border-white";
 
   return (
-    <header className={`sticky top-0 z-40 ${headerBg} backdrop-blur-sm border-b ${borderColor}`}>
+    <header className={`${headerBg} border-b ${borderColor}`}>
       <div className="container">
         <div className="flex items-center justify-between h-[60px] md:h-[72px]">
           {/* Logo Esquerda */}
