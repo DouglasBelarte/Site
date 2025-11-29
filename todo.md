@@ -190,3 +190,10 @@
 - [x] Atualizar referências no GlobalHeader.tsx (.jpg → .png)
 - [x] Remover arquivos .JPG antigos do diretório
 - [x] Incrementar cache-buster para v1.1.2
+
+## Atualização de Cor EAD: Roxo → Púrpura
+
+- [x] Converter CMYK 40 100 0 0 para HEX (#990099)
+- [x] Atualizar cor de hover no index.css (#8B5CF6 → #990099)
+- [x] Atualizar todas as referências de cor na página EAD.tsx
+- [x] Verificar consistência visual em todos os elementos EAD
