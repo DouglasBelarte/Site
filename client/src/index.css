@@ -233,3 +233,24 @@
 .animate-fade-in:nth-child(9) {
   animation-delay: 0.9s;
 }
+
+/* Estilos de hover dos links do menu por seção */
+[data-section="daco"] .nav-link:hover {
+  text-decoration-color: #E85D04;
+}
+
+[data-section="dad"] .nav-link:hover {
+  text-decoration-color: #1D4ED8;
+}
+
+[data-section="mrd"] .nav-link:hover {
+  text-decoration-color: #4CAF50;
+}
+
+[data-section="ead"] .nav-link:hover {
+  text-decoration-color: #8B5CF6;
+}
+
+[data-section="lab"] .nav-link:hover {
+  text-decoration-color: #FACC15;
+}

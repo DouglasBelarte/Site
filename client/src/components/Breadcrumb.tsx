@@ -7,6 +7,7 @@ export function Breadcrumb() {
   const pathSegments = location.split("/").filter(Boolean);
   const isLabPage = location.startsWith("/lab");
   const breadcrumbBg = isLabPage ? "bg-[#373435]/95" : "bg-background/95";
+  const borderColor = isLabPage ? "border-[#373435]" : "border-border";
   
   const breadcrumbItems = [
     { label: "HOME", href: "/" },
@@ -22,7 +23,7 @@ export function Breadcrumb() {
   }
 
   return (
-    <nav className={`sticky top-[72px] md:top-[72px] z-40 border-b border-border ${breadcrumbBg} backdrop-blur-sm`}>
+    <nav className={`sticky top-[72px] md:top-[72px] z-40 border-b ${borderColor} ${breadcrumbBg} backdrop-blur-sm`}>
       <div className="container py-2">
         <ol className="flex items-center gap-2 text-sm text-muted-foreground">
           {breadcrumbItems.map((item, index) => (

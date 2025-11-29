@@ -39,9 +39,10 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
   };
 
   const headerBg = section === "lab" ? "bg-[#373435]/95" : "bg-background/95";
+  const borderColor = section === "lab" ? "border-[#373435]" : "border-border";
 
   return (
-    <header className={`sticky top-0 z-40 ${headerBg} backdrop-blur-sm border-b border-border`}>
+    <header className={`sticky top-0 z-40 ${headerBg} backdrop-blur-sm border-b ${borderColor}`}>
       <div className="container">
         <div className="flex items-center justify-between h-[60px] md:h-[72px]">
           {/* Logo Esquerda */}
@@ -116,7 +117,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
 
         {/* Mobile Nav */}
         {mobileMenuOpen && (
-          <nav className="lg:hidden flex flex-col gap-4 pb-6 pt-4 text-base font-medium border-t border-border">
+          <nav className={`lg:hidden flex flex-col gap-4 pb-6 pt-4 text-base font-medium border-t ${borderColor}`}>
             {menuItems.map((item) => (
               <a
                 key={item.href}
@@ -127,7 +128,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                 {item.label}
               </a>
             ))}
-            <div className="flex items-center gap-3 pt-2 border-t border-border">
+            <div className={`flex items-center gap-3 pt-2 border-t ${borderColor}`}>
               <a href="/#contato" className="text-sm uppercase hover:underline">INFO</a>
               <span className="text-muted-foreground">·</span>
               <DropdownMenu>

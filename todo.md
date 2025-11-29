@@ -158,3 +158,10 @@
 - [x] Transformar todos os links dos menus para ALL CAPS (text-transform: uppercase)
 - [x] Adicionar underline no hover dos links usando cor da paleta de cada página
 - [x] Corrigir paths das logos para produção (garantir carregamento em todos os navegadores)
+
+## LOCK MODE - Correção Linhas Brancas LAB e Header Home
+
+- [x] Remover linhas brancas entre header, breadcrumb e base na página LAB
+- [x] Ajustar bordas da página LAB para cor #373435
+- [x] Verificar header e breadcrumb da página Home usam fundo branco padrão
+- [x] Garantir hover dos links do menu na Home seguem cor laranja #E85D04 da paleta DA.co
