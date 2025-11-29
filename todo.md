@@ -172,3 +172,21 @@
 - [x] Remover sticky do breadcrumb (breadcrumb fica abaixo do header, não acompanha scroll)
 - [x] Padronizar linhas entre header e breadcrumb para brancas em todas as páginas
 - [x] Manter linha #373435 apenas na sub página LAB
+
+## Botão Voltar ao Topo Flutuante
+
+- [x] Verificar componente ScrollToTop existente
+- [x] Garantir que botão apareça após scroll (300px ou mais)
+- [x] Estilizar botão flutuante no canto inferior direito
+- [x] Adicionar animação suave de aparecimento/desaparecimento
+- [x] Testar funcionalidade em todas as páginas
+
+## Substituição de Logomarcas JPG → PNG
+
+- [x] Copiar DAcoLogoinwhite.png para /public/assets/logos/ (página principal)
+- [x] Copiar DAcoLogoDADinwhite.png para /public/assets/logos/ (Doug Design)
+- [x] Copiar DAcoLogoMRDinwhite.png para /public/assets/logos/ (Mundo Roça)
+- [x] Copiar DAcoLogoEADinwhite.png para /public/assets/logos/ (EAD)
+- [x] Atualizar referências no GlobalHeader.tsx (.jpg → .png)
+- [x] Remover arquivos .JPG antigos do diretório
+- [x] Incrementar cache-buster para v1.1.2

@@ -27,14 +27,14 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
 
   const getLogoPath = () => {
     const logoMap: Record<typeof section, string> = {
-      daco: "DAco Logo DACO in white.jpg",
-      dad: "DAco Logo DAD in white.jpg",
-      mrd: "DAco Logo MRD in white.jpg",
-      ead: "DAco Logo EAD in white.jpg",
+      daco: "DAco Logo DACO in white.png",
+      dad: "DAco Logo DAD in white.png",
+      mrd: "DAco Logo MRD in white.png",
+      ead: "DAco Logo EAD in white.png",
       lab: "LAB-logo.png",
     };
     // Cache-buster: adiciona versão como query string
-    const version = "v1.1.1";
+    const version = "v1.1.2";
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
