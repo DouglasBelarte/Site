@@ -31,7 +31,7 @@ export default function EAD() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl">
-            <div className="inline-block bg-[#990099]/10 border border-[#990099]/30 rounded-full px-4 py-2 text-sm font-medium text-[#990099] mb-6">
+            <div className="inline-block bg-[#5766CC]/10 border border-[#5766CC]/30 rounded-full px-4 py-2 text-sm font-medium text-[#5766CC] mb-6">
               {t.ead_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -44,7 +44,7 @@ export default function EAD() {
               <Button
                 size="lg"
                 className="rounded-full"
-                style={{ backgroundColor: "#990099" }}
+                style={{ backgroundColor: "#5766CC" }}
               >
                 {t.ead_cta}
               </Button>
@@ -52,7 +52,7 @@ export default function EAD() {
                 variant="outline"
                 size="lg"
                 className="rounded-full"
-                style={{ borderColor: "#990099", color: "#990099" }}
+                style={{ borderColor: "#5766CC", color: "#5766CC" }}
               >
                 {t.ead_schedule}
               </Button>
@@ -76,7 +76,7 @@ export default function EAD() {
                 e leva para casa não só conhecimento, mas mudança de perspectiva.
               </p>
             </div>
-            <div className="aspect-video bg-gradient-to-br from-[#990099]/20 to-[#990099]/5 rounded-2xl"></div>
+            <div className="aspect-video bg-gradient-to-br from-[#5766CC]/20 to-[#5766CC]/5 rounded-2xl"></div>
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function EAD() {
           <h2 className="text-3xl md:text-4xl mb-12">O que oferecemos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#990099]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#5766CC]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📚</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Workshops presenciais</h3>
@@ -97,7 +97,7 @@ export default function EAD() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#990099]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#5766CC]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">✈️</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Experiência guiada / viagem criativa</h3>
@@ -107,7 +107,7 @@ export default function EAD() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#990099]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[#5766CC]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Formação prática de comunicação</h3>
@@ -128,42 +128,42 @@ export default function EAD() {
             Material gratuito e premium para acelerar sua jornada.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="border-l-4 pl-6" style={{ borderColor: "#990099" }}>
+            <div className="border-l-4 pl-6" style={{ borderColor: "#5766CC" }}>
               <h3 className="text-lg font-medium mb-2">Artigos e ensaios</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Reflexões sobre design, negócios, criatividade e vida. Escritos com tempo e cuidado.
               </p>
-              <a href="#" className="text-sm font-medium" style={{ color: "#990099" }}>
+              <a href="#" className="text-sm font-medium" style={{ color: "#5766CC" }}>
                 Explorar artigos →
               </a>
             </div>
 
-            <div className="border-l-4 pl-6" style={{ borderColor: "#990099" }}>
+            <div className="border-l-4 pl-6" style={{ borderColor: "#5766CC" }}>
               <h3 className="text-lg font-medium mb-2">Guias práticos</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Passo a passo para resolver problemas reais: branding, comunicação, estratégia.
               </p>
-              <a href="#" className="text-sm font-medium" style={{ color: "#990099" }}>
+              <a href="#" className="text-sm font-medium" style={{ color: "#5766CC" }}>
                 Ver guias →
               </a>
             </div>
 
-            <div className="border-l-4 pl-6" style={{ borderColor: "#990099" }}>
+            <div className="border-l-4 pl-6" style={{ borderColor: "#5766CC" }}>
               <h3 className="text-lg font-medium mb-2">Templates e ferramentas</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Recursos prontos para usar: planilhas, frameworks, checklists. Economize tempo.
               </p>
-              <a href="#" className="text-sm font-medium" style={{ color: "#990099" }}>
+              <a href="#" className="text-sm font-medium" style={{ color: "#5766CC" }}>
                 Baixar recursos →
               </a>
             </div>
 
-            <div className="border-l-4 pl-6" style={{ borderColor: "#990099" }}>
+            <div className="border-l-4 pl-6" style={{ borderColor: "#5766CC" }}>
               <h3 className="text-lg font-medium mb-2">Recomendações</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Livros, cursos, ferramentas e pessoas que valem a pena conhecer.
               </p>
-              <a href="#" className="text-sm font-medium" style={{ color: "#990099" }}>
+              <a href="#" className="text-sm font-medium" style={{ color: "#5766CC" }}>
                 Ver recomendações →
               </a>
             </div>

@@ -34,7 +34,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
       lab: "DAco Logo LAB in white.png",
     };
     // Cache-buster: adiciona versão como query string
-    const version = "v1.1.3";
+    const version = "v1.1.4";
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 

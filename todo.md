@@ -213,3 +213,11 @@
 - [x] Remover LAB-logo.png antigo
 - [x] Adicionar dimensão fixa width: 100px para todas as logos no header
 - [x] Incrementar cache-buster para v1.1.3
+
+## Substituição Logo EAD e Atualização Cor Very Peri
+
+- [x] Copiar nova DAcoLogoEADinwhite.png para /public/assets/logos/
+- [x] Converter CMYK 66 60 0 0 para HEX (#5766CC)
+- [x] Atualizar cor de hover no index.css (#990099 → #5766CC)
+- [x] Atualizar todas as referências de cor na página EAD.tsx
+- [x] Incrementar cache-buster para v1.1.4
