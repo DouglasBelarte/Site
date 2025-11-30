@@ -197,3 +197,19 @@
 - [x] Atualizar cor de hover no index.css (#8B5CF6 → #990099)
 - [x] Atualizar todas as referências de cor na página EAD.tsx
 - [x] Verificar consistência visual em todos os elementos EAD
+
+## LOCK MODE - Correção Global dos Paths das Logos
+
+- [x] Verificar arquivos PNG existentes em /public/assets/logos/
+- [x] Verificar correspondência exata de nomes (case-sensitive) no código
+- [x] Corrigir paths no GlobalHeader.tsx se necessário
+- [x] Eliminar qualquer referência restante a .jpg
+- [x] Garantir paths absolutos corretos (/assets/logos/<nome>.png)
+
+## Atualização Logo LAB e Dimensão Fixa Header
+
+- [x] Copiar DAcoLogoLABinwhite.png para /public/assets/logos/
+- [x] Atualizar referência da logo LAB no GlobalHeader.tsx
+- [x] Remover LAB-logo.png antigo
+- [x] Adicionar dimensão fixa width: 100px para todas as logos no header
+- [x] Incrementar cache-buster para v1.1.3

@@ -31,10 +31,10 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
       dad: "DAco Logo DAD in white.png",
       mrd: "DAco Logo MRD in white.png",
       ead: "DAco Logo EAD in white.png",
-      lab: "LAB-logo.png",
+      lab: "DAco Logo LAB in white.png",
     };
     // Cache-buster: adiciona versão como query string
-    const version = "v1.1.2";
+    const version = "v1.1.3";
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
@@ -51,7 +51,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
               <img
                 src={getLogoPath()}
                 alt={logo}
-                style={{ width: "200px", height: "85px", objectFit: "contain" }}
+                style={{ width: "100px", height: "auto", objectFit: "contain" }}
               />
             </div>
           </Link>
