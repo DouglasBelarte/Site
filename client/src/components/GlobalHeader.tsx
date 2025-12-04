@@ -34,40 +34,55 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
       lab: "DAco Logo LAB in white.png",
     };
     // Cache-buster: adiciona versão como query string
-    const version = "v1.1.4";
+    const version = "v1.2.0";
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
   const headerBg = section === "lab" ? "bg-[#373435]" : "bg-background";
   const borderColor = section === "lab" ? "border-[#373435]" : "border-white";
+  
+  const pageTitles: Record<typeof section, string> = {
+    daco: "Doug Amorim Co.",
+    dad: "Doug Amorim Design",
+    mrd: "Mundo Roça Digital",
+    ead: "Let’s Go Beyond",
+    lab: "Laboratório Criativo",
+  };
 
   return (
     <header className={`${headerBg} border-b ${borderColor}`}>
       <div className="container">
         <div className="flex items-center justify-between h-[60px] md:h-[72px]">
-          {/* Logo Esquerda */}
-          <Link href={section === "daco" ? "/" : `/${section}`}>
-            <div className="brand-block flex items-center cursor-pointer">
-              <img
-                src={getLogoPath()}
-                alt={logo}
-                style={{ width: "100px", height: "auto", objectFit: "contain" }}
-              />
-            </div>
-          </Link>
+          {/* Logo e Menu Esquerda */}
+          <div className="flex items-center gap-8">
+            <Link href={section === "daco" ? "/" : `/${section}`}>
+              <div className="brand-block flex items-center cursor-pointer">
+                <img
+                  src={getLogoPath()}
+                  alt={logo}
+                  style={{ width: "100px", height: "auto", objectFit: "contain" }}
+                />
+              </div>
+            </Link>
 
-          {/* Menu Centro - Desktop */}
-          <nav className="hidden lg:flex items-center gap-6 text-sm font-medium">
-            {menuItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="nav-link uppercase hover:opacity-70 hover:underline transition-opacity"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+            {/* Título e Menu - Desktop */}
+            <div className="hidden lg:flex flex-col gap-1">
+              <div className="text-xs font-medium text-muted-foreground">
+                {pageTitles[section]}
+              </div>
+              <nav className="flex items-center gap-4 text-sm font-medium">
+                {menuItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity"
+                  >
+                    {item.label.toLowerCase()}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
 
           {/* Direita: INFO · Idioma · Acesso */}
           <div className="hidden lg:flex items-center gap-4 text-sm">
@@ -118,14 +133,17 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
         {/* Mobile Nav */}
         {mobileMenuOpen && (
           <nav className={`lg:hidden flex flex-col gap-4 pb-6 pt-4 text-base font-medium border-t ${borderColor}`}>
+            <div className="text-xs font-medium text-muted-foreground">
+              {pageTitles[section]}
+            </div>
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="nav-link uppercase hover:opacity-70 hover:underline transition-opacity"
+                className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity"
               >
-                {item.label}
+                {item.label.toLowerCase()}
               </a>
             ))}
             <div className={`flex items-center gap-3 pt-2 border-t ${borderColor}`}>

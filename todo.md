@@ -221,3 +221,23 @@
 - [x] Atualizar cor de hover no index.css (#990099 → #5766CC)
 - [x] Atualizar todas as referências de cor na página EAD.tsx
 - [x] Incrementar cache-buster para v1.1.4
+
+## Atualização Completa Header e Logos
+
+### Substituição de Logos
+- [x] Copiar DAcoLogoinwhite.png (DA.co)
+- [x] Copiar DAcoLogoDADinwhite.png (DAD)
+- [x] Copiar DAcoLogoMRDinwhite.png (MRD)
+- [x] Copiar DAcoLogoEADinwhite.png (EAD)
+- [x] Copiar DAcoLogoLABinwhite.png (LAB)
+
+### Atualização Cor DAD
+- [x] Converter CMYK 60 90 0 10 para HEX (#79458E)
+- [x] Atualizar cor hover DAD no index.css
+- [x] Atualizar cor na página DAD.tsx
+
+### Reestruturação Header
+- [x] Adicionar títulos acima dos menus (Doug Amorim Co., Doug Amorim Design, etc.)
+- [x] Alinhar menus principais à esquerda
+- [x] Converter texto dos menus para minúsculas
+- [x] Incrementar cache-buster para v1.2.0

@@ -32,7 +32,7 @@ export default function DAD() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl">
-            <div className="inline-block bg-[#1D4ED8]/10 border border-[#1D4ED8]/30 rounded-full px-4 py-2 text-sm font-medium text-[#1D4ED8] mb-6">
+            <div className="inline-block bg-[#79458E]/10 border border-[#79458E]/30 rounded-full px-4 py-2 text-sm font-medium text-[#79458E] mb-6">
               {t.dad_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -45,7 +45,7 @@ export default function DAD() {
               <Button
                 size="lg"
                 className="rounded-full"
-                style={{ backgroundColor: "#1D4ED8" }}
+                style={{ backgroundColor: "#79458E" }}
               >
                 {t.dad_cta}
               </Button>
@@ -53,7 +53,7 @@ export default function DAD() {
                 variant="outline"
                 size="lg"
                 className="rounded-full"
-                style={{ borderColor: "#1D4ED8", color: "#1D4ED8" }}
+                style={{ borderColor: "#79458E", color: "#79458E" }}
               >
                 {t.dad_portfolio}
               </Button>
@@ -79,7 +79,7 @@ export default function DAD() {
                 <li>• Social kit e materiais de venda</li>
               </ul>
             </div>
-            <div className="aspect-video bg-gradient-to-br from-[#1D4ED8]/20 to-[#1D4ED8]/5 rounded-2xl"></div>
+            <div className="aspect-video bg-gradient-to-br from-[#79458E]/20 to-[#79458E]/5 rounded-2xl"></div>
           </div>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function DAD() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-[#1D4ED8]/20 to-[#1D4ED8]/5"></div>
+                <div className="aspect-video bg-gradient-to-br from-[#79458E]/20 to-[#79458E]/5"></div>
                 <div className="p-6">
                   <h3 className="text-lg font-medium mb-2">Projeto {i}</h3>
                   <p className="text-sm text-muted-foreground">
@@ -113,13 +113,13 @@ export default function DAD() {
               Reconhecimentos, publicações e parcerias que marcam nossa trajetória.
             </p>
             <div className="space-y-6">
-              <div className="border-l-4 pl-6" style={{ borderColor: "#1D4ED8" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#79458E" }}>
                 <h3 className="text-lg font-medium mb-2">Belarte Company</h3>
                 <p className="text-sm text-muted-foreground">
                   Parceria estratégica em projetos de branding e comunicação visual para o mercado europeu.
                 </p>
               </div>
-              <div className="border-l-4 pl-6" style={{ borderColor: "#1D4ED8" }}>
+              <div className="border-l-4 pl-6" style={{ borderColor: "#79458E" }}>
                 <h3 className="text-lg font-medium mb-2">Publicações</h3>
                 <p className="text-sm text-muted-foreground">
                   Trabalhos destacados em portais de design e inovação.
@@ -141,7 +141,7 @@ export default function DAD() {
             <Button
               size="lg"
               className="rounded-full"
-              style={{ backgroundColor: "#1D4ED8" }}
+              style={{ backgroundColor: "#79458E" }}
             >
               Quero orçar DAD →
             </Button>
