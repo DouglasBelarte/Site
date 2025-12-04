@@ -57,7 +57,7 @@ export default function Home() {
       />
 
       {/* HERO */}
-      <section id="manifesto" className="py-12 md:py-16">
+      <section id="manifesto" className="pt-[20px] pb-12 md:pb-16">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>

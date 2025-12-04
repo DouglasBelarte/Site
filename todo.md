@@ -241,3 +241,7 @@
 - [x] Alinhar menus principais à esquerda
 - [x] Converter texto dos menus para minúsculas
 - [x] Incrementar cache-buster para v1.2.0
+
+## Margem Topo Página Principal
+
+- [x] Adicionar margem de 20px no topo da página Home (consistência com subpáginas)
