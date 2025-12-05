@@ -57,17 +57,21 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
           <div className="flex items-center gap-8">
             <Link href={section === "daco" ? "/" : `/${section}`}>
               <div className="brand-block flex items-center cursor-pointer">
-                <img
-                  src={getLogoPath()}
-                  alt={logo}
-                  style={{ width: "100px", height: "auto", objectFit: "contain" }}
-                />
+              <img
+                src={getLogoPath()}
+                alt={logo}
+                style={{ 
+                  width: section === "daco" ? "200px" : "100px", 
+                  height: section === "daco" ? "85px" : "auto", 
+                  objectFit: "contain" 
+                }}
+              />
               </div>
             </Link>
 
             {/* Título e Menu - Desktop */}
             <div className="hidden lg:flex flex-col gap-1">
-              <div className="text-xs font-medium text-muted-foreground">
+              <div className="text-xs font-medium text-muted-foreground uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
                 {pageTitles[section]}
               </div>
               <nav className="flex items-center gap-4 text-sm font-medium">
@@ -133,7 +137,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
         {/* Mobile Nav */}
         {mobileMenuOpen && (
           <nav className={`lg:hidden flex flex-col gap-4 pb-6 pt-4 text-base font-medium border-t ${borderColor}`}>
-            <div className="text-xs font-medium text-muted-foreground">
+            <div className="text-xs font-medium text-muted-foreground uppercase" style={{ fontFamily: "'Playfair Display', serif" }}>
               {pageTitles[section]}
             </div>
             {menuItems.map((item) => (

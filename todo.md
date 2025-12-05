@@ -245,3 +245,9 @@
 ## Margem Topo Página Principal
 
 - [x] Adicionar margem de 20px no topo da página Home (consistência com subpáginas)
+
+## Fonte Playfair Display nos Títulos Header
+
+- [x] Aplicar Playfair Display + uppercase nos títulos do header
+- [x] Ajustar dimensão da logo na Home para 200x85px
+- [x] Manter dimensão 100px nas subpáginas
