@@ -251,3 +251,16 @@
 - [x] Aplicar Playfair Display + uppercase nos títulos do header
 - [x] Ajustar dimensão da logo na Home para 200x85px
 - [x] Manter dimensão 100px nas subpáginas
+
+## Expansão Home para Landing Page Completa
+
+### Extração de Conteúdo
+- [x] Acessar https://jdozwvcl.manus.space/ e extrair todo o conteúdo
+- [x] Documentar seções, textos, imagens, CTAs e blocos visuais
+
+### Integração na Home
+- [x] Expandir Home mantendo conteúdo atual intacto
+- [x] Adicionar seções: Sobre Doug Amorim expandido, Pilares do Projeto, Resultados Comprovados, Proposta de Valor, CTA Transformação
+- [x] Usar apenas componentes e estilos existentes no template
+- [x] Manter header, menu e footer sem alterações (LOCKDOWN)
+- [x] Garantir responsividade mobile preservada

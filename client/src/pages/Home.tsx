@@ -107,8 +107,105 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SOBRE DOUG AMORIM - EXPANDIDO */}
+      <section id="sobre-doug" className="py-12 md:py-16 bg-muted/30">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl mb-6">Sobre Doug Amorim</h2>
+              
+              <div className="flex gap-8 mb-6">
+                <div>
+                  <div className="text-4xl font-bold text-primary">25</div>
+                  <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold text-primary">+R$1,35mi</div>
+                  <div className="text-sm text-muted-foreground">Arrecadados ONG Anjos do Peito</div>
+                </div>
+              </div>
+
+              <p className="text-base text-muted-foreground mb-4 max-w-[60ch]">
+                Com duas décadas de experiência em branding e marketing digital, Doug Amorim se destaca pela capacidade de criar estratégias que conectam marcas ao seu propósito mais profundo. Seu trabalho com a ONG Anjos do Peito, que resultou em mais de R$ 1,35 milhão arrecadados, demonstra como o branding estratégico pode gerar impacto real e mensurável, mesmo para o terceiro setor.
+              </p>
+
+              <p className="text-base text-muted-foreground max-w-[60ch]">
+                Especialista em IA aplicada ao marketing, Doug combina tecnologia de ponta com sensibilidade humana para criar marcas que não apenas vendem, mas que tocam corações e transformam realidades.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
+              <div className="aspect-[3/4] bg-muted rounded-xl overflow-hidden mb-4">
+                <img 
+                  src="/assets/doug-profile.jpg" 
+                  alt="Doug Amorim" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-muted-foreground text-sm">Foto profissional</div>';
+                  }}
+                />
+              </div>
+              <div className="text-sm text-muted-foreground text-center">
+                Doug Amorim — Diretor de Soluções Web
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PILARES DO PROJETO */}
+      <section id="pilares" className="py-12 md:py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl mb-4">Pilares do Projeto</h2>
+            <p className="text-muted-foreground max-w-[60ch] mx-auto">
+              Combinamos expertise técnica, criatividade e visão estratégica para criar marcas memoráveis.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Estratégia de Marca */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-xl font-medium mb-3">Estratégia de Marca</h3>
+              <p className="text-sm text-muted-foreground">
+                Desenvolvimento de estratégias de branding que conectam propósito, audiência e objetivos de negócio de forma coesa e impactante.
+              </p>
+            </div>
+
+            {/* Identidade Visual */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🎨</div>
+              <h3 className="text-xl font-medium mb-3">Identidade Visual</h3>
+              <p className="text-sm text-muted-foreground">
+                Criação de identidades visuais memoráveis que refletem a essência da marca e se destacam no mercado competitivo.
+              </p>
+            </div>
+
+            {/* Presença Digital */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-medium mb-3">Presença Digital</h3>
+              <p className="text-sm text-muted-foreground">
+                Construção de presença digital estratégica que amplifica o alcance da marca e gera engajamento autêntico.
+              </p>
+            </div>
+
+            {/* IA Aplicada */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="text-4xl mb-4">🤖</div>
+              <h3 className="text-xl font-medium mb-3">IA Aplicada</h3>
+              <p className="text-sm text-muted-foreground">
+                Integração de inteligência artificial para otimizar processos, personalizar experiências e maximizar resultados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ÁREAS */}
-      <section id="areas" className="py-12 md:py-16 border-t border-border">
+      <section id="areas" className="py-12 md:py-16 bg-muted/30">
         <div className="container">
           <div className="mb-8">
             <h2 className="text-3xl md:text-4xl">{t('our_fronts', language)}</h2>
@@ -207,8 +304,143 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SOBRE DOUG */}
-      <section id="blog" className="py-12 md:py-16">
+      {/* RESULTADOS COMPROVADOS */}
+      <section id="resultados" className="py-12 md:py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl mb-4">Resultados Comprovados</h2>
+            <p className="text-muted-foreground max-w-[60ch] mx-auto">
+              Track record de sucesso com cases reais e mensuráveis.
+            </p>
+          </div>
+
+          <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-lg max-w-4xl mx-auto">
+            <div className="text-sm font-semibold uppercase tracking-wide text-primary mb-2">Case de Sucesso</div>
+            <h3 className="text-2xl md:text-3xl font-medium mb-6">ONG Anjos do Peito</h3>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">+R$ 1,35mi</div>
+                <div className="text-sm text-muted-foreground">Arrecadados</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">300%</div>
+                <div className="text-sm text-muted-foreground">Aumento na visibilidade</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">250%</div>
+                <div className="text-sm text-muted-foreground">Crescimento em doações</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">12</div>
+                <div className="text-sm text-muted-foreground">Meses de transformação</div>
+              </div>
+            </div>
+
+            <p className="text-base text-muted-foreground max-w-[70ch]">
+              Através de uma estratégia integrada de branding, presença digital e campanhas direcionadas, transformamos a ONG Anjos do Peito em uma referência nacional na luta contra o câncer de mama, multiplicando seu impacto social e capacidade de arrecadação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PROPOSTA DE VALOR */}
+      <section id="proposta" className="py-12 md:py-16 bg-muted/30">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* O que oferecemos */}
+            <div>
+              <h2 className="text-3xl md:text-4xl mb-6">O que oferecemos</h2>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="text-base">Estratégia de branding completa e personalizada</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="text-base">Identidade visual impactante e memorável</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="text-base">Presença digital estratégica e otimizada</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="text-base">Integração de IA para maximizar resultados</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="text-base">Acompanhamento e otimização contínua</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary text-xl">✓</span>
+                  <span className="text-base">ROI mensurável e transparente</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Benefícios da Parceria */}
+            <div>
+              <h2 className="text-3xl md:text-4xl mb-6">Benefícios da Parceria</h2>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-medium mb-2">Expertise Combinada</h4>
+                  <p className="text-sm text-muted-foreground">
+                    União de 25 anos de experiência com as especialidades de parceiros estratégicos.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium mb-2">Resultados Comprovados</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Track record de sucesso com cases reais e mensuráveis.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium mb-2">Inovação Constante</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Aplicação de IA e tecnologias emergentes para manter sua marca à frente.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium mb-2">Abordagem Holística</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Visão 360° que integra todos os pontos de contato da marca.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA TRANSFORMAÇÃO */}
+      <section id="cta-transformacao" className="py-16 md:py-20">
+        <div className="container">
+          <div className="bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-3xl p-8 md:p-12 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-medium mb-4">
+              Pronto para transformar sua marca?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-[50ch] mx-auto">
+              Vamos conversar sobre como nossa parceria pode levar sua marca ao próximo nível.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="#contato">
+                <Button size="lg" className="rounded-full">
+                  Marcar Reunião
+                </Button>
+              </a>
+              <a href="mailto:douglas@dougamorim.com">
+                <Button variant="outline" size="lg" className="rounded-full">
+                  Enviar E-mail
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SOBRE DOUG - SIMPLIFICADO */}
+      <section id="blog" className="py-12 md:py-16 bg-muted/30">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
