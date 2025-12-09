@@ -264,3 +264,17 @@
 - [x] Usar apenas componentes e estilos existentes no template
 - [x] Manter header, menu e footer sem alterações (LOCKDOWN)
 - [x] Garantir responsividade mobile preservada
+
+## Integração Seção NOSSAS DIVISÕES (ooexijku.manus.space)
+
+### Extração de Conteúdo
+- [x] Acessar https://ooexijku.manus.space/ e extrair seção NOSSAS DIVISÕES
+- [x] Documentar textos, imagens e estrutura visual
+- [x] Baixar todas as imagens da seção para /public/assets/divisoes/
+
+### Integração na Home
+- [x] Fundir seção NOSSAS FRENTES com conteúdo NOSSAS DIVISÕES
+- [x] Usar textos originais da seção ooexijku.manus.space
+- [x] Integrar imagens reais (DAD workspace, EAD classroom, MRD permacultura, LAB coworking)
+- [x] Manter header, menu e footer sem alterações (LOCKDOWN)
+- [x] Garantir responsividade mobile preservada

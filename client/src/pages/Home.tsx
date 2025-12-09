@@ -217,87 +217,101 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* DAD */}
             <a href="/dad" className="block">
-            <article id="dad" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
-                DAD.dougamorim.com
+            <article id="dad" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="/assets/divisoes/dad-workspace.webp" 
+                  alt="DAD - Doug Amorim Design workspace" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-medium mb-3">{t('dad_title', language)}</h3>
-              <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                {t('dad_description', language)}
-              </p>
-              <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
-                <li>Marca e narrativa</li>
-                <li>Website & Landing Pages</li>
-                <li>Catálogo de produtos / Portfólio</li>
-                <li>Social kit e materiais de venda</li>
-              </ul>
-              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Venha conhecer →
-              </span>
+              <div className="p-6">
+                <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
+                  DAD.dougamorim.com
+                </div>
+                <h3 className="text-xl font-medium mb-3">DAD — Doug Amorim Design</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Desde 2025, entregamos soluções digitais com criatividade e funcionalidade. Websites, identidades visuais, sistemas e experiências pensadas para destacar marcas no universo online. Design com essência e presença.
+                </p>
+                <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                  Venha conhecer →
+                </span>
+              </div>
             </article>
             </a>
 
             {/* MRD */}
             <a href="/mrd" className="block">
-            <article id="mrd" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
-                MRD.dougamorim.com
+            <article id="mrd" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="/assets/divisoes/mrd-permacultura.webp" 
+                  alt="MR.D - Mundo Roça Digital permacultura" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-medium mb-3">{t('mrd_title', language)}</h3>
-              <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                {t('mrd_description', language)}
-              </p>
-              <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
-                <li>Produto artesanal & rótulo</li>
-                <li>História de origem</li>
-                <li>Preço justo e transparência</li>
-                <li>Entrega curta, direto de quem fez</li>
-              </ul>
-              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Venha conhecer →
-              </span>
+              <div className="p-6">
+                <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
+                  MRD.dougamorim.com
+                </div>
+                <h3 className="text-xl font-medium mb-3">MR.D — Mundo Roça Digital</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Uma comunidade viva e colaborativa. Unimos permacultura, sustentabilidade e tecnologia para cultivar um futuro mais consciente. Do campo, para o mundo.
+                </p>
+                <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                  Venha conhecer →
+                </span>
+              </div>
             </article>
             </a>
 
             {/* EAD */}
             <a href="/ead" className="block">
-            <article id="ead" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
-                EAD.dougamorim.com
+            <article id="ead" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="/assets/divisoes/ead-classroom.webp" 
+                  alt="EAD - Let's Go Beyond classroom" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-medium mb-3">{t('ead_title', language)}</h3>
-              <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                {t('ead_description', language)}
-              </p>
-              <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
-                <li>Workshops presenciais e on-line</li>
-                <li>Experiência guiada / viagem criativa</li>
-                <li>Formação prática de comunicação</li>
-              </ul>
-              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Venha conhecer →
-              </span>
+              <div className="p-6">
+                <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
+                  EAD.dougamorim.com
+                </div>
+                <h3 className="text-xl font-medium mb-3">EAD — Let's Go Beyond</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Mais que ensino de inglês: oferecemos uma imersão na cultura norte-americana, unindo linguagem e vivência. Preparamos pessoas para o mundo, com fluência, confiança e conexão real com a língua.
+                </p>
+                <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                  Venha conhecer →
+                </span>
+              </div>
             </article>
             </a>
 
             {/* LAB */}
             <a href="/lab" className="block">
-            <article id="lab" className="bg-card border border-border rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
-                LAB.dougamorim.com
+            <article id="lab" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src="/assets/divisoes/lab-coworking.webp" 
+                  alt="LAB - Laboratório Criativo coworking" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-medium mb-3">{t('lab_title', language)}</h3>
-              <p className="text-sm text-muted-foreground mb-4 max-w-[60ch]">
-                {t('lab_description', language)}
-              </p>
-              <ul className="text-sm space-y-2 mb-5 list-disc list-inside">
-                <li>Daniel — Assistente comercial via WhatsApp</li>
-                <li>Busca avançada + WebAR (ex.: Orlean)</li>
-                <li>Prototipagem rápida de produto digital</li>
-              </ul>
-              <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
-                Venha conhecer →
-              </span>
+              <div className="p-6">
+                <div className="inline-block bg-accent/10 border border-accent/30 rounded-full px-3 py-1 text-xs font-medium text-accent mb-3">
+                  LAB.dougamorim.com
+                </div>
+                <h3 className="text-xl font-medium mb-3">LAB — Laboratório Criativo</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Nosso espaço de invenção e inovação. Aqui, ideias ganham forma: seja um app, site, produto ou estratégia de marketing. Prototipamos o futuro com pensamento estratégico e execução eficiente.
+                </p>
+                <span className="text-sm font-medium text-accent border-b border-accent pb-0.5 hover:opacity-70 transition-opacity">
+                  Venha conhecer →
+                </span>
+              </div>
             </article>
             </a>
           </div>
