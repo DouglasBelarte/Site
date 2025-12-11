@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { GlobalHeader } from "@/components/GlobalHeader";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -56,40 +57,22 @@ export default function Home() {
         menuItems={dacoMenuItems}
       />
 
-      {/* HERO */}
-      <section id="manifesto" className="pt-[20px] pb-12 md:pb-16">
+      {/* HERO CAROUSEL */}
+      <HeroCarousel />
+
+      {/* HERO TAGLINE */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-[#727376] max-w-4xl mx-auto">
+            25 anos entregando clareza, presença e estratégia digital.
+          </h2>
+        </div>
+      </section>
+
+      {/* DA.CO EM 4 LINHAS */}
+      <section className="py-16 md:py-20">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight">
-                {t('hero_title', language)}
-                <br />
-                <span className="text-primary block mt-2">
-                  {t('hero_subtitle', language)}
-                </span>
-              </h2>
-
-              <p className="mt-6 text-muted-foreground max-w-[38ch]">
-                {t('hero_description', language)}
-              </p>
-
-              <div className="flex flex-wrap gap-4 mt-6">
-                <a href="#contato">
-                  <Button size="lg" className="rounded-full">
-                    {t('want_to_talk', language)}
-                  </Button>
-                </a>
-                <a href="#areas">
-                  <Button variant="outline" size="lg" className="rounded-full">
-                    {t('see_areas', language)}
-                  </Button>
-                </a>
-              </div>
-
-              <p className="text-xs text-muted-foreground mt-4">
-                Lançamento oficial do Portal Doug — 05 de novembro de 2025.
-              </p>
-            </div>
+          <div className="max-w-2xl mx-auto">
 
             <div className="bg-card border border-border rounded-2xl p-6 shadow-lg max-w-md">
               <h3 className="text-lg font-medium mb-4">DA.co em 4 linhas</h3>
@@ -108,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* SOBRE DOUG AMORIM - EXPANDIDO */}
-      <section id="sobre-doug" className="py-12 md:py-16 bg-muted/30">
+      <section id="sobre-doug" className="py-16 md:py-20 bg-muted/30">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -155,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* PILARES DO PROJETO */}
-      <section id="pilares" className="py-12 md:py-16">
+      <section id="pilares" className="py-16 md:py-20">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4">Pilares do Projeto</h2>
@@ -205,24 +188,24 @@ export default function Home() {
       </section>
 
       {/* ÁREAS */}
-      <section id="areas" className="py-12 md:py-16 bg-muted/30">
+      <section id="areas" className="py-16 md:py-20 bg-muted/30">
         <div className="container">
-          <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl">{t('our_fronts', language)}</h2>
-            <p className="text-muted-foreground mt-3 max-w-[42ch]">
-              {t('our_fronts_subtitle', language)}
+          <div className="mb-10">
+            <h2 className="text-3xl md:text-4xl mb-4">O ecossistema DA.co — quatro frentes, uma só visão.</h2>
+            <p className="text-muted-foreground mt-3 max-w-[60ch]">
+              Cada divisão opera de forma autônoma, mas todas compartilham o mesmo DNA: clareza, excelência e impacto real. Juntas, formam um ecossistema integrado de soluções criativas e estratégicas.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* DAD */}
             <a href="/dad" className="block">
-            <article id="dad" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <article id="dad" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer group">
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src="/assets/divisoes/dad-workspace.webp" 
                   alt="DAD - Doug Amorim Design workspace" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -242,12 +225,12 @@ export default function Home() {
 
             {/* MRD */}
             <a href="/mrd" className="block">
-            <article id="mrd" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <article id="mrd" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer group">
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src="/assets/divisoes/mrd-permacultura.webp" 
                   alt="MR.D - Mundo Roça Digital permacultura" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -267,12 +250,12 @@ export default function Home() {
 
             {/* EAD */}
             <a href="/ead" className="block">
-            <article id="ead" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <article id="ead" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer group">
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src="/assets/divisoes/ead-classroom.webp" 
                   alt="EAD - Let's Go Beyond classroom" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -292,12 +275,12 @@ export default function Home() {
 
             {/* LAB */}
             <a href="/lab" className="block">
-            <article id="lab" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <article id="lab" className="bg-card border border-border rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer group">
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src="/assets/divisoes/lab-coworking.webp" 
                   alt="LAB - Laboratório Criativo coworking" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-6">
@@ -319,7 +302,7 @@ export default function Home() {
       </section>
 
       {/* RESULTADOS COMPROVADOS */}
-      <section id="resultados" className="py-12 md:py-16">
+      <section id="resultados" className="py-16 md:py-20">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4">Resultados Comprovados</h2>
@@ -359,7 +342,7 @@ export default function Home() {
       </section>
 
       {/* PROPOSTA DE VALOR */}
-      <section id="proposta" className="py-12 md:py-16 bg-muted/30">
+      <section id="proposta" className="py-16 md:py-20 bg-muted/30">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* O que oferecemos */}
@@ -432,10 +415,10 @@ export default function Home() {
         <div className="container">
           <div className="bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-3xl p-8 md:p-12 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-medium mb-4">
-              Pronto para transformar sua marca?
+              Vamos iniciar? Me diga o que você precisa.
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-[50ch] mx-auto">
-              Vamos conversar sobre como nossa parceria pode levar sua marca ao próximo nível.
+              Seja um projeto completo ou uma consultoria pontual, estou pronto para ouvir e construir junto com você.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="#contato">
@@ -454,7 +437,7 @@ export default function Home() {
       </section>
 
       {/* SOBRE DOUG - SIMPLIFICADO */}
-      <section id="blog" className="py-12 md:py-16 bg-muted/30">
+      <section id="blog" className="py-16 md:py-20 bg-muted/30">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
@@ -500,7 +483,7 @@ export default function Home() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="py-12 md:py-16 border-t border-border">
+      <section id="contato" className="py-16 md:py-20 border-t border-border">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>

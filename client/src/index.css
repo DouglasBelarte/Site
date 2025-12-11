@@ -234,23 +234,38 @@
   animation-delay: 0.9s;
 }
 
-/* Estilos de hover dos links do menu por seção */
+/* Paleta de Cores Oficial DA.co */
+:root {
+  /* Cores Básicas */
+  --color-black: #000000; /* CMYK 0/0/0/100 */
+  --color-gray-dark: #727376; /* CMYK 0/0/0/70 - Cinza Escuro */
+  --color-gray-light: #BDC1C1; /* CMYK 0/0/0/30 - Cinza Claro */
+  --color-orange: #F5874F; /* CMYK 0/60/80/0 - Laranja */
+  --color-yellow: #FF6400; /* CMYK 0/20/100/0 - Amarelo */
+  
+  /* Cores por Subseção */
+  --color-dad-blue: #2C6EB5; /* CMYK 90/60/0/0 - Azul DAD */
+  --color-mrd-green: #00A859; /* CMYK 100/0/100/0 - Verde MRD */
+  --color-ead-purple: #79458E; /* CMYK 60/90/0/10 - Roxo EAD */
+}
+
+/* Estilos de hover dos links do menu por seção (Laranja obrigatório) */
 [data-section="daco"] .nav-link:hover {
-  text-decoration-color: #E85D04;
+  text-decoration-color: var(--color-orange);
 }
 
 [data-section="dad"] .nav-link:hover {
-  text-decoration-color: #79458E;
+  text-decoration-color: var(--color-orange);
 }
 
 [data-section="mrd"] .nav-link:hover {
-  text-decoration-color: #4CAF50;
+  text-decoration-color: var(--color-orange);
 }
 
 [data-section="ead"] .nav-link:hover {
-  text-decoration-color: #5766CC;
+  text-decoration-color: var(--color-orange);
 }
 
 [data-section="lab"] .nav-link:hover {
-  text-decoration-color: #FACC15;
+  text-decoration-color: var(--color-yellow);
 }

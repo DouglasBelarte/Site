@@ -278,3 +278,37 @@
 - [x] Integrar imagens reais (DAD workspace, EAD classroom, MRD permacultura, LAB coworking)
 - [x] Manter header, menu e footer sem alterações (LOCKDOWN)
 - [x] Garantir responsividade mobile preservada
+
+## Home v3.0 - Atualização Completa (Prompt Cirúrgico)
+
+### Carrossel Hero (6 Slides)
+- [x] Copiar 6 imagens para /public/assets/hero/
+- [x] Implementar carrossel automático com fade transition
+- [x] Configurar auto-play 4-5 segundos
+- [x] Adicionar pontos discretos para navegação manual
+- [x] Vincular slides 3-6 às subpáginas (/dad, /mrd, /ead, /lab)
+
+### Menu Secundário
+- [x] Atualizar para: `light/dark mode . info . pt . acesso`
+- [x] Adicionar ícone visual light/dark (sem funcionalidade ainda)
+- [x] Garantir minúsculas e espaçamento " . " exato
+
+### Paleta de Cores Oficial
+- [x] Aplicar Cinza Escuro (RGB 114/115/118) para títulos e textos
+- [x] Aplicar Laranja (RGB 245/135/79) para hover e detalhes
+- [x] Atualizar cores de botões conforme paleta por subseção
+- [x] Garantir hover laranja #F5874F em todos os botões
+
+### Efeito Parallax
+- [x] Adicionar parallax suave nos cards com imagens (Nossas Frentes)
+- [x] Usar apenas CSS permitido pelo template lockdown
+- [x] Manter proporção das imagens sem distorção
+
+### Reorganização Estrutural
+- [x] Adicionar frase hero: "25 anos entregando clareza, presença e estratégia digital."
+- [x] Reorganizar bloco "Sobre Doug Amorim" (Quem sou eu + Números + Manifesto)
+- [x] Adicionar título: "O ecossistema DA.co — quatro frentes, uma só visão."
+- [x] Destacar Case "Anjos do Peito" com card especial
+- [x] Mover "Quem está por trás" após "DA.co em 4 linhas"
+- [x] Atualizar CTA final: "Vamos iniciar? Me diga o que você precisa."
+- [x] Aumentar espaçamentos entre seções
