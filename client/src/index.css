@@ -234,19 +234,19 @@
   animation-delay: 0.9s;
 }
 
-/* Paleta de Cores Oficial DA.co */
+/* Paleta de Cores Oficial DA.co - RGB Correto */
 :root {
-  /* Cores Básicas */
-  --color-black: #000000; /* CMYK 0/0/0/100 */
-  --color-gray-dark: #727376; /* CMYK 0/0/0/70 - Cinza Escuro */
-  --color-gray-light: #BDC1C1; /* CMYK 0/0/0/30 - Cinza Claro */
-  --color-orange: #F5874F; /* CMYK 0/60/80/0 - Laranja */
-  --color-yellow: #FF6400; /* CMYK 0/20/100/0 - Amarelo */
+  /* Cores Básicas - Valores RGB Oficiais */
+  --color-black: rgb(0, 0, 0); /* CMYK 0/0/0/100 - Preto */
+  --color-gray-dark: rgb(114, 115, 118); /* CMYK 0/0/0/70 - Cinza Escuro (textos, títulos, menus, linhas) */
+  --color-gray-light: rgb(189, 191, 193); /* CMYK 0/0/0/30 - Cinza Claro */
+  --color-orange: rgb(245, 135, 79); /* CMYK 0/60/80/0 - Laranja (detalhes, hover, sombras) */
+  --color-yellow: rgb(255, 100, 0); /* CMYK 0/20/100/0 - Amarelo (LAB apenas) */
   
-  /* Cores por Subseção */
-  --color-dad-blue: #2C6EB5; /* CMYK 90/60/0/0 - Azul DAD */
-  --color-mrd-green: #00A859; /* CMYK 100/0/100/0 - Verde MRD */
-  --color-ead-purple: #79458E; /* CMYK 60/90/0/10 - Roxo EAD */
+  /* Cores por Subseção - Valores RGB Oficiais */
+  --color-dad-blue: rgb(44, 110, 181); /* CMYK 90/60/0/0 - Azul DAD */
+  --color-mrd-green: rgb(0, 168, 89); /* CMYK 100/0/100/0 - Verde MRD */
+  --color-ead-purple: rgb(121, 69, 142); /* CMYK 60/90/0/10 - Roxo EAD */
 }
 
 /* Estilos de hover dos links do menu por seção (Laranja obrigatório) */
@@ -268,4 +268,130 @@
 
 [data-section="lab"] .nav-link:hover {
   text-decoration-color: var(--color-yellow);
+}
+
+/* Aplicação Global da Paleta de Cores */
+
+/* Textos, Títulos e Menus - Cinza Escuro em todas as páginas */
+[data-section="daco"] h1,
+[data-section="daco"] h2,
+[data-section="daco"] h3,
+[data-section="daco"] h4,
+[data-section="daco"] h5,
+[data-section="daco"] h6,
+[data-section="daco"] p,
+[data-section="daco"] .nav-link {
+  color: var(--color-gray-dark);
+}
+
+/* Botões e CTAs - Laranja para DA.co (Home) */
+[data-section="daco"] button:not(.outline),
+[data-section="daco"] .btn-primary {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+[data-section="daco"] button:hover:not(.outline),
+[data-section="daco"] .btn-primary:hover {
+  background-color: var(--color-orange);
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(245, 135, 79, 0.3);
+}
+
+/* DAD - Azul + Laranja */
+[data-section="dad"] h1,
+[data-section="dad"] h2,
+[data-section="dad"] h3,
+[data-section="dad"] h4,
+[data-section="dad"] h5,
+[data-section="dad"] h6,
+[data-section="dad"] p,
+[data-section="dad"] .nav-link {
+  color: var(--color-gray-dark);
+}
+
+[data-section="dad"] .accent-color,
+[data-section="dad"] .primary-color {
+  color: var(--color-dad-blue);
+}
+
+[data-section="dad"] button:hover,
+[data-section="dad"] a:hover {
+  color: var(--color-orange);
+}
+
+/* MRD - Verde + Laranja */
+[data-section="mrd"] h1,
+[data-section="mrd"] h2,
+[data-section="mrd"] h3,
+[data-section="mrd"] h4,
+[data-section="mrd"] h5,
+[data-section="mrd"] h6,
+[data-section="mrd"] p,
+[data-section="mrd"] .nav-link {
+  color: var(--color-gray-dark);
+}
+
+[data-section="mrd"] .accent-color,
+[data-section="mrd"] .primary-color {
+  color: var(--color-mrd-green);
+}
+
+[data-section="mrd"] button:hover,
+[data-section="mrd"] a:hover {
+  color: var(--color-orange);
+}
+
+/* EAD - Roxo + Laranja */
+[data-section="ead"] h1,
+[data-section="ead"] h2,
+[data-section="ead"] h3,
+[data-section="ead"] h4,
+[data-section="ead"] h5,
+[data-section="ead"] h6,
+[data-section="ead"] p,
+[data-section="ead"] .nav-link {
+  color: var(--color-gray-dark);
+}
+
+[data-section="ead"] .accent-color,
+[data-section="ead"] .primary-color {
+  color: var(--color-ead-purple);
+}
+
+[data-section="ead"] button:hover,
+[data-section="ead"] a:hover {
+  color: var(--color-orange);
+}
+
+/* LAB - Preto + Amarelo */
+[data-section="lab"] {
+  background-color: var(--color-black);
+}
+
+[data-section="lab"] h1,
+[data-section="lab"] h2,
+[data-section="lab"] h3,
+[data-section="lab"] h4,
+[data-section="lab"] h5,
+[data-section="lab"] h6,
+[data-section="lab"] p,
+[data-section="lab"] .nav-link {
+  color: var(--color-gray-light);
+}
+
+[data-section="lab"] .accent-color,
+[data-section="lab"] .primary-color {
+  color: var(--color-yellow);
+}
+
+[data-section="lab"] button:hover,
+[data-section="lab"] a:hover {
+  color: var(--color-yellow);
+}
+
+/* Linhas e Bordas - Cinza Escuro */
+.border-card,
+.border-section {
+  border-color: var(--color-gray-dark);
 }

@@ -31,7 +31,7 @@ export default function MRD() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl">
-            <div className="inline-block bg-[#4CAF50]/10 border border-[#4CAF50]/30 rounded-full px-4 py-2 text-sm font-medium text-[#4CAF50] mb-6">
+            <div className="inline-block bg-[rgb(0,168,89)]/10 border border-[rgb(0,168,89)]/30 rounded-full px-4 py-2 text-sm font-medium text-[rgb(0,168,89)] mb-6">
               {t.mrd_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -43,16 +43,18 @@ export default function MRD() {
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
-                className="rounded-full"
-                style={{ backgroundColor: "#4CAF50" }}
+                className="rounded-full hover:opacity-90 transition-all"
+                style={{ backgroundColor: "rgb(0, 168, 89)" }}
+                onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 4px 12px rgba(245, 135, 79, 0.3)'}
+                onMouseLeave={(e) => e.currentTarget.style.boxShadow = 'none'}
               >
                 {t.mrd_cta}
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full"
-                style={{ borderColor: "#4CAF50", color: "#4CAF50" }}
+                className="rounded-full hover:border-[rgb(245,135,79)] hover:text-[rgb(245,135,79)] transition-all"
+                style={{ borderColor: "rgb(0, 168, 89)", color: "rgb(0, 168, 89)" }}
               >
                 {t.mrd_history}
               </Button>
@@ -76,7 +78,7 @@ export default function MRD() {
                 gerando alimentos saudáveis e regenerando o solo.
               </p>
             </div>
-            <div className="aspect-video bg-gradient-to-br from-[#4CAF50]/20 to-[#4CAF50]/5 rounded-2xl"></div>
+            <div className="aspect-video bg-gradient-to-br from-[rgb(0,168,89)]/20 to-[rgb(0,168,89)]/5 rounded-2xl"></div>
           </div>
         </div>
       </section>
@@ -91,7 +93,7 @@ export default function MRD() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#4CAF50]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🌱</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Plantas Nativas</h3>
@@ -101,7 +103,7 @@ export default function MRD() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#4CAF50]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🦋</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Polinizadores</h3>
@@ -111,7 +113,7 @@ export default function MRD() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#4CAF50]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🌳</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Agrofloresta</h3>

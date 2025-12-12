@@ -71,17 +71,17 @@ export function HeroCarousel() {
   }, [emblaApi]);
 
   return (
-    <div className="relative w-full overflow-hidden bg-gray-100">
+    <div className="relative w-screen overflow-hidden bg-gray-100" style={{ marginLeft: 'calc(-50vw + 50%)' }}>
       <div className="embla" ref={emblaRef}>
         <div className="embla__container flex">
           {slides.map((slide) => {
             const content = (
               <div className="embla__slide flex-[0_0_100%] min-w-0">
-                <div className="relative w-full aspect-[21/9]">
+                <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh]">
                   <img
                     src={slide.image}
                     alt={slide.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>

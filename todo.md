@@ -312,3 +312,23 @@
 - [x] Mover "Quem está por trás" após "DA.co em 4 linhas"
 - [x] Atualizar CTA final: "Vamos iniciar? Me diga o que você precisa."
 - [x] Aumentar espaçamentos entre seções
+
+## Correção Carrossel Hero e Paleta de Cores Global
+
+### Carrossel Hero - Responsividade
+- [x] Corrigir largura do carrossel para 100% da tela (full-width)
+- [x] Garantir que imagens se ajustem responsivamente às dimensões da tela
+- [x] Testar em diferentes resoluções (mobile, tablet, desktop)
+
+### Paleta de Cores Oficial - Aplicação Global
+- [x] Atualizar variáveis CSS no index.css com valores RGB corretos
+- [x] Aplicar Cinza Escuro (RGB 114/115/118) em todos os textos, títulos, menus e linhas
+- [x] Aplicar Laranja (RGB 245/135/79) em detalhes, hover e sombras de botões
+- [x] Aplicar cores específicas por página:
+  - [x] HOME (DA.co): Cinza Escuro + Laranja
+  - [x] DESIGN (DAD): Azul (RGB 44/110/181) + Laranja
+  - [x] MUNDO ROÇA (MRD): Verde (RGB 0/168/89) + Laranja
+  - [x] ESTUDO (EAD): Roxo (RGB 121/69/142) + Laranja
+  - [x] LAB: Preto (RGB 0/0/0) + Amarelo (RGB 255/100/0)
+- [x] Testar hover em todos os botões e links
+- [x] Verificar contraste de cores para acessibilidade

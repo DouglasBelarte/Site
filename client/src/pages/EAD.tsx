@@ -31,7 +31,7 @@ export default function EAD() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl">
-            <div className="inline-block bg-[#5766CC]/10 border border-[#5766CC]/30 rounded-full px-4 py-2 text-sm font-medium text-[#5766CC] mb-6">
+            <div className="inline-block bg-[rgb(121,69,142)]/10 border border-[rgb(121,69,142)]/30 rounded-full px-4 py-2 text-sm font-medium text-[rgb(121,69,142)] mb-6">
               {t.ead_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -43,16 +43,18 @@ export default function EAD() {
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
-                className="rounded-full"
-                style={{ backgroundColor: "#5766CC" }}
+                className="rounded-full hover:opacity-90 transition-all"
+                style={{ backgroundColor: "rgb(121, 69, 142)" }}
+                onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 4px 12px rgba(245, 135, 79, 0.3)'}
+                onMouseLeave={(e) => e.currentTarget.style.boxShadow = 'none'}
               >
                 {t.ead_cta}
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full"
-                style={{ borderColor: "#5766CC", color: "#5766CC" }}
+                className="rounded-full hover:border-[rgb(245,135,79)] hover:text-[rgb(245,135,79)] transition-all"
+                style={{ borderColor: "rgb(121, 69, 142)", color: "rgb(121, 69, 142)" }}
               >
                 {t.ead_schedule}
               </Button>
@@ -76,7 +78,7 @@ export default function EAD() {
                 e leva para casa não só conhecimento, mas mudança de perspectiva.
               </p>
             </div>
-            <div className="aspect-video bg-gradient-to-br from-[#5766CC]/20 to-[#5766CC]/5 rounded-2xl"></div>
+            <div className="aspect-video bg-gradient-to-br from-[rgb(121,69,142)]/20 to-[rgb(121,69,142)]/5 rounded-2xl"></div>
           </div>
         </div>
       </section>
@@ -87,7 +89,7 @@ export default function EAD() {
           <h2 className="text-3xl md:text-4xl mb-12">O que oferecemos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#5766CC]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[rgb(121,69,142)]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📚</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Workshops presenciais</h3>
@@ -97,7 +99,7 @@ export default function EAD() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#5766CC]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[rgb(121,69,142)]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">✈️</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Experiência guiada / viagem criativa</h3>
@@ -107,7 +109,7 @@ export default function EAD() {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="w-12 h-12 bg-[#5766CC]/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-[rgb(121,69,142)]/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
               <h3 className="text-xl font-medium mb-3">Formação prática de comunicação</h3>
