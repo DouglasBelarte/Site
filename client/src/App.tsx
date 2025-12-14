@@ -11,6 +11,8 @@ import MRD from "./pages/MRD";
 import EAD from "./pages/EAD";
 import LAB from "./pages/LAB";
 import ManifestoDAD from "./pages/ManifestoDAD";
+import Login from "./pages/Login";
+import Info from "./pages/Info";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -22,6 +24,8 @@ function Router() {
       <Route path="/mrd" component={MRD} />
       <Route path="/ead" component={EAD} />
       <Route path="/lab" component={LAB} />
+      <Route path="/login" component={Login} />
+      <Route path="/info" component={Info} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

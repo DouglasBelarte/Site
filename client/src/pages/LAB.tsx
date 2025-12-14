@@ -33,7 +33,7 @@ export default function LAB() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl">
-            <div className="inline-block bg-[rgb(255,100,0)]/10 border border-[rgb(255,100,0)]/30 rounded-full px-4 py-2 text-sm font-medium text-[rgb(255,100,0)] mb-6">
+            <div className="inline-block bg-[rgb(255,204,41)]/10 border border-[rgb(255,204,41)]/30 rounded-full px-4 py-2 text-sm font-medium text-[rgb(255,204,41)] mb-6">
               {t.lab_subtitle}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -46,7 +46,7 @@ export default function LAB() {
               <Button
                 size="lg"
                 className="rounded-full text-black hover:opacity-90 transition-all"
-                style={{ backgroundColor: "rgb(255, 100, 0)" }}
+                style={{ backgroundColor: "rgb(255, 204, 41)" }}
               >
                 {t.lab_cta}
               </Button>
@@ -54,7 +54,7 @@ export default function LAB() {
                 variant="outline"
                 size="lg"
                 className="rounded-full hover:opacity-80 transition-all"
-                style={{ borderColor: "rgb(255, 100, 0)", color: "rgb(255, 100, 0)" }}
+                style={{ borderColor: "rgb(255, 204, 41)", color: "rgb(255, 204, 41)" }}
               >
                 {t.lab_mission}
               </Button>
@@ -86,7 +86,7 @@ export default function LAB() {
           <h2 className="text-3xl md:text-4xl mb-12">Sites experimentais</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-8">
-              <div className="inline-block bg-[rgb(255,100,0)]/20 px-3 py-1 rounded-full text-xs font-medium text-[rgb(255,100,0)] mb-4">
+              <div className="inline-block bg-[rgb(255,204,41)]/20 px-3 py-1 rounded-full text-xs font-medium text-[rgb(255,204,41)] mb-4">
                 EM DESENVOLVIMENTO
               </div>
               <h3 className="text-2xl font-medium mb-3">Busca Avançada + WebAR</h3>
@@ -95,14 +95,14 @@ export default function LAB() {
                 Experimente produtos em 3D antes de comprar.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-[rgb(255,100,0)]/10 text-[rgb(255,100,0)] px-2 py-1 rounded">WebAR</span>
-                <span className="text-xs bg-[rgb(255,100,0)]/10 text-[rgb(255,100,0)] px-2 py-1 rounded">IA Search</span>
-                <span className="text-xs bg-[rgb(255,100,0)]/10 text-[rgb(255,100,0)] px-2 py-1 rounded">3D</span>
+                <span className="text-xs bg-[rgb(255,204,41)]/10 text-[rgb(255,204,41)] px-2 py-1 rounded">WebAR</span>
+                <span className="text-xs bg-[rgb(255,204,41)]/10 text-[rgb(255,204,41)] px-2 py-1 rounded">IA Search</span>
+                <span className="text-xs bg-[rgb(255,204,41)]/10 text-[rgb(255,204,41)] px-2 py-1 rounded">3D</span>
               </div>
             </div>
 
             <div className="bg-white/5 border border-[#FACC15]/30 rounded-2xl p-8">
-              <div className="inline-block bg-[rgb(255,100,0)]/20 px-3 py-1 rounded-full text-xs font-medium text-[rgb(255,100,0)] mb-4">
+              <div className="inline-block bg-[rgb(255,204,41)]/20 px-3 py-1 rounded-full text-xs font-medium text-[rgb(255,204,41)] mb-4">
                 BETA
               </div>
               <h3 className="text-2xl font-medium mb-3">Orlean — Navegação Inteligente</h3>
@@ -111,8 +111,8 @@ export default function LAB() {
                 e adapta a interface em tempo real.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-[rgb(255,100,0)]/10 text-[rgb(255,100,0)] px-2 py-1 rounded">Machine Learning</span>
-                <span className="text-xs bg-[rgb(255,100,0)]/10 text-[rgb(255,100,0)] px-2 py-1 rounded">UX Adaptativo</span>
+                <span className="text-xs bg-[rgb(255,204,41)]/10 text-[rgb(255,204,41)] px-2 py-1 rounded">Machine Learning</span>
+                <span className="text-xs bg-[rgb(255,204,41)]/10 text-[rgb(255,204,41)] px-2 py-1 rounded">UX Adaptativo</span>
               </div>
             </div>
           </div>

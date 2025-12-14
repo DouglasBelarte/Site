@@ -76,13 +76,15 @@ export function HeroCarousel() {
         <div className="embla__container flex">
           {slides.map((slide) => {
             const content = (
-              <div className="embla__slide flex-[0_0_100%] min-w-0">
-                <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh]">
+              <div className="embla__slide flex-[0_0_100%] min-w-0 group cursor-pointer">
+                <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] overflow-hidden">
                   <img
                     src={slide.image}
                     alt={slide.alt}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
                   />
+                  {/* Overlay escuro no hover */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
                 </div>
               </div>
             );

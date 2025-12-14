@@ -241,7 +241,7 @@
   --color-gray-dark: rgb(114, 115, 118); /* CMYK 0/0/0/70 - Cinza Escuro (textos, títulos, menus, linhas) */
   --color-gray-light: rgb(189, 191, 193); /* CMYK 0/0/0/30 - Cinza Claro */
   --color-orange: rgb(245, 135, 79); /* CMYK 0/60/80/0 - Laranja (detalhes, hover, sombras) */
-  --color-yellow: rgb(255, 100, 0); /* CMYK 0/20/100/0 - Amarelo (LAB apenas) */
+  --color-yellow: rgb(255, 204, 41); /* CMYK 0/20/100/0 - Amarelo (LAB apenas) */
   
   /* Cores por Subseção - Valores RGB Oficiais */
   --color-dad-blue: rgb(44, 110, 181); /* CMYK 90/60/0/0 - Azul DAD */

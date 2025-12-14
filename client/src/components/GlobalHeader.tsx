@@ -88,33 +88,42 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
             </div>
           </div>
 
-          {/* Direita: light/dark mode . info . pt . acesso */}
+          {/* Direita: modo claro/escuro . pt/en/fr . acesso . info */}
           <div className="hidden lg:flex items-center gap-3 text-sm lowercase">
             <button 
-              className="flex items-center gap-1 hover:text-[#F5874F] transition-colors"
-              onClick={() => alert("Light/Dark mode em breve")}
+              className="hover:text-[#F5874F] transition-colors"
+              onClick={() => alert("Modo claro/escuro em breve")}
               title="Alternar tema"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-              <span>light/dark mode</span>
+              modo claro / modo escuro
             </button>
             <span className="text-muted-foreground">.</span>
-            <a href="/#contato" className="hover:text-[#F5874F] transition-colors">
-              info
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="hover:text-[#F5874F] transition-colors">
+                  {language.toLowerCase()}
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem onClick={() => setLanguage("PT")}>
+                  pt
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setLanguage("EN")}>
+                  en
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setLanguage("FR")}>
+                  fr
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <span className="text-muted-foreground">.</span>
+            <a href="/login" className="hover:text-[#F5874F] transition-colors">
+              acesso
             </a>
             <span className="text-muted-foreground">.</span>
-            <span className="hover:text-[#F5874F] transition-colors cursor-pointer">
-              pt
-            </span>
-            <span className="text-muted-foreground">.</span>
-            <button
-              className="hover:text-[#F5874F] transition-colors"
-              onClick={() => alert("Login em breve")}
-            >
-              acesso
-            </button>
+            <a href="/info" className="hover:text-[#F5874F] transition-colors">
+              info
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

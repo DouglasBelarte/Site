@@ -9,11 +9,22 @@ export function Breadcrumb() {
   const breadcrumbBg = isLabPage ? "bg-[#373435]" : "bg-background";
   const borderColor = isLabPage ? "border-[#373435]" : "border-white";
   
+  // Mapeamento de labels personalizados
+  const labelMap: Record<string, string> = {
+    "/": "Home Doug Co",
+    "/dad": "Design",
+    "/mrd": "Mundo Roça",
+    "/ead": "Learning and Teaching",
+    "/lab": "Laboratório Criativo",
+    "/info": "Informações e Contato",
+    "/login": "Acesso",
+  };
+
   const breadcrumbItems = [
-    { label: "HOME", href: "/" },
+    { label: "Home Doug Co", href: "/" },
     ...pathSegments.map((segment, index) => {
       const href = "/" + pathSegments.slice(0, index + 1).join("/");
-      const label = segment.toUpperCase();
+      const label = labelMap[href] || segment.charAt(0).toUpperCase() + segment.slice(1);
       return { label, href };
     }),
   ];

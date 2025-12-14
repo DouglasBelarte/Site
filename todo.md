@@ -332,3 +332,85 @@
   - [x] LAB: Preto (RGB 0/0/0) + Amarelo (RGB 255/100/0)
 - [x] Testar hover em todos os botões e links
 - [x] Verificar contraste de cores para acessibilidade
+
+## Implementação Prompt Final - Correções e Funcionalidades
+
+### 1. Breadcrumbs - Correções Globais
+- [x] Atualizar breadcrumb Home para "Home Doug Co"
+- [x] Atualizar breadcrumb Design (DAD) para "Design"
+- [x] Atualizar breadcrumb Mundo Roça (MRD) para "Mundo Roça"
+- [x] Atualizar breadcrumb EAD para "Learning and Teaching"
+- [x] Atualizar breadcrumb LAB para "Laboratório Criativo"
+- [x] Criar breadcrumb INFO para "Informações e Contato"
+
+### 2. Header - Menu Secundário e Funcionalidades
+- [x] Corrigir menu secundário: modo claro/escuro, pt/en/fr, acesso, info
+- [x] Reativar sistema multilíngue PT/EN/FR completo
+- [ ] Implementar modo claro/escuro funcional
+- [ ] Aplicar logomarcas correspondentes (light e dark) por modo
+- [x] Criar página /login com formulário básico
+
+### 3. Paleta de Cores - Correções por Subpágina
+- [x] LAB: substituir elementos laranja por amarelo (RGB 255/100/0)
+- [x] Verificar todas as páginas mantêm paletas oficiais
+
+### 4. Carrossel Home - Funcionalidades
+- [x] Implementar transição animada entre imagens
+- [x] Adicionar hover com zoom suave nas imagens
+- [x] Implementar cliques: DAD→/dad, MRD→/mrd, EAD→/ead, LAB→/lab
+- [ ] Slides Light/Dark Mode alternam tema do site
+
+### 5. LAB - Versão Light Mode
+- [ ] Criar clone da página LAB para modo claro
+- [ ] Aplicar logomarca modo claro
+- [ ] Aplicar paleta light (fundo branco, textos escuros)
+- [ ] Manter mesma estrutura e conteúdo
+- [ ] Conferir caminhos dos arquivos
+
+### 6. Menu Dropdown Inteligente (Home)
+- [ ] Implementar dropdown no hover sobre Design, Mundo Roça, EAD, LAB
+- [ ] Header estende background ao abrir dropdown
+- [ ] Funcionar em modo light e dark
+
+### 7. Página Clipping (DAD)
+- [ ] Criar página /dad/clipping
+- [ ] Seguir layout de https://yuzjlnbg.manus.space/
+- [ ] Implementar Hero
+- [ ] Criar timeline 2019-2023
+- [ ] Adicionar cards institucionais
+- [ ] Incluir logos de veículos parceiros
+
+### 8. Página INFO - Criação Completa
+- [x] Criar página /info/ completa
+- [x] Implementar versão light + dark
+- [x] Adicionar suporte trilíngue (PT/EN/FR)
+- [x] Usar paleta padrão da Home
+- [x] Criar breadcrumb "Informações e Contato"
+- [x] Implementar Hero simples com título e subtítulo
+- [x] Criar formulário com seleção de áreas (DAD, MRD, EAD, LAB, Geral)
+- [x] Configurar envio para info@dougamorim.com
+- [x] Adicionar botão WhatsApp (+55 11 97581-3741)
+- [x] Incluir placeholder para localização e links institucionais
+- [ ] Criar seção resumida na Home com botão "INFO / Contato"
+
+### 9. Ícones Pilares do Projeto (Home)
+- [ ] Atualizar todos os ícones para estilo minimalista clean
+- [ ] Aplicar preto e branco (monocromia refinada)
+- [ ] Usar formato vetorizado (SVG preferencial)
+- [ ] Garantir consistência (mesma espessura, bordas, proporção)
+- [ ] Gravar conhecimento no template para futuros ícones
+
+### 10. Finalização e Testes
+- [ ] Revisar responsividade em todas as páginas
+- [ ] Validar navegação completa
+- [ ] Checar breadcrumbs em todas as páginas
+- [ ] Testar alternância dark/light mode
+- [ ] Verificar caminhos de todas as imagens
+- [ ] Testar formulários (login, info)
+- [ ] Validar links do carrossel
+- [ ] Testar menu dropdown
+
+## Correção Urgente - Cor Amarela LAB
+- [x] Corrigir cor amarela de RGB 255/100/0 para RGB 255/204/41 no index.css
+- [x] Atualizar todos os elementos amarelos na página LAB para RGB 255/204/41
+- [x] Verificar e atualizar qualquer referência à cor amarela incorreta
