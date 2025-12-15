@@ -414,3 +414,30 @@
 - [x] Corrigir cor amarela de RGB 255/100/0 para RGB 255/204/41 no index.css
 - [x] Atualizar todos os elementos amarelos na página LAB para RGB 255/204/41
 - [x] Verificar e atualizar qualquer referência à cor amarela incorreta
+
+## Próximos Passos - Funcionalidades Avançadas
+
+### Modo Claro/Escuro Funcional
+- [x] Habilitar switchable no ThemeProvider
+- [x] Conectar botão do menu secundário ao useTheme hook
+- [ ] Atualizar logomarcas conforme tema (light/dark)
+- [x] Testar alternância em todas as páginas
+- [x] Verificar persistência do tema escolhido
+
+### Menu Dropdown Inteligente (Home)
+- [x] Criar componente DropdownNav para submenus
+- [x] Adicionar submenus para Design, Mundo Roça, EAD, LAB
+- [x] Implementar hover para abrir dropdown
+- [x] Estender background do header ao abrir
+- [x] Garantir funcionamento em light/dark mode
+- [ ] Testar responsividade mobile
+
+### Página Clipping (DAD)
+- [x] Criar arquivo /dad/clipping.tsx
+- [x] Implementar Hero section
+- [x] Criar timeline 2019-2023 com eventos
+- [x] Adicionar cards institucionais
+- [x] Incluir logos de veículos parceiros
+- [x] Seguir layout de https://yuzjlnbg.manus.space/
+- [x] Adicionar rota no App.tsx
+- [x] Testar navegação e responsividade

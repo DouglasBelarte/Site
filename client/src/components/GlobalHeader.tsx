@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useTheme } from "@/contexts/ThemeContext";
 
 interface MenuItem {
   label: string;
@@ -24,6 +25,7 @@ interface GlobalHeaderProps {
 export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
 
   const getLogoPath = () => {
     const logoMap: Record<typeof section, string> = {
@@ -75,15 +77,68 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                 {pageTitles[section]}
               </div>
               <nav className="flex items-center gap-4 text-sm font-medium">
-                {menuItems.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity"
-                  >
-                    {item.label.toLowerCase()}
-                  </a>
-                ))}
+                {menuItems.map((item) => {
+                  // Menu dropdown apenas na Home para Design, Mundo Roça, EAD, LAB
+                  const hasDropdown = section === 'daco' && ['design', 'mundo roça', 'ead', 'lab'].includes(item.label.toLowerCase());
+                  
+                  if (hasDropdown) {
+                    const dropdownItems: Record<string, Array<{label: string, href: string}>> = {
+                      'design': [
+                        { label: 'Manifesto', href: '/dad/manifesto' },
+                        { label: 'Portfólio', href: '/dad#portfolio' },
+                        { label: 'Clipping', href: '/dad/clipping' },
+                      ],
+                      'mundo roça': [
+                        { label: 'Permacultura', href: '/mrd#permacultura' },
+                        { label: 'Fauna e Flora', href: '/mrd#fauna-flora' },
+                        { label: 'Comunidade', href: '/mrd#comunidade' },
+                      ],
+                      'ead': [
+                        { label: 'Conteúdo', href: '/ead#conteudo' },
+                        { label: 'Biblioteca', href: '/ead#biblioteca' },
+                      ],
+                      'lab': [
+                        { label: 'Missão', href: '/lab#missao' },
+                        { label: 'Sites', href: '/lab#sites' },
+                        { label: 'Aplicativos', href: '/lab#aplicativos' },
+                      ],
+                    };
+                    
+                    const items = dropdownItems[item.label.toLowerCase()] || [];
+                    
+                    return (
+                      <DropdownMenu key={item.href}>
+                        <DropdownMenuTrigger asChild>
+                          <a
+                            href={item.href}
+                            className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity cursor-pointer"
+                          >
+                            {item.label.toLowerCase()}
+                          </a>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                          {items.map((subItem) => (
+                            <DropdownMenuItem key={subItem.href} asChild>
+                              <a href={subItem.href} className="cursor-pointer">
+                                {subItem.label}
+                              </a>
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    );
+                  }
+                  
+                  return (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity"
+                    >
+                      {item.label.toLowerCase()}
+                    </a>
+                  );
+                })}
               </nav>
             </div>
           </div>
@@ -92,10 +147,10 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
           <div className="hidden lg:flex items-center gap-3 text-sm lowercase">
             <button 
               className="hover:text-[#F5874F] transition-colors"
-              onClick={() => alert("Modo claro/escuro em breve")}
+              onClick={toggleTheme}
               title="Alternar tema"
             >
-              modo claro / modo escuro
+              {theme === 'light' ? 'tema escuro' : 'tema claro'}
             </button>
             <span className="text-muted-foreground">.</span>
             <DropdownMenu>
