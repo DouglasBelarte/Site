@@ -441,3 +441,33 @@
 - [x] Seguir layout de https://yuzjlnbg.manus.space/
 - [x] Adicionar rota no App.tsx
 - [x] Testar navegação e responsividade
+
+## LOCK MODE - Implementação Final
+
+### Tema Escuro - Matriz LAB
+- [x] Aplicar tema escuro LAB como matriz global
+- [x] Header cinza sólido (#2e2e2e), corpo preto (#000)
+- [x] Tema claro: header (#f5f5f5), corpo branco (#fff)
+- [x] Implementar detecção automática de tema do sistema
+- [x] Adicionar listener para mudança de preferência do sistema
+
+### Logos Padronizados
+- [x] Extrair logos dos ZIPs (Dark e Light MODE)
+- [x] Aplicar frame invisível 200x85px
+- [x] Centralizar logos em todas as páginas
+- [x] Alternar logos conforme tema ativo
+
+### Header e Menu
+- [x] Remover arredondamento do dropdown
+- [x] Hover apenas por cor/opacidade (sem underline)
+- [ ] Subpáginas: primeiro item "Início"
+- [x] Home exclusivo da Home DAco
+
+### Breadcrumb
+- [x] Sempre iniciar com "Home Doug Co."
+
+### Tradução Automática PT/EN/FR
+- [x] Implementar detecção automática de idioma do navegador
+- [x] Aplicar tradução automática sem reload
+- [x] Sincronizar com seletor de idioma do menu
+- [x] Persistir preferência no localStorage

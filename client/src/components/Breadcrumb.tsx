@@ -11,7 +11,7 @@ export function Breadcrumb() {
   
   // Mapeamento de labels personalizados
   const labelMap: Record<string, string> = {
-    "/": "Home Doug Co",
+    "/": "Home Doug Co.",
     "/dad": "Design",
     "/mrd": "Mundo Roça",
     "/ead": "Learning and Teaching",
@@ -21,7 +21,7 @@ export function Breadcrumb() {
   };
 
   const breadcrumbItems = [
-    { label: "Home Doug Co", href: "/" },
+    { label: "Home Doug Co.", href: "/" },
     ...pathSegments.map((segment, index) => {
       const href = "/" + pathSegments.slice(0, index + 1).join("/");
       const label = labelMap[href] || segment.charAt(0).toUpperCase() + segment.slice(1);

@@ -27,16 +27,17 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
   const { language, setLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
 
+  // LOCK MODE - Logos por tema (200x85 frame invisível)
   const getLogoPath = () => {
+    const themeFolder = theme === 'dark' ? 'light' : 'dark'; // dark theme usa logos claros (light), light theme usa logos escuros (dark)
     const logoMap: Record<typeof section, string> = {
-      daco: "DAco Logo DACO in white.png",
-      dad: "DAco Logo DAD in white.png",
-      mrd: "DAco Logo MRD in white.png",
-      ead: "DAco Logo EAD in white.png",
-      lab: "DAco Logo LAB in white.png",
+      daco: `${themeFolder}/daco-${themeFolder}.png`,
+      dad: `${themeFolder}/dad-${themeFolder}.png`,
+      mrd: `${themeFolder}/mrd-${themeFolder}.png`,
+      ead: `${themeFolder}/ead-${themeFolder}.png`,
+      lab: `${themeFolder}/lab-${themeFolder}.png`,
     };
-    // Cache-buster: adiciona versão como query string
-    const version = "v1.2.0";
+    const version = "v2.0.0";
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
@@ -63,8 +64,8 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                 src={getLogoPath()}
                 alt={logo}
                 style={{ 
-                  width: section === "daco" ? "200px" : "100px", 
-                  height: section === "daco" ? "85px" : "auto", 
+                  width: "200px", 
+                  height: "85px", 
                   objectFit: "contain" 
                 }}
               />
@@ -111,12 +112,12 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                         <DropdownMenuTrigger asChild>
                           <a
                             href={item.href}
-                            className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity cursor-pointer"
+                            className="nav-link lowercase hover:opacity-70 transition-opacity cursor-pointer"
                           >
                             {item.label.toLowerCase()}
                           </a>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent>
+                        <DropdownMenuContent className="rounded-none">
                           {items.map((subItem) => (
                             <DropdownMenuItem key={subItem.href} asChild>
                               <a href={subItem.href} className="cursor-pointer">
@@ -133,7 +134,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                     <a
                       key={item.href}
                       href={item.href}
-                      className="nav-link lowercase hover:opacity-70 hover:underline transition-opacity"
+                      className="nav-link lowercase hover:opacity-70 transition-opacity"
                     >
                       {item.label.toLowerCase()}
                     </a>
@@ -159,7 +160,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
                   {language.toLowerCase()}
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent className="rounded-none">
                 <DropdownMenuItem onClick={() => setLanguage("PT")}>
                   pt
                 </DropdownMenuItem>
