@@ -41,8 +41,9 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
     return `/assets/logos/${logoMap[section]}?${version}`;
   };
 
-  const headerBg = section === "lab" ? "bg-[#373435]" : "bg-background";
-  const borderColor = section === "lab" ? "border-[#373435]" : "border-white";
+  // LOCK MODE: usar variável CSS para header background
+  const headerBg = "bg-[hsl(var(--header-bg))]";
+  const borderColor = "border-border";
   
   const pageTitles: Record<typeof section, string> = {
     daco: "Doug Amorim Co.",

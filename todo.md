@@ -471,3 +471,17 @@
 - [x] Aplicar tradução automática sem reload
 - [x] Sincronizar com seletor de idioma do menu
 - [x] Persistir preferência no localStorage
+
+## Correções Urgentes - Dark Mode e Multilíngue
+
+### Background Dark Mode
+- [x] Aplicar header cinza #2e2e2e em todas as páginas no dark mode
+- [x] Aplicar body preto #000 em todas as páginas no dark mode
+- [x] Atualizar GlobalHeader para usar variável CSS --header-bg
+- [x] Testar em todas as páginas (Home, DAD, MRD, EAD, LAB, Info, Login, Clipping)
+
+### Sistema Multilíngue
+- [x] Verificar traduções em todas as páginas
+- [x] Corrigir páginas que não respondem à mudança de idioma (7/11 páginas com suporte)
+- [x] Garantir que dropdown de idioma funciona corretamente
+- [x] Testar alternância PT/EN/FR em tempo real

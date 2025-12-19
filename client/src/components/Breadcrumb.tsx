@@ -5,9 +5,9 @@ export function Breadcrumb() {
   const [location] = useLocation();
   
   const pathSegments = location.split("/").filter(Boolean);
-  const isLabPage = location.startsWith("/lab");
-  const breadcrumbBg = isLabPage ? "bg-[#373435]" : "bg-background";
-  const borderColor = isLabPage ? "border-[#373435]" : "border-white";
+  // LOCK MODE: usar variável CSS para breadcrumb background
+  const breadcrumbBg = "bg-[hsl(var(--header-bg))]";
+  const borderColor = "border-border";
   
   // Mapeamento de labels personalizados
   const labelMap: Record<string, string> = {
