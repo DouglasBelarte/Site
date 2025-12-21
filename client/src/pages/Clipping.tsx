@@ -5,7 +5,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 
 export default function Clipping() {
   const dadMenuItems = [
-    { label: "Home", href: "/dad" },
+    { label: "Início", href: "/dad" },
     { label: "Manifesto", href: "/dad/manifesto" },
     { label: "Portfólio", href: "/dad#portfolio" },
     { label: "Clipping", href: "/dad/clipping" },

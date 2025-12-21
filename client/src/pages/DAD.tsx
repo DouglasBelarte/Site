@@ -10,7 +10,7 @@ export default function DAD() {
   const { language } = useLanguage();
   const t = translations[language];
   const dadMenuItems = [
-    { label: "Home", href: "/dad" },
+    { label: "Início", href: "/dad" },
     { label: "Manifesto", href: "/dad/manifesto" },
     { label: "Portfólio", href: "/dad#portfolio" },
     { label: "Clipping", href: "/dad#clipping" },

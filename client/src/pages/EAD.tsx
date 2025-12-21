@@ -10,7 +10,7 @@ export default function EAD() {
   const { language } = useLanguage();
   const t = translations[language];
   const eadMenuItems = [
-    { label: "Home", href: "/ead" },
+    { label: "Início", href: "/ead" },
     { label: "Conteúdo", href: "/ead#conteudo" },
     { label: "Biblioteca", href: "/ead#biblioteca" },
   ];

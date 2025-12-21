@@ -10,6 +10,7 @@ export default function LAB() {
   const { language } = useLanguage();
   const t = translations[language];
   const labMenuItems = [
+    { label: "Início", href: "/lab" },
     { label: "Missão", href: "/lab#missao" },
     { label: "Sites", href: "/lab#sites" },
     { label: "Aplicativos", href: "/lab#aplicativos" },

@@ -10,6 +10,7 @@ export default function MRD() {
   const { language } = useLanguage();
   const t = translations[language];
   const mrdMenuItems = [
+    { label: "Início", href: "/mrd" },
     { label: "Permacultura", href: "/mrd#permacultura" },
     { label: "Fauna e Flora", href: "/mrd#fauna-flora" },
     { label: "Comunidade", href: "/mrd#comunidade" },

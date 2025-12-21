@@ -11,7 +11,7 @@ export default function ManifestoDAD() {
   const t = manifestoTranslations[language];
   
   const dadMenuItems = [
-    { label: "Home", href: "/dad" },
+    { label: "Início", href: "/dad" },
     { label: "Manifesto", href: "/dad/manifesto" },
     { label: "Portfólio", href: "/dad#portfolio" },
     { label: "Clipping", href: "/dad#clipping" },
