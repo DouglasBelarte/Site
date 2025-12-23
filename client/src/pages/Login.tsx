@@ -6,8 +6,39 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Login() {
+  const { language } = useLanguage();
+  
+  const translations = {
+    PT: {
+      title: "Acesso",
+      subtitle: "Entre na sua conta",
+      email: "E-mail",
+      password: "Senha",
+      button: "Entrar",
+      message: "Login padrão ativado. Integração futura."
+    },
+    EN: {
+      title: "Access",
+      subtitle: "Sign in to your account",
+      email: "Email",
+      password: "Password",
+      button: "Sign in",
+      message: "Standard login activated. Future integration."
+    },
+    FR: {
+      title: "Accès",
+      subtitle: "Connectez-vous à votre compte",
+      email: "E-mail",
+      password: "Mot de passe",
+      button: "Se connecter",
+      message: "Connexion standard activée. Intégration future."
+    }
+  };
+  
+  const t = translations[language];
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -41,15 +72,15 @@ export default function Login() {
         <div className="container">
           <div className="max-w-md mx-auto">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
-              <h1 className="text-3xl md:text-4xl mb-2">Acesso</h1>
+              <h1 className="text-3xl md:text-4xl mb-2">{t.title}</h1>
               <p className="text-muted-foreground mb-8">
-                Entre com suas credenciais para acessar a área restrita.
+                {t.subtitle}
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    E-mail
+                    {t.email}
                   </label>
                   <Input
                     type="email"
@@ -63,7 +94,7 @@ export default function Login() {
 
                 <div>
                   <label htmlFor="password" className="block text-sm font-medium mb-2">
-                    Senha
+                    {t.password}
                   </label>
                   <Input
                     type="password"
@@ -80,7 +111,7 @@ export default function Login() {
                   className="w-full rounded-full"
                   style={{ backgroundColor: "rgb(245, 135, 79)" }}
                 >
-                  Entrar
+                  {t.button}
                 </Button>
               </form>
 

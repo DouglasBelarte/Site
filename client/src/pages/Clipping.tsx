@@ -2,8 +2,37 @@ import { GlobalHeader } from "@/components/GlobalHeader";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CookieBar } from "@/components/CookieBar";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Clipping() {
+  const { language } = useLanguage();
+  
+  const translations = {
+    PT: {
+      title: "Clipping",
+      subtitle: "Nossa trajetória na mídia",
+      timeline: "Timeline",
+      institutional: "Projetos Institucionais",
+      partners: "Veículos Parceiros"
+    },
+    EN: {
+      title: "Clipping",
+      subtitle: "Our media journey",
+      timeline: "Timeline",
+      institutional: "Institutional Projects",
+      partners: "Partner Outlets"
+    },
+    FR: {
+      title: "Clipping",
+      subtitle: "Notre parcours médiatique",
+      timeline: "Chronologie",
+      institutional: "Projets institutionnels",
+      partners: "Médias partenaires"
+    }
+  };
+  
+  const t = translations[language];
+  
   const dadMenuItems = [
     { label: "Início", href: "/dad" },
     { label: "Manifesto", href: "/dad/manifesto" },
