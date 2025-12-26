@@ -54,9 +54,16 @@
   --chart-4: var(--color-blue-700);
   --chart-5: var(--color-blue-800);
   --radius: 0.65rem;
-  --background: 0 0% 100%; /* Branco #fff - corpo */
-  --foreground: 0 0% 17%;
-  --header-bg: 0 0% 96%; /* Cinza claro #f5f5f5 - header */
+  /* Variáveis semânticas obrigatórias - Tema Claro */
+  --bg-body: 0 0% 100%; /* #ffffff - branco */
+  --bg-header: 0 0% 96%; /* #f5f5f5 - cinza claro */
+  --text-primary: 0 0% 10%; /* #1a1a1a - contraste WCAG AA */
+  --text-secondary: 0 0% 37%; /* #5e5e5e - texto secundário */
+  --link-color: 16 92% 47%; /* Laranja oficial */
+  /* Mapeamento para compatibilidade */
+  --background: var(--bg-body);
+  --foreground: var(--text-primary);
+  --header-bg: var(--bg-header);
   --card: 0 0% 100%;
   --card-foreground: 0 0% 17%;
   --popover: oklch(1 0 0);
@@ -86,9 +93,16 @@
   --primary-foreground: var(--color-blue-50);
   --sidebar-primary: var(--color-blue-500);
   --sidebar-primary-foreground: var(--color-blue-50);
-  --background: 0 0% 0%; /* Preto #000 - corpo */
-  --foreground: 0 0% 90%; /* Texto claro */
-  --header-bg: 0 0% 18%; /* Cinza #2e2e2e - header */
+  /* Variáveis semânticas obrigatórias - Tema Escuro */
+  --bg-body: 0 0% 7%; /* #121212 - preto suavizado */
+  --bg-header: 0 0% 18%; /* #2e2e2e - cinza escuro */
+  --text-primary: 0 0% 90%; /* #e6e6e6 - contraste WCAG AA */
+  --text-secondary: 0 0% 60%; /* #999999 - texto secundário */
+  --link-color: 16 92% 60%; /* Laranja mais claro para dark mode */
+  /* Mapeamento para compatibilidade */
+  --background: var(--bg-body);
+  --foreground: var(--text-primary);
+  --header-bg: var(--bg-header);
   --card: 0 0% 10%;
   --card-foreground: 0 0% 90%;
   --popover: 0 0% 10%;
@@ -129,6 +143,20 @@
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     letter-spacing: -0.02em;
+    color: hsl(var(--text-primary)); /* Contraste WCAG AA */
+  }
+  a {
+    color: hsl(var(--link-color));
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  p, li, span {
+    color: hsl(var(--text-primary));
+  }
+  .text-muted-foreground, .text-secondary {
+    color: hsl(var(--text-secondary)) !important;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),

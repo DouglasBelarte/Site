@@ -135,3 +135,33 @@
 ---
 
 **Última atualização:** Checkpoint 82905663 - Correções Dark Mode e Multilíngue
+
+## Análise e Correção de Tema Claro/Escuro (Prompt Oficial)
+
+### Análise Obrigatória
+- [x] Analisar origem do tema (CSS global, variáveis, media queries, localStorage)
+- [x] Identificar problemas: body não refletindo tema, header cor fixa, baixo contraste
+- [x] Documentar inconsistências entre tema detectado e aplicado
+
+### Implementação de Variáveis CSS Semânticas
+- [x] Criar variáveis obrigatórias: --bg-body, --bg-header, --text-primary, --text-secondary, --link-color
+- [x] Implementar sistema baseado exclusivamente em variáveis CSS
+- [x] Garantir que cada tema apenas sobrescreve valores das variáveis
+
+### Correção Body e Header
+- [x] Body tema claro: bg #ffffff, text #1a1a1a (WCAG AA)
+- [x] Body tema escuro: bg #121212, text #e6e6e6 (WCAG AA)
+- [x] Header sincronizado com tema ativo (--header-bg)
+- [x] Header com contraste claro em relação ao body
+
+### Tipografia e Contraste
+- [x] Garantir contraste mínimo WCAG AA (4.5:1)
+- [x] Definir cores para texto principal, secundário, títulos, links
+- [x] Links distinguíveis com underline no hover
+- [x] Evitar cinzas de baixo contraste
+
+### Validação Final
+- [x] Tema claro e escuro funcionando previsivelmente
+- [x] Body e header sempre sincronizados
+- [x] Tipografia legível em ambos os modos
+- [x] Código organizado com variáveis semânticas
