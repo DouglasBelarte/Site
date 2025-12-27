@@ -14,6 +14,7 @@ import ManifestoDAD from "./pages/ManifestoDAD";
 import Login from "./pages/Login";
 import Info from "./pages/Info";
 import Clipping from "./pages/Clipping";
+import Licenciamento from "./pages/Licenciamento";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/dad" component={DAD} />
       <Route path="/dad/manifesto" component={ManifestoDAD} />
       <Route path="/dad/clipping" component={Clipping} />
+      <Route path="/dad/licenciamento" component={Licenciamento} />
       <Route path="/mrd" component={MRD} />
       <Route path="/ead" component={EAD} />
       <Route path="/lab" component={LAB} />

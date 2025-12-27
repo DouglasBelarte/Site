@@ -10,6 +10,7 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
+import { Link } from "wouter";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -558,9 +559,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEÇÃO INFO/CONTATO */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container text-center">
+          <h2 className="text-3xl md:text-4xl mb-4">
+            {language === "PT" ? "Informações e Contato" : language === "EN" ? "Information and Contact" : "Informations et Contact"}
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            {language === "PT" ? "Entre em contato para discutir seu projeto ou saber mais sobre nossos serviços." : language === "EN" ? "Get in touch to discuss your project or learn more about our services." : "Contactez-nous pour discuter de votre projet ou en savoir plus sur nos services."}
+          </p>
+          <Link href="/info">
+            <Button
+              size="lg"
+              className="rounded-full px-8"
+              style={{ backgroundColor: "rgb(245, 135, 79)" }}
+            >
+              {language === "PT" ? "INFO / Contato" : language === "EN" ? "INFO / Contact" : "INFO / Contact"}
+            </Button>
+          </Link>
+        </div>
+      </section>
+
       {/* FOOTER */}
-      <footer className="bg-[#2B2B2B] text-white py-12">
-        <div className="container">
+      <footer className="bg-[rgb(114,115,118)] text-white py-16">       <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* COLUNA 1: INSTITUCIONAL */}
             <div>
