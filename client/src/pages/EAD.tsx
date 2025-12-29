@@ -83,6 +83,109 @@ export default function EAD() {
         </div>
       </section>
 
+      {/* INGLÊS COM DOUGLAS AMORIM */}
+      <section className="py-16 border-t border-border bg-muted/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl mb-4">Inglês com Douglas Amorim</h2>
+              <p className="text-xl text-muted-foreground">
+                Fluência, confiança e resultados reais - desde o nível iniciante até o avançado
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+              <div>
+                <h3 className="text-2xl font-medium mb-4">Professor desde 2001</h3>
+                <p className="text-muted-foreground mb-4">
+                  Com experiência de vida na América do Norte (Canadá e Estados Unidos), Douglas Amorim já ajudou 
+                  centenas de alunos a alcançarem seus objetivos com o inglês – desde viagens até negócios internacionais.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Suas aulas são personalizadas, dinâmicas e 100% focadas em você: no seu ritmo e nos seus objetivos.
+                </p>
+                <p className="text-muted-foreground">
+                  Utiliza metodologias tradicionais e comprovadas, como o método <strong>Interchange</strong> (livros Intro, 1, 2 e 3), 
+                  o clássico <strong>Essential Grammar in Use</strong>, e o método britânico <strong>Callan</strong>, 
+                  uma abordagem acelerada e direta para quem quer desenvolver fluência com rapidez.
+                </p>
+              </div>
+              <div className="bg-[rgb(121,69,142)]/5 border border-[rgb(121,69,142)]/20 rounded-2xl p-8">
+                <h4 className="text-lg font-medium mb-4">Benefícios das Aulas</h4>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[rgb(121,69,142)] mt-1">✓</span>
+                    <span><strong>Todos os níveis:</strong> Do iniciante ao avançado</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[rgb(121,69,142)] mt-1">✓</span>
+                    <span><strong>Conversação:</strong> Vocabulário e fluência no dia a dia</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[rgb(121,69,142)] mt-1">✓</span>
+                    <span><strong>Inglês para viagens:</strong> Entrevistas, apresentações e negócios</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[rgb(121,69,142)] mt-1">✓</span>
+                    <span><strong>Metodologia prática:</strong> Foco em resultados reais</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[rgb(121,69,142)] mt-1">✓</span>
+                    <span><strong>Flexibilidade:</strong> Horários adaptados à sua rotina</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[rgb(121,69,142)] mt-1">✓</span>
+                    <span><strong>Atendimento online:</strong> Aulas à distância com qualidade</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8 mb-8">
+              <h4 className="text-xl font-medium mb-6 text-center">Depoimentos de Alunos</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="border-l-4 pl-6" style={{ borderColor: "rgb(121, 69, 142)" }}>
+                  <p className="text-muted-foreground italic mb-2">
+                    "As aulas com o Douglas me deram confiança para viajar sozinho aos EUA!"
+                  </p>
+                  <p className="text-sm text-muted-foreground">— Rafael, ex-aluno</p>
+                </div>
+                <div className="border-l-4 pl-6" style={{ borderColor: "rgb(121, 69, 142)" }}>
+                  <p className="text-muted-foreground italic mb-2">
+                    "Consegui uma promoção no trabalho após 6 meses de aula com o Douglas."
+                  </p>
+                  <p className="text-sm text-muted-foreground">— Juliana, aluna de inglês corporativo</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-lg text-muted-foreground mb-6">
+                Quer começar a falar inglês com segurança e fluência?
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Button
+                  size="lg"
+                  className="rounded-full"
+                  style={{ backgroundColor: "rgb(121, 69, 142)" }}
+                >
+                  Agendar Aula Experimental
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full hover:border-[rgb(245,135,79)] hover:text-[rgb(245,135,79)] transition-all"
+                  style={{ borderColor: "rgb(121, 69, 142)", color: "rgb(121, 69, 142)" }}
+                  onClick={() => window.open('https://wa.me/5512997224036', '_blank')}
+                >
+                  WhatsApp: +55 12 99722 4036
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTEÚDO */}
       <section id="conteudo" className="py-16 border-t border-border bg-muted/30">
         <div className="container">

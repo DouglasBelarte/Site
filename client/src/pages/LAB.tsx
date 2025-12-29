@@ -81,6 +81,104 @@ export default function LAB() {
         </div>
       </section>
 
+      {/* PARCERIAS ESTRATÉGICAS */}
+      <section className="py-16 border-t border-white/10 bg-white/5">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl mb-4">Parcerias que Constroem Marcas com Alma</h2>
+              <p className="text-xl text-white/70">
+                Descubra como a expertise de 25 anos de Doug Amorim em branding e IA pode transformar 
+                sua marca através de parcerias estratégicas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="bg-black/50 border border-[rgb(255,204,41)]/20 rounded-xl p-6">
+                <div className="text-3xl mb-3">🎯</div>
+                <h3 className="text-lg font-medium mb-2">Estratégia de Marca</h3>
+                <p className="text-sm text-white/70">
+                  Desenvolvimento de estratégias de branding que conectam propósito, audiência e objetivos de negócio.
+                </p>
+              </div>
+
+              <div className="bg-black/50 border border-[rgb(255,204,41)]/20 rounded-xl p-6">
+                <div className="text-3xl mb-3">🎨</div>
+                <h3 className="text-lg font-medium mb-2">Identidade Visual</h3>
+                <p className="text-sm text-white/70">
+                  Criação de identidades visuais memoráveis que refletem a essência da marca.
+                </p>
+              </div>
+
+              <div className="bg-black/50 border border-[rgb(255,204,41)]/20 rounded-xl p-6">
+                <div className="text-3xl mb-3">🚀</div>
+                <h3 className="text-lg font-medium mb-2">Presença Digital</h3>
+                <p className="text-sm text-white/70">
+                  Construção de presença digital estratégica que amplifica o alcance da marca.
+                </p>
+              </div>
+
+              <div className="bg-black/50 border border-[rgb(255,204,41)]/20 rounded-xl p-6">
+                <div className="text-3xl mb-3">🤖</div>
+                <h3 className="text-lg font-medium mb-2">IA Aplicada</h3>
+                <p className="text-sm text-white/70">
+                  Integração de inteligência artificial para otimizar processos e maximizar resultados.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-[rgb(255,204,41)]/10 to-[rgb(255,204,41)]/5 border border-[rgb(255,204,41)]/30 rounded-2xl p-8 mb-8">
+              <h3 className="text-2xl font-medium mb-4">Case de Sucesso: ONG Anjos do Peito</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                <div>
+                  <div className="text-3xl font-bold text-[rgb(255,204,41)] mb-1">+R$ 1,35M</div>
+                  <div className="text-sm text-white/70">Arrecadados</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-[rgb(255,204,41)] mb-1">12</div>
+                  <div className="text-sm text-white/70">Meses de transformação</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-[rgb(255,204,41)] mb-1">Nacional</div>
+                  <div className="text-sm text-white/70">Referência</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-[rgb(255,204,41)] mb-1">360°</div>
+                  <div className="text-sm text-white/70">Estratégia integrada</div>
+                </div>
+              </div>
+              <p className="text-white/80">
+                Através de uma estratégia integrada de branding, presença digital e campanhas direcionadas, 
+                transformamos a ONG Anjos do Peito em uma referência nacional na luta contra o câncer de mama, 
+                multiplicando seu impacto social e capacidade de arrecadação.
+              </p>
+            </div>
+
+            <div className="bg-black/50 border border-[rgb(255,204,41)]/20 rounded-2xl p-8">
+              <h3 className="text-xl font-medium mb-4">Benefícios da Parceria</h3>
+              <ul className="space-y-3 text-white/80">
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(255,204,41)] mt-1">✓</span>
+                  <span><strong>Expertise Combinada:</strong> 20 anos de experiência + especialidades da URZE e Angélica Co.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(255,204,41)] mt-1">✓</span>
+                  <span><strong>Resultados Comprovados:</strong> Track record de sucesso com cases reais e mensuráveis</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(255,204,41)] mt-1">✓</span>
+                  <span><strong>Inovação Constante:</strong> Aplicação de IA e tecnologias emergentes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(255,204,41)] mt-1">✓</span>
+                  <span><strong>Abordagem Holística:</strong> Visão 360° integrando todos os pontos de contato da marca</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SITES */}
       <section id="sites" className="py-16 border-t border-white/10">
         <div className="container">

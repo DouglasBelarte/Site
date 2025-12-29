@@ -126,6 +126,109 @@ export default function MRD() {
         </div>
       </section>
 
+      {/* TECNOLOGIA E GESTÃO RURAL */}
+      <section id="tecnologia" className="py-16 border-t border-border bg-muted/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl mb-4">Tecnologia que Conecta com a Terra</h2>
+              <p className="text-lg text-muted-foreground">
+                O Mundo Roça é um aplicativo modular criado para atender às necessidades do sitiante moderno.
+                Ferramentas digitais simples e práticas para controle de criações, produção vegetal, manejo diário e finanças.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="w-10 h-10 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xl">🐔</span>
+                </div>
+                <h3 className="text-lg font-medium mb-2">Galinhas & Aves</h3>
+                <p className="text-sm text-muted-foreground">
+                  Controle de raças, postura, alimentação e produção de ovos
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="w-10 h-10 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xl">🌿</span>
+                </div>
+                <h3 className="text-lg font-medium mb-2">Horta & Hortifrútis</h3>
+                <p className="text-sm text-muted-foreground">
+                  Planejamento de plantio, colheita e épocas ideais por cultura
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="w-10 h-10 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xl">🐝</span>
+                </div>
+                <h3 className="text-lg font-medium mb-2">Apicultura</h3>
+                <p className="text-sm text-muted-foreground">
+                  Controle de caixas, coletas de mel e manejo de colmeias
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="w-10 h-10 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xl">🐟</span>
+                </div>
+                <h3 className="text-lg font-medium mb-2">Rãs & Peixes</h3>
+                <p className="text-sm text-muted-foreground">
+                  Tanques, crescimento, alimentação e controle sanitário
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="w-10 h-10 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xl">🐐</span>
+                </div>
+                <h3 className="text-lg font-medium mb-2">Cabras & Leite</h3>
+                <p className="text-sm text-muted-foreground">
+                  Produção de leite, ordenha e controle de queijeira
+                </p>
+              </div>
+
+              <div className="bg-card border border-border rounded-xl p-6">
+                <div className="w-10 h-10 bg-[rgb(0,168,89)]/10 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xl">💰</span>
+                </div>
+                <h3 className="text-lg font-medium mb-2">Gestão Financeira</h3>
+                <p className="text-sm text-muted-foreground">
+                  Contas, alertas de compras, estoque e controle de vendas
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[rgb(0,168,89)]/5 border border-[rgb(0,168,89)]/20 rounded-2xl p-8">
+              <h3 className="text-xl font-medium mb-4">Diferenciais do Aplicativo</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(0,168,89)] mt-1">✓</span>
+                  <span>Interface simples e amigável, feita para uso no campo</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(0,168,89)] mt-1">✓</span>
+                  <span>Lembretes inteligentes e automação de tarefas repetitivas</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(0,168,89)] mt-1">✓</span>
+                  <span>Integração entre módulos com alertas no calendário</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(0,168,89)] mt-1">✓</span>
+                  <span>Comunidade ativa para troca de conhecimento rural</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[rgb(0,168,89)] mt-1">✓</span>
+                  <span>Modularidade: ative somente os módulos que você utiliza</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* COMUNIDADE */}
       <section id="comunidade" className="py-16 border-t border-border">
         <div className="container">

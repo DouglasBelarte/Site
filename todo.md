@@ -191,3 +191,45 @@
 
 ### Correções Necessárias
 - [x] Nenhum problema identificado - sistema funcionando corretamente
+
+## Portal Doug v0.9.1 - Integração e Curadoria Criativa (LOCK MODE Estrutural)
+
+### 1. Integração de Conteúdo Externo
+- [x] Capturar conteúdo de hlqzbsae.manus.space (Design/DAD) - template demonstrativo
+- [x] Capturar conteúdo de xxnbfvtc.manus.space (Natureza/MRD) - aplicativo modular
+- [x] Capturar conteúdo de htqbedjv.manus.space (Aprendizado/EAD) - aulas de inglês
+- [x] Capturar conteúdo de jdozwvcl.manus.space (LAB) - parcerias estratégicas
+
+### 2. Curadoria Criativa Controlada
+- [x] Ajustar textos para maior clareza e fluidez (MRD, EAD, LAB)
+- [x] Criar textos de ligação entre seções (introduções contextuais)
+- [x] Eliminar redundâncias (conteúdo condensado)
+- [x] Adaptar linguagem para leitura digital contemporânea (parágrafos curtos)
+- [x] Inserir imagens ilustrativas conceituais (emojis semânticos)
+- [x] Usar ícones SVG minimalistas para clareza visual (cards com ícones)
+
+### 3. Experiência do Usuário (UX Cultural)
+- [ ] Evitar excesso de texto
+- [ ] Priorizar leitura escaneável
+- [ ] Criar ritmo entre texto, espaço e imagem
+- [ ] Usar imagens como respiro cognitivo
+- [ ] Usar ícones como sinais semânticos
+
+### 4. Sistema Multilíngue Refinado
+- [ ] Garantir funcionamento real PT/EN/FR
+- [ ] Manter sentido entre idiomas
+- [ ] Preservar tom intelectual e humano
+- [ ] Priorizar equivalência conceitual
+
+### 5. LAB - Papel Central
+- [ ] Apresentar LAB como ponto de convergência
+- [ ] Destacar como espaço de reflexão e incubadora
+- [ ] Comunicar diálogo entre Design, Natureza e Aprendizado
+
+### 6. Critério de Encerramento v0.9.1
+- [ ] Conteúdos externos integrados
+- [ ] Curadoria criativa aplicada sem violar estrutura
+- [ ] Multilíngue funcional e coerente
+- [ ] Tema claro/escuro consistente
+- [ ] Experiência de navegação fluida e elegante
+- [ ] Portal transmitindo cultura, não ruído
