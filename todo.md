@@ -253,3 +253,31 @@
 
 ### Entregável
 - [x] Relatório diagnóstico completo (DIAGNOSTIC_REPORT_FINAL.md)
+
+## ❌ Migração Portal v1.0 On-line (CANCELADA)
+
+**Status:** CANCELADA - Tarefa congelada para nova task "Portal Doug Online"
+
+### Fase 0 — Pré-Migração (Concluída)
+- [x] Snapshot completo do código-fonte (checkpoint v0.95 = b875e968)
+- [x] Inventário de assets (MIGRATION_V1.0_SNAPSHOT.md)
+- [x] Documentar estrutura de rotas (10 páginas + âncoras)
+- [x] Validar metadata SEO (titles, descriptions, OG tags)
+- [x] Checklist: todas páginas carregam sem erro
+- [x] Checklist: links internos funcionando
+- [x] Checklist: nenhuma dependência quebrada
+- [x] Marcar versão como Portal v1.0 baseline
+
+### Fases 1-5 (Não Executadas)
+**Motivo:** Requer acesso ao painel de publicação Manus e configurações de DNS
+**Próxima Ação:** Criar nova tarefa "Portal Doug Online" com acesso adequado
+
+---
+
+## 🧧 TAREFA CONGELADA
+
+**Checkpoint Final:** b875e968 (Portal v0.95)  
+**Documentação:** TASK_FREEZE.md  
+**Próxima Tarefa:** Portal Doug Online  
+
+**Não modificar esta tarefa. Usar como base para nova tarefa.**
