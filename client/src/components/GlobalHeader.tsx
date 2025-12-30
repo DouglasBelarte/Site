@@ -155,24 +155,7 @@ export function GlobalHeader({ section, logo, menuItems }: GlobalHeaderProps) {
               {theme === 'light' ? 'tema escuro' : 'tema claro'}
             </button>
             <span className="text-muted-foreground">.</span>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="hover:text-[#F5874F] transition-colors">
-                  {language.toLowerCase()}
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="rounded-none">
-                <DropdownMenuItem onClick={() => setLanguage("PT")}>
-                  pt
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("EN")}>
-                  en
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage("FR")}>
-                  fr
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <span className="text-muted-foreground">pt</span>
             <span className="text-muted-foreground">.</span>
             <a href="/login" className="hover:text-[#F5874F] transition-colors">
               acesso

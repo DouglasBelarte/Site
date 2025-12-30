@@ -19,9 +19,9 @@ export function CookieBar() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-[#2B2B2B] text-white p-4 z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-card text-card-foreground border-t border-border p-4 z-50">
       <div className="container mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-        <p className="text-sm text-white/80 max-w-3xl">
+        <p className="text-sm text-muted-foreground max-w-3xl">
           Usamos cookies e dados de navegação para melhorar sua experiência e entender demanda de projeto.
           Ao continuar, você concorda com nossa Política de Privacidade e uso de Cookies.
         </p>

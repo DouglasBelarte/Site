@@ -233,3 +233,23 @@
 - [ ] Tema claro/escuro consistente
 - [ ] Experiência de navegação fluida e elegante
 - [ ] Portal transmitindo cultura, não ruído
+
+## Análise Diagnóstica - Portal Publicado (Sem Execução)
+
+### Objetivo
+- [x] Analisar portal publicado em https://dougportal-v25.manus.space/
+- [x] Identificar incompletudes críticas e moderadas
+- [x] Documentar pontos de falha funcional, semântica e estrutural
+- [x] NÃO corrigir, NÃO implementar, NÃO sugerir soluções
+
+### Escopo de Análise
+- [x] Botões e CTAs (estrutura OK, funcionalidade não validada end-to-end)
+- [x] Fluxos lógicos (âncoras funcionam, formulários não testados)
+- [x] Padronização entre páginas (tema persiste, idioma não funciona)
+- [x] Infraestrutura de tema claro/escuro (FUNCIONA MAS cookie bar ilegível)
+- [x] Infraestrutura multilinguagem (DECORATIVA, não funcional)
+- [x] Procedimentos inacabados (i18n, contraste tema escuro)
+- [x] Pontos de quebra cognitiva (mistura PT/EN, seletor sem feedback)
+
+### Entregável
+- [x] Relatório diagnóstico completo (DIAGNOSTIC_REPORT_FINAL.md)

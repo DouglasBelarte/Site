@@ -80,7 +80,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-muted-foreground list-disc list-inside">
                 <li>Branding & Identidade</li>
                 <li>Site e Infra Digital</li>
-                <li>Catálogo / Portfólio / Produto</li>
+                <li><a href="https://www.dougamorim.com/portfolio" className="hover:text-primary transition-colors">Catálogo / Portfólio</a> / Produto</li>
                 <li>Atendimento assistido (Daniel)</li>
               </ul>
               <div className="mt-6 bg-accent/10 border border-accent/30 rounded-xl p-4 text-sm italic">

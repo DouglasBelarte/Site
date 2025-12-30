@@ -12,7 +12,7 @@ export default function DAD() {
   const dadMenuItems = [
     { label: "Início", href: "/dad" },
     { label: "Manifesto", href: "/dad/manifesto" },
-    { label: "Portfólio", href: "/dad#portfolio" },
+    { label: "Portfólio", href: "https://www.dougamorim.com/portfolio" },
     { label: "Clipping", href: "/dad#clipping" },
   ];
 
